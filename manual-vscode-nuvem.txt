@@ -1,3 +1,6 @@
 =========
 Terminal:
 npx http-server ./ (Abre um servidor de páginas em nuvem pelo terminal)
+
+======
+Em relação aos Commits, eu tenho que por alguma alteração na caixa de texto do commit caso contrário ele vai ficar procurando valor para o mesmo
