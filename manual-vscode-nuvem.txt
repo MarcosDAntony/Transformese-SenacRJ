@@ -1,0 +1,3 @@
+=========
+Terminal:
+npx http-server ./ (Abre um servidor de páginas em nuvem pelo terminal)
