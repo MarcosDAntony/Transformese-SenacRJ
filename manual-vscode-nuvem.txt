@@ -1,7 +1,12 @@
 =========
 Terminal:
 npx http-server ./ (Abre um servidor de páginas em nuvem pelo terminal)
-
+Clicar com o direito em cima de algum arquivo do projeto e clicar em "Show Preview" para abrir uma porta de testes do site.
 ======
 Em relação aos Commits, eu tenho que por alguma alteração na caixa de texto do commit caso contrário ele vai ficar procurando valor para o mesmo
 https://stackoverflow.com/questions/74452866/how-preview-a-html-file-github-codespaces (forum de possiveis respostas para abrir uma página web do arquivo)
+
+(crtl + shift + v) para dar preview do arquivo em página
+
+Extensões como Preview e Live Preview(Microsoft) surtiram um ótimo efeito!
+
