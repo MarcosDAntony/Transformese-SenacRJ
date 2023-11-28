@@ -4,3 +4,4 @@ npx http-server ./ (Abre um servidor de páginas em nuvem pelo terminal)
 
 ======
 Em relação aos Commits, eu tenho que por alguma alteração na caixa de texto do commit caso contrário ele vai ficar procurando valor para o mesmo
+https://stackoverflow.com/questions/74452866/how-preview-a-html-file-github-codespaces (forum de possiveis respostas para abrir uma página web do arquivo)
