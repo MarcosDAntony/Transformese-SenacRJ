@@ -1,2 +1,5 @@
-<?  echo "Olá mundo!\n",
-    "Aqui é o banco de dados do site Lux Medic Uniformes! ";?>
+<?php
+    echo "Aqui vai ser o banco de dados da página Lux Medic Uniformes!\n";
+    echo "oi";
+
+?>
