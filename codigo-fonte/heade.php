@@ -8,8 +8,8 @@
   <title>Lux Medic Uniformes</title>
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
-<body>
-  <img src="projeto-integrador-transformese/imagens/img_ref/luxmed.png">
+<body class="">
+
 
 
     <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
