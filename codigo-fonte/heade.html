@@ -1,72 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Lux Medic Uniformes</title>
 
-  <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="icon" href="/imagens/icons/lux.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Lux Medic</title>
+
+    <style>
+            .social-icons i {margin-right: 10px;}
+            .navbar-icons i {font-size: 24px;margin-right: 40px;}
+    </style>
 </head>
+
 <body>
-  
-<header class="card">
-    <img src="/imagens/img_ref/luxmed.png" class="d-flex justify-content-cente" width="150" height="150">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="d-flex justify-content-center"><form class="d-flex" role="search">
-<a class="navbar-brand" href="#"> LOJA ONLINE</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-expand-lg"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"> Início </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"> Produtos </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled"> Vendas </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled"> Contato </a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="" placeholder="" aria-label="pesquisa">
-                  <button class="btn btn-outline-success" type="submit">Pesquisa</button>
-                </form>
+<!-- header
+ -->
+    <header style="background-color: rgba(128, 0, 128, 0.87);">
+        <div class="container px-4 text-center">
+            <div class="row gx-5">
+              <div class="col">
+               <div class="p-3">Whatsapp da Rapaziada</div>
+              </div>
+              <div class="col">
+                <div class="p-3"><i class="fas fa-phone">Atendimento ao Cliente (21) 4002-8922</i></div>
+              </div>
+              <div class="col">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook p-2 fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp p-2 fa-2x"></i></a>
+                    <a href="https://abre.ai/huV7"><i class="fab fa-instagram p-2 fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-pinterest p-2 fa-2x"></i></a>
+                  </div>
               </div>
             </div>
-          </nav>
-      </nav>
-    
     </header>
+            <!-- navbar -->
 
-            <input class="form-control me-2" type="search">
-            <button class="btn-group w-auto h-auto end" type="submit"><img src="/imagens/lupa.png" class="h-100 w-25"></button>
-          </form></div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <form class="form-inline mr-auto ms-3"> 
+                  <input class="form-control mr-sm-2 mb-3" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <a class="navbar-brand mx-auto" href="#">
+                  <img src="../imagens/luxmed.png" width="202" height="202" alt="Logo"> 
+                </a>
+                <div class="navbar-icons">
+                  <a href="#" class="mr-3"><i class="fas fa-phone"></i></a>
+                  <a href="#" class="mr-3"><i class="fas fa-user"></i></a>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </nav>
+          </div>
+          
+<!--carrousel-->
 
-      </nav>
+
+
+
     
-    </header>
+</body>
 
-
-
-
-
-
-    
-    <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    
-    
-    
-    <?= require_once = "footer.php";?>
-  </body>
 </html>
