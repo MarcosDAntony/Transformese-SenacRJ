@@ -7,38 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Design Bootstrap-->  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
     <!-- Fonte da página--><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <!-- Icone da página--><link rel="shortcut icon" href="../site/imagens/icons/logodeluxunipro.ico" type="image/x-icon">
-  <style>
-    .headertop{
-      background-color: green;
+    <!-- Icone fav--><link rel="shortcut icon" href="../site/imagens/icons/logodeluxunipro.ico" type="image/x-icon">
+    <!-- Icones da página--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/*Estilização do Header*/
+.headertop{
+      background-color: #008000;
       height: 5px;
     }
-
-    .headersub{
+.headersub{
       background: rgb(106,255,111);
-      background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
+      background: linear-gradient(0deg, #6aff6f 0%, green);
       direction:initial;
       height: 270px;
 
     }
 
-/* Estilização da caixa de Pesquisa */
-#divBusca{
-  background-color:rgb(231, 252, 231);
-  border:solid 1px;
-  border-radius:15px;
-  width:300px;
-}
 
-#txtBusca{
+
+
+/* Estilização da caixa de Pesquisa */
+.divBusca{
+  border-radius:20px;
+  width:290px;
+  border: 0;
+  background-color: white;
+}
+.txtBusca{
   float:left;
   background-color:transparent;
-  padding-left:5px;
   font-style:italic;
-  font-size:18px;
-  border:transparent;
+  border:green;
   height:32px;
   width:260px;
+}
+
+
+
+
+/*Estilização do Footer*/
+.bgfooter{
+   background: rgb(0,128,0);
+background: linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
 }
 
   </style>
@@ -49,7 +59,7 @@
 <!--Aqui é onde fica o primeiro cabeçalho onde fica o atendimento de reclamações  -->
     <header class="headertop">
         <div class="container-fluid">
-              <div class="pb-md-1 text-light"><i class="fas fa-phone">Atendimento ao Cliente(+55 21 96860-3959)</i></div>
+              <div class="pb-md-1 text-light">Atendimento ao Cliente(+55 21 96860-3959)</i></div>
               <hr>    
             </div>
      </header>
@@ -57,7 +67,7 @@
 <!-- Aqui é onde fica o segundo cabeçalho com barra de pesquisa, logo e algumas opções-->
     <header class="headersub">
       <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
+        <div class="container-fluid" style="font-size: 18px;">
           <a href="#" target="_self"> <img src="../site/imagens/img_ref/deluxpro-semmaquina-removebg-preview.png"  width="350" height="350" alt="logo"> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span> <!-- Esse <nav class="navbar"> conjunto de tag faz um menu hamburguer quando a página reduz de tamanho...-->
@@ -67,16 +77,6 @@
             <ul class="navbar-nav me-auto mb-2">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="">Sobre</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contatos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"><i class="fab fa-instagram p-md-2" style="color: rgba(170, 0, 156, 0.63);">Instagram</i></a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fab fa-whatsapp p-md-2" style="color: rgba(7, 255, 7, 0.562);">Whatsapp</i></a></li>
-                </ul>
               </li>
 
 
@@ -91,11 +91,15 @@
                 </ul>
               </li>
 
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Equipe</a>
+              </li>
+              
             </ul>
           </div>
-          
-          <div id="divBusca">
-            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <!-- Barra de Pesquisa-->
+          <div class="divBusca">
+            <input type="search" class="txtBusca" placeholder="  Buscar..."/>
             <img src="../site/imagens/icons/lupamenor.png" id="btnBusca" alt="Buscar"/>
           </div>
         
@@ -125,14 +129,14 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="float-md-start"><img src="../site/imagens/icons/icons8-whatsapp-128.png" height="40" width="40" alt=""></div><br>
+      <div class="float-md-start"><img src="../site/imagens/icons/icons8-whatsapp-128.png" height="45" width="40" alt=""></div><br>
     </main>
 
 
 
 <!-- Aqui vai ser o fim da página!-->
     
-<nav class="navbar navbar-expand-md fixed-bottom  bg-body-tertiary d-flex justify-content-center" style="background-color: green;">
+<nav class="bgfooter navbar navbar-expand-md fixed-bottom d-flex justify-content-center">
     <p>&copy; 2023 - Todos os direitos reservados.</p>
   </nav>
 
