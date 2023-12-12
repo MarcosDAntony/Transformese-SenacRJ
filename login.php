@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <?php
-	$conn = new PDO("mysql:host=localhost;dbname=lol", "lucasfelinto", "Lucas.4dec");
-
 	session_start();
 
 ?>
