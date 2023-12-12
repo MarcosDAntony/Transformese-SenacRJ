@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11/12/2023 às 20:25
--- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.2.4
+-- Tempo de geração: 12/12/2023 às 19:29
+-- Versão do servidor: 10.4.32-MariaDB
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,27 +18,18 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `deluxuniformespro-bd`
+-- Banco de dados: `deluxuniformespro`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `categorias`
+-- Estrutura para tabela `categoria`
 --
 
-CREATE TABLE `categorias` (
-  `id_categoria` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `conteudo-da-pagina`
---
-
-CREATE TABLE `conteudo-da-pagina` (
-  `id_conteudodapagina` int(11) NOT NULL
+CREATE TABLE `categoria` (
+  `id_categoria` int(11) NOT NULL,
+  `nome_categoria` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -48,7 +39,22 @@ CREATE TABLE `conteudo-da-pagina` (
 --
 
 CREATE TABLE `produtos` (
-  `id_produtos` int(11) NOT NULL
+  `id_produto` int(11) NOT NULL,
+  `descricao` varchar(500) NOT NULL,
+  `preco` float NOT NULL,
+  `imagem` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `id_usuario` int(50) NOT NULL,
+  `senha` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -56,44 +62,44 @@ CREATE TABLE `produtos` (
 --
 
 --
--- Índices de tabela `categorias`
+-- Índices de tabela `categoria`
 --
-ALTER TABLE `categorias`
+ALTER TABLE `categoria`
   ADD PRIMARY KEY (`id_categoria`);
-
---
--- Índices de tabela `conteudo-da-pagina`
---
-ALTER TABLE `conteudo-da-pagina`
-  ADD PRIMARY KEY (`id_conteudodapagina`);
 
 --
 -- Índices de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  ADD PRIMARY KEY (`id_produtos`);
+  ADD PRIMARY KEY (`id_produto`);
+
+--
+-- Índices de tabela `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`id_usuario`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT de tabela `categorias`
+-- AUTO_INCREMENT de tabela `categoria`
 --
-ALTER TABLE `categorias`
+ALTER TABLE `categoria`
   MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `conteudo-da-pagina`
---
-ALTER TABLE `conteudo-da-pagina`
-  MODIFY `id_conteudodapagina` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id_produtos` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `id_usuario` int(50) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
