@@ -9,7 +9,7 @@
 <body>
 <header>
 
-  <a href=""> De Lux Uniformes</a>
+  <a href=""> De Lux Uniformes Profissionais </a>
 	<nav>
     <li><a href="index.php">Inicio</a></li>
     <li><a href="login.php" >Login</a></li>
