@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br"
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<title>formulario</title>
 	<link rel="stylesheet" type="text/css" href="css/cadastro_usuario.css">
+   <!-- Design Bootstrap-->  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
 	body {
   font-family: sans-serif;
 }
@@ -12,7 +14,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: green;
+  background: rgb(106,255,111);
+    background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
   color: white;
   padding: 10px;
 }
@@ -29,7 +32,7 @@ header a:hover {
 
 nav li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .formulário {
@@ -38,6 +41,8 @@ nav li {
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 5px;
+  background: rgb(106,255,111);
+    background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
 }
 
 .formulário h2 {
@@ -55,7 +60,7 @@ nav li {
 }
 
 .meio input {
-  width: 100%;
+  width: 80%;
   padding: 5px 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -74,11 +79,12 @@ nav li {
   background-color: #ddd;
   cursor: not-allowed;
 }
+</style>
 </head>
 <body>
+<!--  
 <header>
-
-  <a href=""> De Lux Uniformes</a>
+  <a href=""> DeLux Uniformes Profissionais</a>
 	<nav>
     <li><a href="index.php">Inicio</a></li>
     <li><a href="login.php" >Login</a></li>
@@ -86,45 +92,52 @@ nav li {
     <li><a href="sobre.php">Sobre</a></li></li>
 	</nav>
 </header>
-
+-->
 <div class="formulário">
 	
-	<h2>Usuário</h2>
-    
+  
+	<h2 class="text-white">Cadastro</h2>
+ 
     <form action="../controller/cadastrar.php" method="POST">
 
         <div class="meio">
-          <input type="text" name="nome" required="">
-          <label>Nome</label>
+        <label>Nome:</label>
+        <input type="text" name="nome" required="">
+        
         </div>
 
        <div class="meio">
-          <input type="email" name="email" required="">
-          <label>Email</label>
+       <label>Email:</label> 
+       <input type="email" name="email" required="">
+        
        </div>    
        
        <div class="meio">
+       <label>Endereço:</label>
        <input type="text" name="endereco" required="">
-       <label>Endereço</label>
+      
        </div>    
        
        <div class="meio">
+       <label>Cidade:</label>
        <input type="text" name="cidade" required="">
-       <label>Cidade</label>
+    
        </div>    
        
        <div class="meio">
+       <label>Estado:</label>
        <input type="text" name="estado" required="">
-       <label>Estado</label>
+    
        </div>    
        
        <div class="meio">
+       <label>Senha:</label>
        <input type="password" name="senha" required="" id="senha" oninput="noway()">
-       <label>Senha</label>
+     
        </div>   
 
   
-        <input type="submit" name="" value="Entrar">
+        <input type="submit" name="enviar" value="Enviar" class="btn border-opacity-10">
      </form>
        
 </div>
