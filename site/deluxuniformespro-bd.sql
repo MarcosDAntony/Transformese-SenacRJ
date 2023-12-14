@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14/12/2023 às 14:31
+-- Tempo de geração: 14/12/2023 às 14:37
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -29,7 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cadastro_usuarios` (
   `id_cadastro` int(11) NOT NULL,
-  `Nome` int(11) NOT NULL,
+  `id_pedido` int(11) NOT NULL,
+  `Nome` varchar(25) NOT NULL,
   `Email` varchar(25) NOT NULL,
   `Senha` varchar(16) NOT NULL,
   `Cidade` varchar(25) NOT NULL,
@@ -72,7 +73,7 @@ CREATE TABLE `produtos` (
 --
 ALTER TABLE `cadastro_usuarios`
   ADD PRIMARY KEY (`id_cadastro`),
-  ADD KEY `Nome` (`Nome`);
+  ADD KEY `id_pedido` (`id_pedido`);
 
 --
 -- Índices de tabela `categorias`
@@ -111,7 +112,7 @@ ALTER TABLE `produtos`
 -- Restrições para tabelas `cadastro_usuarios`
 --
 ALTER TABLE `cadastro_usuarios`
-  ADD CONSTRAINT `cadastro_usuarios_ibfk_1` FOREIGN KEY (`Nome`) REFERENCES `produtos` (`id_produto`);
+  ADD CONSTRAINT `cadastro_usuarios_ibfk_1` FOREIGN KEY (`id_pedido`) REFERENCES `produtos` (`id_produto`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Restrições para tabelas `categorias`
