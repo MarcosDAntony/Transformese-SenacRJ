@@ -19,7 +19,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
   height: 100%;
-  line-height: 1.8;
+  line-height: 1;
 }
 
 
@@ -58,7 +58,7 @@ width:260px;
       background-size: cover;
       background-image: url(../site/imagens/img_ref/atual/imgheader.jpeg);
       min-height: 150%;
-    
+      
     }
 
 
@@ -92,18 +92,14 @@ width:260px;
 
 <!-- Aqui é onde fica o segundo cabeçalho com barra de pesquisa, logo e algumas opções-->
 <header class="headersub">
-  <nav class="navbar navbar-expand-md">
-    <div class="container-fluid" style="font-size: 16px;">
-      
+  <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
       <a href="#" target="_self"> <img src="../site/imagens/img_ref/atual/deluxpro-semmaquina-removebg-preview.png"  width="300" height="300" alt="logo"> </a>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> 
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent " style="font-size: 16px;">
         <ul class="navbar-nav">
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> 
-          </button>
-          
           <li class="nav-item">
             <a href="#Sobre" class="nav-link active" aria-current="page">Sobre</a>
           </li>
@@ -127,13 +123,17 @@ width:260px;
           </li>
 
         </ul>
-      </div>
-    <!-- Barra de Pesquisa-->
+        
+
+
+         <!-- Barra de Pesquisa-->
       <div class="divBusca">
         <input type="search" class="txtBusca" placeholder="  Buscar..."/>
         <a href="#Pesquisa"><img src="../site/imagens/icons/atuais/lupa.png" height="30" width="30" alt="Buscar"/></a>
       </div>
-    
+      </div>
+   
+    </div>
   </nav>
 </header>
         
