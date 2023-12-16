@@ -10,6 +10,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
       rel="stylesheet"
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,7 +22,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  background:linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,8 +113,13 @@ body {
   visibility: visible;
   color: #e74c3c;
 }
+
+
+
+
+
     />
-    <title>(EM PROGRESSO) Formulário</title>
+    <title>Formulário</title>
   </head>
   <body>
     <div class="container">
