@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -124,13 +124,13 @@ body {
   <body>
     <div class="container">
       <div class="header">
-        <h2>Criar uma conta</h2>
+        <h2>Cadastro</h2>
       </div>
 
       <form id="form" class="form">
         <div class="form-control">
-          <label for="username">Nome de
-            ousuário</label>
+          <label for="username">Nome do
+          usuário</label>
           <input
             type="text"
             id="username"
