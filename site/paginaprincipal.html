@@ -32,16 +32,24 @@ body, html {
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
     direction:initial;
     height: 250px;
+    padding: auto;;
     font-size: medium;
   }
 
-  .imgheader {
-      background-position: center;
-      background-size: cover;
-      background-image: url(../site/imagens/img_ref/atual/imgheader.jpeg);
-      min-height: 200%;
-      
-    }
+  .imgmain {
+  /* The image used */
+  background-image: url("../site/imagens/img_ref/atual/imgheader.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment:unset;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 
 .divBusca{
@@ -144,10 +152,11 @@ width:260px;
         </div>
       </div>
     </nav>
+    <hr>
     
- <!--Imagem do header-->
- <header class="imgheader" id="#Home">
-</header>
+ <!--================================================Main==========================================================================-->
+ <main class="imgmain">
+ </main>
 <hr>
 
 

@@ -84,6 +84,8 @@ nav li {
 </style>
 </head>
 <body>
+  <!--Inclusão do Banco de Dados da página Cadastro de Usuarios-->
+  <?= require_once("../site/deluxuniformespro-bd"); ?>
 <!--  
 <header>
   <a href=""> DeLux Uniformes Profissionais</a>
