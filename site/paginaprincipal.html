@@ -36,6 +36,7 @@ body, html {
     padding: auto;
     font-size: medium;
   }
+  .bgmenu{background: rgb(255,255,255);}
 
   .imgmain {
   min-height: 100%;
@@ -64,6 +65,25 @@ height:35px;
 width:260px;
 }
 
+
+
+#divBusca{
+  background-color:white;
+  border:solid 1px;
+  border-radius:15px;
+  width:300px;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:16px;
+  border:none;
+  height:25px;
+  width:25px;
+}
 
     /* ===============================================Style Footer===================================================*/
     .bgfooter{
@@ -102,7 +122,7 @@ width:260px;
 <!-- =============================================Header II=========================================================================-->
     <header class="headersub">
 
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md" style="font-size: 17px;">
       <div class="container-fluid">
         
         <a class="animate-img" href="#Home">
@@ -120,12 +140,12 @@ width:260px;
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-info-circle"></i>Sobre</a>
               </li>
 
               <li class="nav-item dropdown">
                 <a href="#Produtos" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa fa-usd"></i> Produtos
+                  <i class="fa fa-"></i> Produtos
                 </a>    
 
               <ul class="dropdown-menu">
@@ -144,20 +164,26 @@ width:260px;
                   <i class="fa fa-users"></i>Cadastro/  <i class="fa fa-key"></i>Login
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./cadastro_usuario.html">  <i class="fa fa-users"></i>Cadastro</a></li>
-                  <li><a class="dropdown-item" href="./login_usuario.html"> <i class="fa fa-key"></i>Login</a></li>
+                  <li><a class="dropdown-item" href="./formulario/cadastro.html">  <i class="fa fa-users"></i>Cadastro</a></li>
+                  <li><a class="dropdown-item" href="./formulario/login.html"> <i class="fa fa-key"></i>Login</a></li>
                   </ul>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-cart-arrow-down"></i>Carrinho</a>
+              </li>
+
             </ul>
 
-            <!-- Barra de Pesquisa-->
+            <!-- Barra de Pesquisa -->
             <form class="d-flex mt-3" role="search">
             <div class="divBusca">
             <a href="#Pesquisa"><input type="search" class="txtBusca" placeholder="  Buscar..."/></a>
               <a href="#Pesquisa"><img src="../site/imagens/icons/atuais/lupa.png" height="25" width="25" alt="Buscar"/></a>
             </div>
             </form>
-
+          
+         
           </div>
         </div>
       </div>

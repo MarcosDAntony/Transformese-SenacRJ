@@ -68,8 +68,7 @@ body {
 
 .form button {
   background-color:linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
-  border: 2px solid #ff;
-  color: #ff;
+  border: 2px solid #ffff;
   font-size: 14px;
   width: 100%;
   border-radius: 10px;
