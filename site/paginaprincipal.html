@@ -12,13 +12,14 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 
     <title>DeLux Uniformes Profissionais</title>
-    <style>
+
+<style>
  /*======================================================== Style Geral===========================================================*/
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
-  height: 100%;
-  line-height: 1.8;
+  height: 90%;
+  line-height: 1;
 }
 
 /*======================================================== Style Header=========================================================*/
@@ -32,21 +33,15 @@ body, html {
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
     direction:initial;
     height: 250px;
-    padding: auto;;
+    padding: auto;
     font-size: medium;
   }
 
   .imgmain {
-  /* The image used */
-  background-image: url("../site/imagens/img_ref/atual/imgheader.jpeg");
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment:unset;
+  min-height: 100%;
+  background-attachment:fixed; /* Efeito Paralax */
+  background-image: url(../site/imagens/img_ref/atual/imgmain.jpg);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -59,6 +54,7 @@ height: 32px;
 border: transparent;
 background-color: white;
 }
+
 .txtBusca{
 float:left;
 background-color:transparent;
@@ -74,17 +70,31 @@ width:260px;
     background: rgb(0,128,0);
  background: linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
  }
- 
     </style>
   </head>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <body>
 <!-- ============================================Header I=========================================================================  -->
 <header class="headertop">
   <div>
         <div class="text-black-50">
-              <i class="fa fa-phone ms-2"></i> Atendimento ao Cliente
+              <i class="fa fa-phone ms-2"></i> Contatos
           <a href="https://www.instagram.com/deluxuniformesprofissionais/" target="_blank"><i class="fa fa-instagram w3-large ms-1"></i></a>
-          <a href="https://wa.me/5521968603959"><i class="fa fa-whatsapp w3-large ms-1"></i>(+55 21 96860-3959)</a>
+          <a href="https://wa.me/5521968603959" target="_blank"><i class="fa fa-whatsapp w3-large ms-1"></i></a>(+55 21 96860-3959)
         </div>
         <hr>    
       </div>
@@ -102,7 +112,7 @@ width:260px;
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end bgmenu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></h5>
           </div>
@@ -155,7 +165,8 @@ width:260px;
     <hr>
     
  <!--================================================Main==========================================================================-->
- <main class="imgmain">
+ <main>
+  <img src="../site/imagens/img_ref/atual/imgmain.jpg" class="imgmain" alt="imgmain">
  </main>
 <hr>
 
