@@ -15,7 +15,7 @@
 
 <style>
  /*======================================================== Style Geral===========================================================*/
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
 
 body, html {
   height: 100%;
@@ -35,15 +35,14 @@ body, html {
   }
 
   .logo{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
   }
 
- /* .bgmenu{ 
-    background: linear-gradient 0deg, rgba(106,255,111,1);
-    border: none;
+  .bgmenu{ 
+    inset-block-end: 15px;
   }
-*/
+
   .imgmain {
   min-height: 100%;
   background-attachment:fixed; /* Efeito Paralax */
@@ -93,18 +92,16 @@ border: transparent;
   <body>
 <!-- ============================================Header I=========================================================================  -->
 <header class="headertop">
-  <div>
-        <div class="text-black-50">
+        <div class="text-black-60 icon-link-hover w3-responsive">
               <i class="fa fa-phone ms-2"></i> Contatos
           <a href="https://www.instagram.com/deluxuniformesprofissionais/" target="_blank"><i class="fa fa-instagram w3-large ms-1"></i></a>
           <a href="https://wa.me/5521968603959" target="_blank"><i class="fa fa-whatsapp w3-large ms-1"></i></a>(+55 21 96860-3959)
         </div>
            <hr>
-      </div>
 </header>
 <!-- =============================================Header II=========================================================================-->
     <header class="headersub">
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md text-black-70">
 
       <div class="container-fluid">
         <a class="animate-img" target="_self">
@@ -126,7 +123,7 @@ border: transparent;
               </li>
 
               <li class="nav-item dropdown">
-                <a href="#Produtos" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#Produtos" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                   <i class="fa fa-shopping-bag">Produtos</i>     
                 </a>
               <ul class="dropdown-menu">
@@ -136,7 +133,7 @@ border: transparent;
             </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                   <i class="fa fa-user">Conta</i>
                 </a>
                 <ul class="dropdown-menu">
@@ -146,15 +143,15 @@ border: transparent;
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Carrinho"><i class="fa fa-cart-plus"></i></a>
+                <a class="nav-link active" aria-current="page" href="#Carrinho" style="font-size: 25px;"><i class="fa fa-cart-plus"></i></a>
               </li>
             </ul>
 
              <!-- Barra de Pesquisa -->
-             <form class="d-flex mt-1" role="search">
+             <form class="d-flex" role="search">
               <div class="divBusca">
               <a href="#Pesquisa"><input type="search" class="inputBusca" placeholder=" Buscar..."/>
-                <img src="../site/imagens/icons/atuais/lupa.png" height="25" width="25" alt="Buscar..."/>
+                <img src="../site/imagens/icons/atuais/lupa.png" height="30" width="30"/>
               </a>
               </div>
               </form>
@@ -166,9 +163,14 @@ border: transparent;
     
  <!--================================================Main==========================================================================-->
  <main> 
-  <div class="carousel">
+  <div class="carousel w3-animate-left">
         <img src="../site/imagens/img_ref/atual/imgmain.jpg" class="imgmain" alt="imgmain">
   </div>
+
+
+
+
+
 
  </main>
 <hr>
