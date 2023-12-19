@@ -18,8 +18,8 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
-  height: 90%;
-  line-height: 1;
+  height: 100%;
+  line-height: 1.8;
 }
 
 /*======================================================== Style Header=========================================================*/
@@ -27,63 +27,46 @@ body, html {
     background-color: green;
     height: 30px;
   }
-
   .headersub{
     background: rgb(106,255,111);
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
     direction:initial;
     height: 250px;
-    padding: auto;
-    font-size: medium;
   }
-  .bgmenu{background: rgb(255,255,255);}
 
+  .logo{
+    width: 300px;
+    height: 300px;
+  }
+
+ /* .bgmenu{ 
+    background: linear-gradient 0deg, rgba(106,255,111,1);
+    border: none;
+  }
+*/
   .imgmain {
   min-height: 100%;
   background-attachment:fixed; /* Efeito Paralax */
-  background-image: url(../site/imagens/img_ref/atual/imgmain.jpg);
-  background-position: center;
+  background-position: unset;
   background-size: cover;
 }
-
-
 
 .divBusca{
 border-radius:3px;
 width:290px;
-height: 32px;
+height: 36px;
 border: transparent;
 background-color: white;
 }
 
-.txtBusca{
-float:left;
-background-color:transparent;
-font-style:italic;
-border:green;
-height:35px;
-width:260px;
+.inputBusca{
+border-radius:3px;
+width:250px;
+height: 36px;
+border: transparent;
 }
 
 
-
-#divBusca{
-  background-color:white;
-  border:solid 1px;
-  border-radius:15px;
-  width:300px;
-}
-
-#txtBusca{
-  float:left;
-  background-color:transparent;
-  padding-left:5px;
-  font-style:italic;
-  font-size:16px;
-  border:none;
-  height:25px;
-  width:25px;
-}
 
     /* ===============================================Style Footer===================================================*/
     .bgfooter{
@@ -116,17 +99,16 @@ width:260px;
           <a href="https://www.instagram.com/deluxuniformesprofissionais/" target="_blank"><i class="fa fa-instagram w3-large ms-1"></i></a>
           <a href="https://wa.me/5521968603959" target="_blank"><i class="fa fa-whatsapp w3-large ms-1"></i></a>(+55 21 96860-3959)
         </div>
-        <hr>    
+           <hr>
       </div>
 </header>
 <!-- =============================================Header II=========================================================================-->
     <header class="headersub">
+    <nav class="navbar navbar-expand-md">
 
-    <nav class="navbar navbar-expand-md" style="font-size: 17px;">
       <div class="container-fluid">
-        
-        <a class="animate-img" href="#Home">
-          <img src="../site/imagens/img_ref/atual/deluxpro-semmaquina-removebg-preview.png" width="300" height="300" alt="logo">
+        <a class="animate-img" target="_self">
+          <img src="../site/imagens/img_ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -137,23 +119,17 @@ width:260px;
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></h5>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"  style="font-size: 20px;">
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-info-circle"></i>Sobre</a>
+                <a class="nav-link active" aria-current="page" href="../site/sobre.php"><i class="fa fa-info-circle">Sobre</i></a>
               </li>
 
               <li class="nav-item dropdown">
                 <a href="#Produtos" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa fa-"></i> Produtos
-                </a>    
-
-              <ul class="dropdown-menu">
-                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Categorias
+                  <i class="fa fa-shopping-bag">Produtos</i>     
                 </a>
-              
-
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#Feminino">Feminino</a></li>
                 <li><a class="dropdown-item" href="#Masculino">Masculino</a></li>
               </ul>
@@ -161,7 +137,7 @@ width:260px;
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa fa-users"></i>Cadastro/  <i class="fa fa-key"></i>Login
+                  <i class="fa fa-user">Conta</i>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="./formulario/cadastro.html">  <i class="fa fa-users"></i>Cadastro</a></li>
@@ -170,29 +146,30 @@ width:260px;
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-cart-arrow-down"></i>Carrinho</a>
+                <a class="nav-link active" aria-current="page" href="#Carrinho"><i class="fa fa-cart-plus"></i></a>
               </li>
-
             </ul>
 
-            <!-- Barra de Pesquisa -->
-            <form class="d-flex mt-3" role="search">
-            <div class="divBusca">
-            <a href="#Pesquisa"><input type="search" class="txtBusca" placeholder="  Buscar..."/></a>
-              <a href="#Pesquisa"><img src="../site/imagens/icons/atuais/lupa.png" height="25" width="25" alt="Buscar"/></a>
-            </div>
-            </form>
-          
-         
+             <!-- Barra de Pesquisa -->
+             <form class="d-flex mt-1" role="search">
+              <div class="divBusca">
+              <a href="#Pesquisa"><input type="search" class="inputBusca" placeholder=" Buscar..."/>
+                <img src="../site/imagens/icons/atuais/lupa.png" height="25" width="25" alt="Buscar..."/>
+              </a>
+              </div>
+              </form>
+            
           </div>
         </div>
       </div>
     </nav>
-    <hr>
     
  <!--================================================Main==========================================================================-->
- <main>
-  <img src="../site/imagens/img_ref/atual/imgmain.jpg" class="imgmain" alt="imgmain">
+ <main> 
+  <div class="carousel">
+        <img src="../site/imagens/img_ref/atual/imgmain.jpg" class="imgmain" alt="imgmain">
+  </div>
+
  </main>
 <hr>
 
