@@ -3,24 +3,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
 
 body, html {
   height: 100%;
-  line-height: 1.8;
+  line-height: 1;
 }
 
 /*======================================================== Style Header=========================================================*/
 .headertop{
-    background-color: green;
+   background: green;
     height: 30px;
   }
   .headersub{
     background: rgb(106,255,111);
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
     direction:initial;
-    height: 250px;
+    height: 270px;
+    border: 15px;
+    padding-top: 0.5%;
+    margin-block-start: auto;
   }
 
   .logo{
-    width: 350px;
-    height: 350px;
+    width: 325px;
+    height: 325px;
   }
 
   .bgmenu{ 
