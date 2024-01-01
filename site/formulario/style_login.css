@@ -1,73 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-  font-family: sans-serif;
-}
-
-header {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background: rgb(106,255,111);
-    background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
-  color: white;
-  padding: 10px;
 }
 
-header a {
-  color: white;
-  text-decoration: none;
-  padding: 5px;
-}
-
-header a:hover {
-  background-color: #3366CC;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.formulário {
-  margin: 0 auto;
+.container {
+  background-color:  linear-gradient(0deg, rgba(106,255,111,1) 0%, green);;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   width: 400px;
-  border: 1px solid #ddd;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #eeeeee;
   padding: 20px;
-  border-radius: 5px;
-  background: rgb(106,255,111);
-    background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
 }
 
-.formulário h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.meio {
-  margin-bottom: 15px;
-}
-
-.meio label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.meio input {
-  width: 80%;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 16px;
-}
-
-.meio input[type="submit"] {
-  background-color: #4285F4;
-  color: white;
-  border: none;
-  cursor: pointer;
+.form button {
+  background-color:linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
+  border: 2px solid #ffff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
   padding: 10px;
 }
 
-.meio input[type="submit"]:disabled {
-  background-color: #ddd;
-  cursor: not-allowed;
+/* Error and Success */
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #fc6251;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
 }

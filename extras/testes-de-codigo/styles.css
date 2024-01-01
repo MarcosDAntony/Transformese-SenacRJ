@@ -1,39 +1,6 @@
+header{
+    background: rgb(106,255,111);
+    background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
+    height: 150px;
+  }
 
-
-.edge-search {
-    width: 400px;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-/*
-.search-icon {
-    width: 30px;
-    height: 30px;
-    background-color: #0078d4;
-    /* Adicione um ícone aqui ou ajuste conforme necessário 
-}
-*/
-.search-input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-}
-
-/*.search-button {
-    background-image: url("../testes-de-codigo/imgtestes/lupa.png");
-    border: none;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-}
-*/
