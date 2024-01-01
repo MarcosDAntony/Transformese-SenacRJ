@@ -1,7 +1,0 @@
-Aqui é o manual do xampp do projeto dentro do pedrive.
-
-Vou desenvolver o site todo em .html e depois para funcionar os codigos php(não lidos nele),alterar a extensão para .php em todos.
-
-em href lembrar sempre de por ../(o resto dos caminhos)
-
-Quando for para criar o Banco de Dados não o faça no Xampp Portable, faça no notebook em casa pelo Xampp da Máquina no 'myphpadmin'.
