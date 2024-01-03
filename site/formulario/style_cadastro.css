@@ -9,8 +9,6 @@
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
   
@@ -23,10 +21,7 @@
     overflow: hidden;
   }
   
-  .header {
-    background-color: #eeeeee;
-    padding: 20px;
-  }
+  
 
   .form button {
     background-color:linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
@@ -37,26 +32,8 @@
     padding: 10px;
   }
   
-  /* Error and Success */
-  .form-control.success input {
-    border-color: #2ecc71;
-  }
+ 
   
-  .form-control.error input {
-    border-color: #fc6251;
-  }
   
-  .form-control.success i.fa-check-circle {
-    color: #2ecc71;
-    visibility: visible;
-  }
   
-  .form-control.error i.fa-exclamation-circle {
-    color: #e74c3c;
-    visibility: visible;
-  }
   
-  .form-control.error small {
-    visibility: visible;
-    color: #e74c3c;
-  }

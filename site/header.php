@@ -56,8 +56,8 @@
             </ul>
             <!-- Barra de Pesquisa -->
               <div class="divBusca">
-              <input href="#Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..."/>
-                <img src="../site/imagens/icons/atuais/lupamenor.png" height="26" width="26"/>
+             <input href="#Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..."/>
+               <a href=""><img src="../site/conteudos/imagens/icons/atuais/lupamenor.png" height="26" width="26"/></a>
               </div>
           </div>
         </div>
