@@ -4,7 +4,7 @@
 <div id="carouselExample" class="carousel slide w3-animate-left" >
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../site/imagens/img_ref/atual/imgmain.jpg" class="d-block w-100 imgmain" alt="imgmain">
+      <img src="../site/conteudos/imagens/img_ref/atual/imgmain.jpg" class="d-block w-100 imgmain" alt="imgmain">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
