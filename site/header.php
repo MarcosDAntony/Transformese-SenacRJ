@@ -35,9 +35,11 @@
                   <i class="fa fa-shopping-bag">Produtos</i>     
                 </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../site/conteudos/feminino.html">Feminino</a></li>
-                <li><a class="dropdown-item" href="../site/conteudos/masculino.html">Masculino</a></li> 
-            </ul>
+                <li><a class="dropdown-item" href="../site/conteudos/medicina.html">Medicina</a></li>
+                <li><a class="dropdown-item" href="../site/conteudos/beleza.html">Beleza</a></li> 
+                <li><a class="dropdown-item" href="../site/conteudos/culinaria.html">Culinaria</a></li>
+                <li><a class="dropdown-item" href="../site/conteudos/auxiliarlimpeza.html">Auxiliar de Limpeza</a></li>
+              </ul>
             </li>
 
               <li class="nav-item dropdown">
@@ -51,13 +53,13 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../site/formulario/carrinho.html" style="font-size: 19px;"><i class="fa fa-cart-plus"></i></a>
+                <a class="nav-link active" aria-current="page" href="../site/formulario/carrinho.html" style="font-size: 24px;"><i class="fa fa-cart-plus"></i></a>
               </li>
             </ul>
             <!-- Barra de Pesquisa -->
               <div class="divBusca">
-             <input href="#Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..."/>
-               <a href=""><img src="../site/conteudos/imagens/icons/atuais/lupamenor.png" height="26" width="26"/></a>
+             <input name="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post"/>
+              <label for="Pesquisa"><img src="../site/conteudos/imagens/icons/atuais/lupamenor.png" href="#Pesquisa" height="26" width="26"/></label>
               </div>
           </div>
         </div>

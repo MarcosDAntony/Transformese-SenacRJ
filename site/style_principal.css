@@ -1,5 +1,7 @@
 /*======================================================== Style Geral===========================================================*/
-body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
+*{
+  font-family: "Poppins", sans-serif
+}
 /*======================================================== Style Header=========================================================*/
 .headertop{
    background: green;
@@ -29,8 +31,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
   background-attachment:fixed; /* Efeito Paralax */
   background-position: unset;
   background-size: cover;
-  width: 200px;
-  height: 450px;
 }
 
 
@@ -51,6 +51,5 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
 
     /* ===============================================Style Footer===================================================*/
     .bgfooter{
-    background: rgb(0,128,0);
  background: linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
  }
