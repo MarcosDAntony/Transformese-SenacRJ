@@ -10,11 +10,10 @@
   .headersub{
     background: rgb(106,255,111);
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
-    direction:initial;
+    direction:unset;
     height: 260px;
-    border: 15px;
-    padding-top: 0.5%;
-    margin-block-start: auto;
+    padding-top: 0.8%;
+    
   }
 
   .logo{
@@ -23,11 +22,13 @@
   }
 
   .whatsapp-image {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    display: flex;
+    position:fixed;
+    direction: unset;
+    bottom: 30px;
+    right: 25px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
   }
 
@@ -36,11 +37,10 @@
   }
 
   .imgmain {
-  position: initial;
   min-height: 120%;
   background-size: contain;
-  height: 850px;
-  width: 1250px;
+  height: 700px;
+  width: 900px;
 }
 
 
