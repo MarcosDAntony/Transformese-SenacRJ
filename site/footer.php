@@ -1,7 +1,6 @@
 <!--==================================================Footer=======================================================================-->
 <footer>
-<br>
-<br>   
+   
 <nav class="bgfooter navbar navbar-expand-md d-flex justify-content-center">
    <p>&copy; 2023 - Todos os direitos reservados.</p>
 

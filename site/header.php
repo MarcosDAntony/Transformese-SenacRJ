@@ -58,7 +58,7 @@
             </ul>
             <!-- Barra de Pesquisa -->
               <div class="divBusca">
-             <input name="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post"/>
+          <input name="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post"/>
               <label for="Pesquisa"><img src="../site/conteudos/imagens/icons/atuais/lupamenor.png" href="#Pesquisa" height="26" width="26"/></label>
               </div>
           </div>
