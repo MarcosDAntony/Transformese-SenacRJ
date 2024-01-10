@@ -25,11 +25,12 @@
     display: flex;
     position:fixed;
     direction: unset;
-    bottom: 30px;
+    bottom: 70px;
     right: 25px;
     width: 35px;
     height: 35px;
     cursor: pointer;
+    animation:infinite;
   }
 
   .bgmenu{ 
@@ -37,10 +38,9 @@
   }
 
   .imgmain {
-  min-height: 120%;
-  background-size: contain;
-  height: 700px;
-  width: 900px;
+  background-size: cover;
+  bottom: 50px;
+  justify-items: center;
 }
 
 
@@ -62,5 +62,4 @@
     /* ===============================================Style Footer===================================================*/
     footer{
  background: linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
- position: fixed;
  }
