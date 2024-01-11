@@ -12,8 +12,6 @@
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
     direction:unset;
     height: 260px;
-    padding-top: 0.8%;
-    
   }
 
   .logo{
@@ -30,7 +28,7 @@
     width: 35px;
     height: 35px;
     cursor: pointer;
-    animation:infinite;
+    animation:normal linear;
   }
 
   .bgmenu{ 
@@ -40,7 +38,6 @@
   .imgmain {
   background-size: cover;
   bottom: 50px;
-  justify-items: center;
 }
 
 
