@@ -17,9 +17,9 @@
 
   <body>
       <?= 
-      include_once ("../site/header.php");
-       include_once ("../site/main.php");
-       include_once ("../site/footer.php");
+      include_once ("../site/header.html");
+       include_once ("../site/main.html");
+       include_once ("../site/footer.html");
        ?>
   </body>
 </html>

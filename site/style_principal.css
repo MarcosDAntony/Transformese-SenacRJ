@@ -24,15 +24,10 @@
     position:fixed;
     direction: unset;
     bottom: 70px;
-    right: 25px;
+    right: 15px;
     width: 35px;
     height: 35px;
-    cursor: pointer;
-    animation:normal linear;
-  }
-
-  .bgmenu{ 
-    inset-block-end: 20px;
+    animation: normal alternate;
   }
 
   .imgmain {
