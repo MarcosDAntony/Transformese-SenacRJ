@@ -8,7 +8,6 @@
     height: 30px;
   }
   .headersub{
-    background: rgb(106,255,111);
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
     direction:unset;
     height: 260px;
@@ -28,6 +27,10 @@
     width: 35px;
     height: 35px;
     animation: normal alternate;
+  }
+
+  .fa fab{
+    color: yellow;
   }
 
   .imgmain {

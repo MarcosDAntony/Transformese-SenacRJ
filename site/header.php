@@ -47,13 +47,13 @@
                   <i class="fa fa-user">Conta</i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../site/formulario/cadastro.html">  <i class="fa fa-users"></i>Cadastro</a></li>
-                  <li><a class="dropdown-item" href="../site/formulario/login.html"> <i class="fa fa-key"></i>Login</a></li>
+                  <li><a class="dropdown-item" href="../site/formularios/cadastro.html">  <i class="fa fa-users"></i>Cadastro</a></li>
+                  <li><a class="dropdown-item" href="../site/formularios/login.html"> <i class="fa fa-key"></i>Login</a></li>
                   </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../site/formulario/carrinho.html" style="font-size: 24px;"><i class="fa fa-cart-plus"></i></a>
+                <a class="nav-link active" aria-current="page" href="../site/formularios/" style="font-size: 24px;"><i class="fa fa-cart-plus"></i></a>
               </li>
             </ul>
             <!-- Barra de Pesquisa -->
