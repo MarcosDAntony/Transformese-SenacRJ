@@ -11,7 +11,7 @@
   <!-- Funções W3Schools --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   <!-- FavIcon das Páginas --><link rel="shortcut icon" href="../site/imagens/icons/logodeluxunipro.ico" type="image/x-icon">
   <!-- Style Proprio --><link rel="stylesheet" href="style_principal.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
     <title>DeLux Uniformes Profissionais</title>
   </head>
 
@@ -19,6 +19,7 @@
       <?= 
       include_once ("../site/header.php");
        include_once ("../site/main.php");
+       require_once ("../site/banco-de-dados/config.php");
        include_once ("../site/footer.php");
        ?>
   </body>
