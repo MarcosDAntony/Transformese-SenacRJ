@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap-->  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!-- Funções Bootstrap --> <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> 
-  <!-- W3schools--> <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- Funções W3Schools --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-  <!-- FavIcon das Páginas --><link rel="shortcut icon" href="../site/imagens/icons/logodeluxunipro.ico" type="image/x-icon">
-  <!-- Style Proprio --><link rel="stylesheet" href="style_principal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.8">
+    <link rel="shortcut icon" href="../site/imagens/icons/deluxunipro.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Sobre nós</title>
+    <style>
+        /* Add the background image */
+        *{
+            font-family: "Poppins", sans-serif;
+        }
+        body {
+            background-image: url("../conteudos/imagens/img_ref/atual/fundo-\ imagem.png");
+            background-size:cover;
+            background-repeat: no-repeat;
+            font-size: 20px;
+        }
 
-    <title>DeLux Uniformes Profissionais</title>
-  </head>
+        p{
+            border: 1px transparent;
+            width: 400px;
+            border-radius: 2%;
+            padding: 10px;
+            background: linear-gradient(1deg, rgba(106,255,111,1) 0%, green);
+        }
 
-  <body>
-      <?= 
-      include_once ("../site/header.php");
-       include_once ("../site/main.php");
-       require_once ("../site/banco-de-dados/config.php");
-       include_once ("../site/footer.php");
-       ?>
-  </body>
+    </style>
+</head>
+<body>
+
+    <div class="img_sobre">
+    <!--<fieldset></fieldset> pode ser uma opção-->
+    <h1>Sobre a Empresa</h1>
+</div> 
+
+ <div class="bgsobre">
+        <br>
+        <p>A De Lux produz os mais diversos tipos de jalecos para profissionais que trabalham em<br>
+           hospitais, clínicas, consultórios, 
+           assim como para estudantes<br> e demais profissionais que vestem jaleco para exercer sua atividade profissional.</p>
+        <br>
+        <p>Produzimos também para os segmentos de bares, lanchonetes, restaurantes, limpeza<br> e para profissionais que prestam serviços.</p>
+        <br>
+        <p>Nossos produtos são ideais para profissionais que priorizam conforto e qualidade.</p>
+    </div>
+
+
+</body>
 </html>
