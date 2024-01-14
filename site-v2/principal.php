@@ -6,8 +6,9 @@
   <title>Document</title>
 </head>
 <body>
-    <?= include_once("../site-v2/header.php");?>
-    <?= include_once("../site-v2/main.php");?>
-    <?= include_once("../site-v2/footer.php")?>
+    <?= include_once("../site-v2/header.html");?>
+    <?= include_once("../site-v2/main.html");?>
+    <?= include_once("../site-v2/banco-de-dados/config.php");?>
+    <?= include_once("../site-v2/footer.html")?>
 </body>
 </html>
