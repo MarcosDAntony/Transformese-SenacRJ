@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="shortcut icon" href="../site-v2/conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../site-v2/style_principalv2.css">
+  <title>DeLux Uniformes Profissionais</title>
 </head>
 <body>
     <?= include_once("../site-v2/header.html");?>

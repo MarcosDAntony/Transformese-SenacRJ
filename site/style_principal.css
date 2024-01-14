@@ -28,11 +28,7 @@
     height: 35px;
     animation: normal alternate;
   }
-
-  .fa fab{
-    color: yellow;
-  }
-
+  
   .imgmain {
   background-size: cover;
   bottom: 50px;
