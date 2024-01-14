@@ -3,11 +3,7 @@
   font-family: "Poppins", sans-serif
 }
 /*======================================================== Style Header=========================================================*/
-.headertop{
-   background: green;
-    height: 30px;
-  }
-  .headersub{
+  .header{
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
     direction:unset;
     height: 260px;
@@ -29,16 +25,12 @@
     animation: normal alternate;
   }
 
-  .fa fab{
-    color: yellow;
-  }
-
   .imgmain {
   background-size: cover;
   bottom: 50px;
 }
 
-
+/*Barra de Pesquisa*/
 .divBusca{
   border-radius:3px;
   width:290px;
@@ -52,9 +44,16 @@
   height: 36px;
   border: transparent;
   }
+/*=====================*/
 
 
-    /* ===============================================Style Footer===================================================*/
+
+
+
+
+
+
+/* ===============================================Style Footer===================================================*/
     footer{
  background: linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
  }
