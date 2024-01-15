@@ -1,56 +1,147 @@
-/*======================================================== Style Geral===========================================================*/
+/*========================================== Style Geral===========================================================*/
 *{
-  font-family: "Poppins", sans-serif
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/*======================================================== Style Header=========================================================*/
-.headertop{
+/*========================================== Style Header=========================================================*/
+/*.headertop{
    background: green;
     height: 30px;
   }
-  .headersub{
+*/
+  header{
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
     direction:unset;
-    height: 260px;
+    height: 200px;
   }
 
   .logo{
-    width: 325px;
-    height: 325px;
+    width: 260px;
+    height: 260px;
   }
 
-  .whatsapp-image {
-    display: flex;
-    position:fixed;
-    direction: unset;
-    bottom: 70px;
-    right: 15px;
-    width: 35px;
-    height: 35px;
-    animation: normal alternate;
-  }
-  
-  .imgmain {
-  background-size: cover;
-  bottom: 50px;
-}
-
-
+/*========Barra de Pesquisa======*/
 .divBusca{
   border-radius:3px;
   width:290px;
-  height: 36px;
+  height: 35px;
   background-color: white;
   }
   
   .inputBusca{
   border-radius:3px;
   width:250px;
-  height: 36px;
+  height: 35px;
   border: transparent;
   }
 
+  .lupa{
+    width: 24px;
+    height: 24px;
+  }
+/*============================*/
+/*================================================Style Main=====================================================*/
+.imgmain {
+  display: flex;
+  align-content: center;
+  background-image: url(../site/conteudos/imagens/img-ref/atual/fundo\ sobre.PNG);
+  width: 450px;
+  height: 600;
 
-    /* ===============================================Style Footer===================================================*/
+}
+
+
+.whatsapp {
+  display: flex;
+  position:fixed;
+  direction: unset;
+  bottom: 90px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  animation: normal alternate;
+}
+
+
+
+
+
+/* ===============================================Style Footer===================================================*/
     footer{
  background: linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
- }
+ text-align: center;
+ text-transform:initial;
+ font-style: normal;
+ width: 1350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f0f0; /* Cor de fundo para melhor visualização
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+    display: flexbox;
+    justify-content: center;
+    height: 111vh;
+    }
+
+    nav {
+      background:linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
+      color: #fff;
+      padding: 50px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin:  200px;
+    }
+
+    main {
+      background:linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
+      text-align: center;
+      padding: 50px;
+    }
+  </style>
+*/
