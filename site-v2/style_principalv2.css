@@ -25,10 +25,6 @@
     animation: normal alternate;
   }
 
-  .imgmain {
-  background-size: cover;
-  bottom: 50px;
-}
 
 /*Barra de Pesquisa*/
 .divBusca{
@@ -46,7 +42,11 @@
   }
 /*=====================*/
 
-
+/*================================================Style Main=======================================================*/
+.imgmain {
+  background-size: cover;
+  bottom: 50px;
+}
 
 
 
