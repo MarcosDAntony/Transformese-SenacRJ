@@ -1,18 +1,66 @@
-<!-- ============================================Header I========================================================================= 
-<header class="headertop">
-        <div class="text-black-60 icon-link-hover">
-              <i class="fa fa-phone ms-2"></i> Contatos
-          <a href="https://www.instagram.com/deluxuniformesprofissionais/" target="_blank"><i class="fa fa-instagram w3-large ms-1"></i></a>
-          <a href="https://wa.me/5521968603959" target="_blank"><i class="fa fa-whatsapp w3-large ms-1"></i></a>(+55 21 96860-3959)
-        </div>
-           <hr>
-</header>
--->
-<!-- =============================================Header II=========================================================================-->
-    <header class="headersub">
-    <div class="navbar navbar-expand-md text-black-70">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <div class="container-fluid">
+<style>
+  *{
+  font-family: 'sans-serif';
+  /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
+}
+/*======================================================== Style Header=========================================================*/
+  header{
+    background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
+    direction:unset;
+    height: 260px;
+  }
+
+  .logo{
+    width: 325px;
+    height: 325px;
+  }
+
+  .whatsapp-image {
+    display: flex;
+    position:fixed;
+    direction: unset;
+    bottom: 70px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    animation: normal alternate;
+  }
+  
+  .imgmain {
+  background-size: cover;
+  bottom: 50px;
+}
+
+
+.divBusca{
+  border-radius:3px;
+  width:290px;
+  height: 36px;
+  background-color: white;
+  }
+  
+  .inputBusca{
+  border-radius:3px;
+  width:250px;
+  height: 36px;
+  border: transparent;
+  }
+</style>
+</head>
+<body>
+  
+</body>
+</html>
+<!-- =============================================Header=========================================================================-->
+    <header class="header">
+    <div class="navbar navbar-expand-md text-black-70 container-fluid">
+
 
         <a  href="principal.php" class="animate-img w3-animate-left" target="_self">
           <img src="../site/conteudos/imagens/img_ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
@@ -68,5 +116,4 @@
           </div>
         </div>
       </div>
-    </div>
     
