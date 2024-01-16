@@ -8,15 +8,27 @@
   <!-- W3schools--> <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- Funções W3Schools --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   <!-- FavIcon das Páginas --><link rel="shortcut icon" href="../site/imagens/icons/logodeluxunipro.ico" type="image/x-icon">
-  <!-- Style Proprio --><link rel="stylesheet" href="style_conteudos.css">
-    <title>Sobre nós</title>
-</head>
-<?= include_once("../header.php")?>
-<body>
-<div>
+  <style>
+    *{
+    font-family: 'sans-serif';
+    /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
+  }
 
+.caixa-sobre-empresa{
+    border: 1px transparent;
+    width: 400px;
+    border-radius: 2%;
+    padding: 10px;
+    background: linear-gradient(1deg, rgba(106,255,111,1) 0%, green);
+  }
+  </style>  
+  
+  <title>Sobre nós</title>
+</head>
+<body>
+<br><br><br><br><br><br>
+<div>
 <h1>Sobre a Empresa</h1>
-</div> 
 
  <div class="caixa-sobre-empresa">
     <br>
@@ -28,6 +40,6 @@
     <br>
         <p>Nossos produtos são ideais para profissionais que priorizam conforto e qualidade.</p>
     </div>
-
+</div>
 </body>
 </html>
