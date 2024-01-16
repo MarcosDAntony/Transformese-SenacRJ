@@ -1,0 +1,56 @@
+/*======================================================== Style Geral===========================================================*/
+*{
+  font-family: "Poppins", sans-serif
+}
+/*======================================================== Style Header=========================================================*/
+.headertop{
+   background: green;
+    height: 30px;
+  }
+  .headersub{
+    background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
+    direction:unset;
+    height: 260px;
+  }
+
+  .logo{
+    width: 325px;
+    height: 325px;
+  }
+
+  .whatsapp-image {
+    display: flex;
+    position:fixed;
+    direction: unset;
+    bottom: 70px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    animation: normal alternate;
+  }
+  
+  .imgmain {
+  background-size: cover;
+  bottom: 50px;
+}
+
+
+.divBusca{
+  border-radius:3px;
+  width:290px;
+  height: 36px;
+  background-color: white;
+  }
+  
+  .inputBusca{
+  border-radius:3px;
+  width:250px;
+  height: 36px;
+  border: transparent;
+  }
+
+
+    /* ===============================================Style Footer===================================================*/
+    footer{
+ background: linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
+ }
