@@ -1,0 +1,45 @@
+/*================================================Style Conteudos==================================================*/
+*{
+    font-family: 'sans-serif';
+    /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
+  }
+
+.caixa-sobre-empresa{
+    border: 1px transparent;
+    width: 400px;
+    border-radius: 2%;
+    padding: 10px;
+    background: linear-gradient(1deg, rgba(106,255,111,1) 0%, green);
+  }
+  
+
+  header{
+    background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
+    height: 200px;
+  }
+
+  .logo{
+    width: 250px;
+    height: 250px;
+  }
+
+/*========Barra de Pesquisa======*/
+.divBusca{
+  border-radius:3px;
+  width:290px;
+  height: 35px;
+  background-color: white;
+  }
+  
+  .inputBusca{
+  border-radius:3px;
+  width:250px;
+  height: 35px;
+  border: transparent;
+  }
+
+  .lupa{
+    width: 24px;
+    height: 25px;
+  }
+/*============================*/

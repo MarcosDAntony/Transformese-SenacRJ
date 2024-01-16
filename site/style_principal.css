@@ -1,22 +1,17 @@
 /*========================================== Style Geral===========================================================*/
 *{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'sans-serif';
+  /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
 }
 /*========================================== Style Header=========================================================*/
-/*.headertop{
-   background: green;
-    height: 30px;
-  }
-*/
   header{
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
-    direction:unset;
     height: 200px;
   }
 
   .logo{
-    width: 260px;
-    height: 260px;
+    width: 250px;
+    height: 250px;
   }
 
 /*========Barra de Pesquisa======*/
@@ -36,7 +31,7 @@
 
   .lupa{
     width: 24px;
-    height: 24px;
+    height: 25px;
   }
 /*============================*/
 /*================================================Style Main=====================================================*/
@@ -62,18 +57,11 @@
 }
 
 
-
-
-
 /* ===============================================Style Footer===================================================*/
     footer{
+    position:relative;
  background: linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
- text-align: center;
- text-transform:initial;
- font-style: normal;
- width: 1350px;
 }
-
 
 
 
