@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
   *{
   font-family: 'sans-serif';
@@ -13,55 +10,43 @@
   header{
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
     direction:unset;
-    height: 260px;
+    height: 180px;
   }
 
   .logo{
-    width: 325px;
-    height: 325px;
+    position:relative;
+    bottom:15px;
+    width: 240px;
+    height: 250px;
   }
 
-  .whatsapp-image {
-    display: flex;
-    position:fixed;
-    direction: unset;
-    bottom: 70px;
-    right: 15px;
-    width: 35px;
-    height: 35px;
-    animation: normal alternate;
-  }
-  
-  .imgmain {
-  background-size: cover;
-  bottom: 50px;
-}
-
-
+/**Barra de Pesquisa */
 .divBusca{
   border-radius:3px;
-  width:290px;
-  height: 36px;
+  width: 295px;
+  height: 32px;
   background-color: white;
   }
   
   .inputBusca{
   border-radius:3px;
-  width:250px;
-  height: 36px;
+  width:260px;
+  height: 32px;
   border: transparent;
   }
+
+  .lupa{
+    width: 2px;
+    height: 2px;
+  }
+/**===================== */
 </style>
 </head>
 <body>
-  
-</body>
-</html>
-<!-- =============================================Header=========================================================================-->
-    <header class="header">
-    <div class="navbar navbar-expand-md text-black-70 container-fluid">
-
-
+  <!-- =============================================Header=========================================================================-->
+  <header>
+    <div class="navbar navbar-expand-md text-black-80">
+    <div class="container-fluid">
         <a  href="principal.php" class="animate-img w3-animate-left" target="_self">
           <img src="../site/conteudos/imagens/img_ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
         </a>
@@ -76,11 +61,11 @@
           </div>
 
           <div class="offcanvas-body">
-            <ul class="navbar-nav flex-grow-1 pe-3"  style="font-size: 19px;">
+            <ul class="navbar-nav flex-grow-1 pe-3"  style="font-size: 17px;">
 
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../site/conteudos/sobre.html">Sobre</a>
-              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../site/conteudos/sobre.php">Sobre</a>
+              </li>  Antiga página sobre-->
 
               <li class="nav-item dropdown">
                 <a href="#Produtos" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true">
@@ -108,12 +93,16 @@
                 <a class="nav-link active" aria-current="page" href="../site/conteudos/formularios/carrinho.html" style="font-size: 24px;"><i class="fa fa-cart-plus"></i></a>
               </li>
             </ul>
+
             <!-- Barra de Pesquisa -->
               <div class="divBusca">
               <input name="Pesquisa" id="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post"/>
-              <a href="#Pesquisa" target="_top" class="animate-img"><img src="../site/conteudos/imagens/icons/atuais/lupa2-2.png" style="height:25px; width:25px;"/></a>
+              <a href="#Pesquisa" target="_top" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;"/></a>
               </div>
+
           </div>
         </div>
       </div>
-    
+  </header>
+</body>
+</html>
