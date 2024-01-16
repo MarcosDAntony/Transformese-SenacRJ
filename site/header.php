@@ -65,10 +65,10 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav flex-grow-1 pe-3"  style="font-size: 17px;">
 
-              <li class="nav-item">
+             <!-- <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="../site/conteudos/sobre.php">Sobre</a>
-              </li>
-
+  Aqui está a antiga página opção sobre  </li>
+-->
               <li class="nav-item dropdown">
                 <a href="#Produtos" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                  Produtos     
