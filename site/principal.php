@@ -11,7 +11,6 @@
 
     <title>DeLux Uniformes Profissionais</title>
   </head>
-
   <body>
       <?= 
       include_once ("../site/header.php");
