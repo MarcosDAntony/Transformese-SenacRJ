@@ -25,6 +25,7 @@
     position:relative;
     left: 80px;
     top: 20px;
+    font-size:x-large;
 }
   </style>  
   <title>Sobre nós</title>
