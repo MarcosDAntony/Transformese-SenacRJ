@@ -6,8 +6,13 @@
     *{
     font-family: 'sans-serif';
     /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
-    background-image: url(../conteudos/imagens/Img-Ref/Atual/fundo-\ imagem.png);
   }
+
+  body {
+            position: absolute;
+            background-image: url("../conteudos/imagens/img-ref/atual/fundo-sobre.png");
+            background-size:cover;
+        }
 
 .caixa-sobre-empresa{
     border: 1px transparent;
@@ -28,7 +33,6 @@
 
 <div class="sobre-empresa-posicao">
 <h1>Sobre a Empresa</h1>
-    <br>
       <p class="caixa-sobre-empresa">A De Lux produz os mais diversos tipos de jalecos para profissionais que trabalham em hospitais, clínicas, consultórios, 
            assim como para estudantes e demais profissionais que vestem jaleco para exercer sua atividade profissional.</p>
     <br>
@@ -36,7 +40,7 @@
     <br>
       <p class="caixa-sobre-empresa">Nossos produtos são ideais para profissionais que priorizam conforto e qualidade.</p>
 </div>
-<br><br>
+<br>
 
 </body>
 </html>

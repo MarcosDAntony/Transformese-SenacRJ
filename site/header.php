@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+
 <head>
 <style>
   *{
@@ -48,7 +47,7 @@
     <div class="navbar navbar-expand-md text-black-80">
     <div class="container-fluid">
         <a  href="principal.php" class="animate-img w3-animate-left" target="_self">
-          <img src="../site/conteudos/imagens/img_ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
+          <img src="../site/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -63,9 +62,9 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav flex-grow-1 pe-3"  style="font-size: 17px;">
 
-              <!--<li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="../site/conteudos/sobre.php">Sobre</a>
-              </li>  Antiga página sobre-->
+              </li>
 
               <li class="nav-item dropdown">
                 <a href="#Produtos" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true">
@@ -97,7 +96,7 @@
             <!-- Barra de Pesquisa -->
               <div class="divBusca">
               <input name="Pesquisa" id="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post"/>
-              <a href="#Pesquisa" target="_top" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;"/></a>
+              <a href="#Pesquisa" target="_blank" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;"/></a>
               </div>
 
           </div>
