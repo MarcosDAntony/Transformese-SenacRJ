@@ -8,7 +8,6 @@
 /*======================================================== Style Header=========================================================*/
   header{
     background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
-    direction:unset;
     height: 180px;
   }
 
@@ -96,7 +95,7 @@
             <!-- Barra de Pesquisa -->
               <div class="divBusca">
               <input name="Pesquisa" id="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post"/>
-              <a href="#Pesquisa" target="_blank" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;"/></a>
+              <a href="#Pesquisa" target="_top" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;"/></a>
               </div>
 
           </div>
