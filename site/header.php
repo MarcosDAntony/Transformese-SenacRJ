@@ -70,7 +70,7 @@
             <ul class="navbar-nav flex-grow-1 pe-3"  style="font-size: 17px;">
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../site/conteudos/sobre.php">Sobre</a>
+                <a class="nav-link active" aria-current="page" href="../site/sobre.php">Sobre</a>
               </li>
 
               <li class="nav-item dropdown">

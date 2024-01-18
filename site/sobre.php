@@ -31,7 +31,7 @@
   <title>Sobre nós</title>
 </head>
 <body>
-<?php include_once("../header.php");?>
+<?php include_once("../site/header.php");?>
 <div class="sobre-empresa-posicao">
 <h1>Sobre a Empresa</h1>
       <p class="caixa-sobre-empresa">A De Lux produz os mais diversos tipos de jalecos para profissionais que trabalham em hospitais, clínicas, consultórios, 

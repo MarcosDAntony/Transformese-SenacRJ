@@ -15,7 +15,7 @@
       <?php 
       include_once ("../site/header.php");
        include_once ("../site/main.php");
-       require_once ("../site/banco-de-dados/config.php");
+       //require_once ("../site/banco-de-dados/config.php");
        include_once ("../site/footer.php");
        ?>
   </body>
