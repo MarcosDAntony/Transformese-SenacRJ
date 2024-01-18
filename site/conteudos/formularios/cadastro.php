@@ -13,8 +13,6 @@
 }
   
   body {
-    width: 100%;
-  min-height: 100vh;
   background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
   display: flex;
   justify-content: center;
@@ -25,63 +23,54 @@
     background-color:  linear-gradient(0deg, rgba(106,255,111,1) 0%, green);;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 400px;
+    width: 450px;
     overflow: hidden;
   }
-  
-  
 
-  .form button {
-    background-color:linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
-    border: 2px solid #ffff;
-    font-size: 14px;
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px;
-  }
   
     </style>
     <title>Cadastre-se</title>
   </head>
   <body>
+    <header>
+    <?= include("../site/header.php");?>
+    </header>
     <div class="container fluid">
-      <br>
-      <br>
         <h2>Cadastro</h2>
         <form class="row g-3">
 
           <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Nome: </label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Nome Completo">
+            <label for="nome" class="form-label">Nome: </label>
+            <input type="email" class="form-control" id="nome" placeholder="Nome Completo">
           </div>
 
           <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
           </div>
 
           <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="inputPassword4">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="senha">
           </div>
 
           <div class="col-md-4">
-            <label for="inputState" class="form-label">UF</label>
-            <select id="inputState" class="form-select">
+            <label for="uf" class="form-label">UF</label>
+            <select id="uf" class="uf">
               <option selected>...</option>
               <option>RJ</option>
             </select>
           </div>
 
           <div class="col-12">
-            <label for="inputAddress" class="form-label">Endereço</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Cidade, Número, e Complemento">
+            <label for="endereco" class="form-label">Endereço</label>
+            <input type="text" class="form-control" id="endereco" placeholder="Cidade, Número, e Complemento">
           </div>
 
          
           <div class="col-md-2">
-            <label for="inputZip" class="form-label">CEP</label>
-            <input type="text" class="form-control" id="inputZip" placeholder="00000-000">
+            <label for="cep" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="cep" placeholder="00000-000" style="width:100px;">
           </div>
 
           <div class="col-12">
@@ -99,8 +88,6 @@
     </div>
 </div>
 
-<script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
-<script src="../formulario/scriptsformulariocadastro.js"></script> 
 </body>
 </html>
 

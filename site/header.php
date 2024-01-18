@@ -71,7 +71,7 @@
                 </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="../site/conteudos/medicina.html">Medicina</a></li>
-                <li><a class="dropdown-item" href="../site/conteudos/beleza.html">Beleza</a></li> 
+                <li><a class="dropdown-item" href="../site/conteudos/beleza-feminino.html">Beleza</a></li> 
                 <li><a class="dropdown-item" href="../site/conteudos/culinaria.html">Culinaria</a></li>
                 <li><a class="dropdown-item" href="../site/conteudos/auxiliarlimpeza.html">Auxiliar de Limpeza</a></li>
               </ul>
@@ -82,8 +82,8 @@
                   Conta
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../site/conteudos/formularios/cadastro.html">  Cadastro</a></li>
-                  <li><a class="dropdown-item" href="../site/conteudos/formularios/login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="../site/conteudos/formularios/cadastro.php">  Cadastro</a></li>
+                  <li><a class="dropdown-item" href="../site/conteudos/formularios/login.php">Login</a></li>
                   </ul>
               </li>
 
