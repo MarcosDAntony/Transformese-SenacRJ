@@ -13,14 +13,13 @@
 }
   
   body {
-  background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
   display: flex;
   justify-content: center;
   align-items: center;
   }
   
   .container {
-    background-color:  linear-gradient(0deg, rgba(106,255,111,1) 0%, green);;
+    background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 450px;
@@ -32,9 +31,6 @@
     <title>Cadastre-se</title>
   </head>
   <body>
-    <header>
-    <?= include("../site/header.php");?>
-    </header>
     <div class="container fluid">
         <h2>Cadastro</h2>
         <form class="row g-3">
@@ -45,12 +41,12 @@
           </div>
 
           <div class="col-md-6">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label">Email:</label>
             <input type="email" class="form-control" id="email">
           </div>
 
           <div class="col-md-6">
-            <label for="senha" class="form-label">Senha</label>
+            <label for="senha" class="form-label">Senha:</label>
             <input type="password" class="form-control" id="senha">
           </div>
 
@@ -63,13 +59,13 @@
           </div>
 
           <div class="col-12">
-            <label for="endereco" class="form-label">Endereço</label>
+            <label for="endereco" class="form-label">Endereço:</label>
             <input type="text" class="form-control" id="endereco" placeholder="Cidade, Número, e Complemento">
           </div>
 
          
           <div class="col-md-2">
-            <label for="cep" class="form-label">CEP</label>
+            <label for="cep" class="form-label">CEP:</label>
             <input type="text" class="form-control" id="cep" placeholder="00000-000" style="width:100px;">
           </div>
 

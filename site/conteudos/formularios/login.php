@@ -16,14 +16,13 @@
 }
   
   body {
-  background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
   display: flex;
   justify-content: center;
   align-items: center;
   }
   
   .container {
-    background-color:  linear-gradient(0deg, rgba(106,255,111,1) 0%, green);;
+    background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 450px;
@@ -32,18 +31,20 @@
 </style>
 </head>
 <body>
-  <?=include("../site/header.php");?>
-  <div class="container fluid">
+  <div class="container">
     <h2>Login</h2>
     <form class="row g-3">
 
       <div class="col-md-6">
         <label for="email" class="form-label">Email:  </label>
         <input type="email" class="form-control" id="email" placeholder="E-mail">
-      <br>
+</div>
+        <br>
+      <div class="col-md-6">
         <label for="senha" class="form-label">Senha:  </label>
         <input type="password" class="form-control" id="senha" placeholder="Senha">
       </div>
+      <button class="btn btn-sucess">Entrar</button>
     </div>
 </body>
 </html>
