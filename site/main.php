@@ -31,12 +31,14 @@
   .imgmain {
   background-size: cover;
   bottom: 50px;
+  background-image: url("../site/conteudos/imagens/Img-Ref/Atual/principal-image-resize.png");
 }
     </style>
 </head>
 <body>
 <!--================================================Main==========================================================================-->
 <main>
+
 <a href="https://www.instagram.com/deluxuniformesprofissionais?igsh=MWJxZjMwaWJqaGR2Nw==" target="_blank" class="instagram animate-img">
   <img src="../site/conteudos/imagens/icons/atual/instagram.png" alt="instagram">
 </a>

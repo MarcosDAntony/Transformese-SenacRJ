@@ -27,6 +27,11 @@
   }
 
 /**Barra de Pesquisa */
+.posicao-pesquisa{
+position: relative;
+right: 15px;
+}
+
 .divBusca{
   border-radius:3px;
   width: 295px;
@@ -51,8 +56,8 @@
 <body>
   <!-- =============================================Header=========================================================================-->
   <header>
-    <div class="navbar navbar-expand-md text-black-80">
-    <div class="container-fluid">
+    <div class="navbar navbar-expand-lg text-black-80 container-fluid">
+        <!--<div class="container-fluid"> talvez tenha que englobar isso dnv nas tags abaixo e remover a mesma de cima.-->
         <a  href="principal.php" class="animate-img w3-animate-left" target="_self">
           <img src="../site/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
         </a>
@@ -101,14 +106,13 @@
             </ul>
 
             <!-- Barra de Pesquisa -->
-              <div class="divBusca">
+              <div class="divBusca posicao-pesquisa">
               <input name="Pesquisa" id="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post"/>
               <a href="#Pesquisa" target="_top" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;"/></a>
               </div>
 
           </div>
         </div>
-      </div>
   </header>
 </body>
 </html>

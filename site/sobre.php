@@ -8,12 +8,6 @@
     /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
   }
 
-  body {
-            position: absolute;
-            background-image: url("../conteudos/imagens/img-ref/atual/fundo-sobre.png");
-            background-size:cover;
-        }
-
 .caixa-sobre-empresa{
     border: 1px transparent;
     width: 400px;
@@ -24,8 +18,8 @@
 .sobre-empresa-posicao{
     position:relative;
     left: 80px;
-    top: 20px;
-    font-size:x-large;
+    top: 80px;
+    font-size:larger;
 }
   </style>  
   <title>Sobre nós</title>
@@ -42,6 +36,6 @@
       <p class="caixa-sobre-empresa">Nossos produtos são ideais para profissionais que priorizam conforto e qualidade.</p>
 </div>
 <br>
-
+<?php include_once("../site/footer.php");?>
 </body>
 </html>
