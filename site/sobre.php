@@ -6,6 +6,13 @@
     *{
     font-family: 'sans-serif';
     /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
+      
+  }
+
+  body{
+    background-image: url(../site/conteudos/imagens/Img-Ref/Atual/fundo-sobre_resized.jpg);
+background-size: cover;
+position:unset;
   }
 
 .caixa-sobre-empresa{
@@ -21,10 +28,12 @@
     top: 80px;
     font-size:larger;
 }
+
+
   </style>  
   <title>Sobre nós</title>
 </head>
-<body>
+<body class="imgsobre">
 <?php include_once("../site/header.php");?>
 <div class="sobre-empresa-posicao">
 <h1>Sobre a Empresa</h1>

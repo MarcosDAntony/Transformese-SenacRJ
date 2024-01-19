@@ -101,7 +101,7 @@ right: 15px;
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../site/conteudos/formularios/carrinho.html" style="font-size: 24px;"><i class="fa fa-cart-plus"></i></a>
+                <a class="nav-link active" aria-current="page" href="../site/conteudos/formularios/carrinho.php" style="font-size: 24px;"><i class="fa fa-cart-plus"></i></a>
               </li>
             </ul>
 
