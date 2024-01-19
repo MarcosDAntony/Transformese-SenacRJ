@@ -10,6 +10,7 @@
 position:relative;
 top: 500px;
  background: linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%); 
+text-align: center;
 }
     </style>
 </head>
