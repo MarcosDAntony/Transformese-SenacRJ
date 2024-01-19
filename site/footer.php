@@ -8,7 +8,7 @@
 /* ===============================================Style Footer===================================================*/
     footer{
 position:relative;
-top: 500px;
+top: 1000px;
  background: linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%); 
 text-align: center;
 }
@@ -18,8 +18,7 @@ text-align: center;
 <!--==================================================Footer=======================================================================-->
 <footer>
    <p>&copy; 2023 - Todos os direitos reservados.</p>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <!--Não pode remover por que tira a função de opções da página-->
 </footer>
 </body>
 </html>

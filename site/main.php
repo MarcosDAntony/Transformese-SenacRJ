@@ -11,8 +11,7 @@
 .whatsapp {
     display: flex;
     position:fixed;
-    direction: unset;
-    bottom: 70px;
+    bottom: 400px;
     right: 15px;
     width: 30px;
     height: 30px;
@@ -21,23 +20,22 @@
   .instagram{
     display: flex;
     position:fixed;
-    direction: unset;
-    bottom: 120px;
+    bottom: 350px;
     right: 15px;
     width: 30px;
     height: 30px;
     animation: normal alternate;
   }
-  .imgmain {
+
+  body {
   background-size: cover;
-  bottom: 50px;
-  background-image: url("../site/conteudos/imagens/Img-Ref/Atual/principal-image-resize.png");
+  background-image: url("../site/conteudos/imagens/Img-Ref/Atual/principal1.png");
 }
     </style>
 </head>
 <body>
 <!--================================================Main==========================================================================-->
-<main>
+<main class="imgmain">
 
 <a href="https://www.instagram.com/deluxuniformesprofissionais?igsh=MWJxZjMwaWJqaGR2Nw==" target="_blank" class="instagram animate-img">
   <img src="../site/conteudos/imagens/icons/atual/instagram.png" alt="instagram">

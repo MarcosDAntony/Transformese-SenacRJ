@@ -30,6 +30,7 @@
     </style>
     <title>Cadastre-se</title>
   </head>
+  
   <body>
     <div class="container fluid">
         <h2>Cadastro</h2>
