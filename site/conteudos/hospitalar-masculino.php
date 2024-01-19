@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uniformes Hospitalares Femininos</title>
+  <title>Uniformes Hospitalares Masculino</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'sans-serif';
+  /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -67,7 +68,7 @@
 <body>
   <div class="image-container">
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-1.png" alt="Product 1">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-1.png" alt="Product 1">
       <p>  </p>
       <br>
       <label for="quantity1">Quantidade:</label>
@@ -77,7 +78,7 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-2.png" alt="Product 2">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-2.png" alt="Product 2">
       <p>  </p>
       <br>
       <label for="quantity2">Quantidade:</label>
@@ -87,7 +88,7 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-3.png" alt="Product 3">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-3.png" alt="Product 3">
       <p> </p>
       <br>
       <label for="quantity3">Quantidade:</label>
@@ -97,7 +98,7 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-4.png" alt="Product 4">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-4.png" alt="Product 4">
       <p>   </p>
       <br>
       <label for="quantity4">Quantidade:</label>
@@ -107,7 +108,7 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-5.png" alt="Product 5">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-5.png" alt="Product 5">
       <p>  </p>
       <br>
       <label for="quantity5">Quantidade:</label>
@@ -117,7 +118,7 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-6.png" alt="Product 6">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-6.png" alt="Product 6">
       <p>  </p>
       <br>
       <label for="quantity6">Quantidade:</label>
@@ -127,7 +128,7 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-7.png" alt="Product 7">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-7.png" alt="Product 7">
       <p>  </p>
       <br>
       <label for="quantity7">Quantidade:</label>
@@ -137,7 +138,7 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-8.png" alt="Product 8">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-8.png" alt="Product 8">
       <p>  </p>
       <br>
       <label for="quantity8">Quantidade:</label>
@@ -147,7 +148,7 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-9.png" alt="Product 9">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-9.png" alt="Product 9">
       <p>  </p>
       <br>
       <label for="quantity9">Quantidade:</label>
@@ -157,7 +158,7 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-10.png" alt="Product 10">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-10.png" alt="Product 10">
       <p>  </p>
       <br>
       <label for="quantity10">Quantidade:</label>
@@ -167,7 +168,7 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-11.png" alt="Product 11">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-11.png" alt="Product 11">
       <p>  </p>
       <br>
       <label for="quantity11">Quantidade:</label>
@@ -177,7 +178,7 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-12.png" alt="Product 12">
+      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-12.png" alt="Product 12">
       <p> </p>
       <br>
       <label for="quantity12">Quantidade:</label>

@@ -83,10 +83,10 @@ right: 15px;
                  Produtos     
                 </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../site/conteudos/medicina.html">Medicina</a></li>
-                <li><a class="dropdown-item" href="../site/conteudos/beleza-feminino.html">Beleza</a></li> 
-                <li><a class="dropdown-item" href="../site/conteudos/culinaria.html">Culinaria</a></li>
-                <li><a class="dropdown-item" href="../site/conteudos/auxiliarlimpeza.html">Auxiliar de Limpeza</a></li>
+                <li><a class="dropdown-item" href="">Medicina</a></li>
+                <li><a class="dropdown-item" href="../site/conteudos/beleza-feminino.php">Beleza</a></li> 
+                <li><a class="dropdown-item" href="">Culinaria</a></li>
+                <li><a class="dropdown-item" href="">Auxiliar de Limpeza</a></li>
               </ul>
             </li>
 
