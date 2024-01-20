@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uniformes Beleza Femininos</title>
   <style>
     body {
-      font-family: 'sans-serif';
-  /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background-color: #f5f5f5; /* Adicionando uma cor de fundo */
+      background-color: #f5f5f5;
     }
 
     header {
-      background-color: #333;
       color: #fff;
+      text-align: center;
+      padding: 350px;
+      background-image: url('../conteudos/imagens/Img-Ref/Atual/manequim-beleza.png');
+      /* Imagem de fundo adicionada */
+      background-size: cover;
+    
+    }
+
+    .principal {
       text-align: center;
       padding: 20px;
     }
@@ -28,25 +36,31 @@
       padding: 20px;
     }
 
-    .image-container > div {
+    .image-container>div {
       text-align: center;
       margin: 20px;
-      background-color: #fff; /* Fundo branco para destacar as imagens e descrições */
+      background-color: #fff;
+      /* Fundo branco para destacar as imagens e descrições */
       padding: 15px;
-      border-radius: 8px; /* Cantos arredondados */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-      transition: transform 0.3s ease; /* Efeito de transição suave */
+      border-radius: 8px;
+      /* Cantos arredondados */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* Sombra suave */
+      transition: transform 0.3s ease;
+      /* Efeito de transição suave */
     }
 
-    .image-container > div:hover {
-      transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
+    .image-container>div:hover {
+      transform: scale(1.05);
+      /* Aumenta ligeiramente ao passar o mouse */
     }
 
     .image-container img {
       width: 100%;
       height: auto;
       max-width: 200px;
-      border-radius: 8px; /* Cantos arredondados para as imagens */
+      border-radius: 8px;
+      /* Cantos arredondados para as imagens */
     }
 
     .image-container .description {
@@ -56,17 +70,36 @@
 
     @media screen and (max-width: 768px) {
       header {
-        font-size: 18px; /* Reduz a fonte no cabeçalho para dispositivos menores */
+        font-size: 18px;
+        /* Reduz a fonte no cabeçalho para dispositivos menores */
       }
 
-      .image-container > div {
-        width: 90%; /* Utiliza a largura máxima para dispositivos menores */
+      .image-container>div {
+        width: 90%;
+        /* Utiliza a largura máxima para dispositivos menores */
       }
     }
   </style>
 </head>
+
 <body>
-  <?php include_once("./site/header.php");?>
+  <header>
+
+  </header>
+
+  <div class="principal">
+    <h1>Uniformes Femininos de Beleza</h1>
+    <p>
+      Aqui você encontra uma variedade de uniformes femininos para profissionais de beleza, como cabeleireiros, manicures, maquiadores e esteticistas.
+    </p>
+    <p>
+      Nossos uniformes são produzidos com tecidos de alta qualidade e design moderno, para que você se sinta confortável e elegante durante o seu trabalho.
+    </p>
+  </div>
+
+  
+    <!-- Restante dos produtos... -->
+
   <div class="image-container">
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-1.png" alt="Product 1">
@@ -160,7 +193,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-10.png" alt="Product 10">
-      <p>Avental Branco para manicure</p>
+      <p>Avental Branco com bolsos para esteticistas</p>
       <br>
       <label for="quantity10">Quantidade:</label>
       <input type="number" id="quantity10" class="quantity-input" value="1" min="1">
@@ -190,3 +223,10 @@
   </div>
 </body>
 </html>
+
+
+  </div>
+</body>
+
+</html>
+
