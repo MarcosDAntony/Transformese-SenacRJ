@@ -70,7 +70,7 @@
   </style>
 </head>
 <body>
-  <?php include_once("../site/header.php");?>
+  <?php include_once("../site/heade.php");?>
 <section class="imagem-de-fundo">
   <div class="conteudo-texto">
     <h2 class="section-heading text-uppercase">Sobre a Empresa</h2>
