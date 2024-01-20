@@ -33,7 +33,6 @@
 }
     </style>
 </head>
-<body>
 <!--================================================Main==========================================================================-->
 <main class="imgmain">
 
@@ -46,5 +45,3 @@
 <img src="../site/conteudos/imagens/icons/atual/whatsapp.png" alt="WhatsApp">
     </a>
 </main> 
-</body>
-</html>

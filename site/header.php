@@ -53,7 +53,6 @@ right: 15px;
 /**===================== */
 </style>
 </head>
-<body>
   <!-- =============================================Header=========================================================================-->
   <header>
     <div class="navbar navbar-expand-lg text-black-80 container-fluid">
@@ -112,5 +111,4 @@ right: 15px;
               </div>
 
               </header>
-</body>
 </html>
