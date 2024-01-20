@@ -13,7 +13,7 @@
   </head>
   <body>
       <?php 
-      include_once ("../site/header.php");
+      include_once ("../site/heade.php");
        include_once ("../site/main.php");
        include_once ("../site/footer.php");
        ?>
