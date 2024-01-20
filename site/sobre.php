@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap-->  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!-- Funções Bootstrap --> <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> 
-  <!-- W3schools--> <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- Funções W3Schools --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-  <!-- FavIcon das Páginas --><link rel="shortcut icon" href="../site/conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre a De Lux</title>
+  <link rel="stylesheet" href="css/styles.css">
   <style>
-    *{
-    font-family: 'sans-serif';
-    /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
-  }
+    body {
+      font-family: 'sans-serif';
+      font-size: 22px;
+      margin: 0;
+      padding: 0;
+    }
 
-  body {
-  background-size: cover;
-  background-image: url("../site/conteudos/imagens/Img-Ref/Atual/fundo-sobre_resized.jpg");
-}
+    .imagem-de-fundo {
+      background-image: url('../site/conteudos/imagens/Img-Ref/Atual/fundo-sobre_ok.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: black;
+    }
 
-.caixa-sobre-empresa{
+    @media (max-width: 768px) {
+      .imagem-de-fundo {
+        height: 100%;
+      }
+    }
+
+    .conteudo-texto {
+      flex: 1;
+      text-align: left;
+      max-width: 50%; /* Definindo uma largura máxima para o conteúdo */
+      margin-left: 20px; /* Adicionando margem à esquerda para afastar do lado direito */
+      
+    }
+
+    .conteudo-texto h2 {
+      margin-bottom: 20px;
+    }
+
+    .section-subheading,
+    .tahoma-50,
+    .lead {
+      font-size: 25px;
+    }
+
+
+
+
+    .caixa-sobre-empresa{
     border: 1px transparent;
     width: 400px;
     border-radius: 2%;
@@ -34,21 +67,22 @@
 }
 
 
-  </style>  
-  <title>Sobre nós</title>
+  </style>
 </head>
 <body>
-<?php include_once("../site/header.php");?>
-<div class="sobre-empresa-posicao">
-<h1>Sobre a Empresa</h1>
-      <p class="caixa-sobre-empresa">A De Lux produz os mais diversos tipos de jalecos para profissionais que trabalham em hospitais, clínicas, consultórios, 
-           assim como para estudantes e demais profissionais que vestem jaleco para exercer sua atividade profissional.</p>
+  <?php include_once("../site/header.php");?>
+<section class="imagem-de-fundo">
+  <div class="conteudo-texto">
+    <h2 class="section-heading text-uppercase">Sobre a Empresa</h2>
     <br>
-      <p class="caixa-sobre-empresa">Produzimos também para os segmentos de bares, lanchonetes, restaurantes, limpeza<br> e para profissionais que prestam serviços.</p>
+    <p class="section-subheading text-muted">"Costure sua elegância com nossos tecidos de qualidade e transforme cada ponto em uma expressão única de estilo e sofisticação."</p>
     <br>
-      <p class="caixa-sobre-empresa">Nossos produtos são ideais para profissionais que priorizam conforto e qualidade.</p>
-</div>
-<br>
+    <p class="section-subheading text-muted">
+      A De Lux Uniformes Profissionais fabrica uma ampla variedade de jalecos para profissionais que atuam em hospitais, clínicas, consultórios, bem como para estudantes e outros profissionais que utilizam jalecos em suas atividades. Além disso, também produzimos vestimentas para funcionários de bares, lanchonetes, restaurantes, limpeza e serviços de beleza. Nossos produtos são especialmente projetados para profissionais que valorizam conforto e qualidade.
+    </p>
+  </div>
+</section>
 <?php include_once("../site/footer.php");?>
 </body>
 </html>
+
