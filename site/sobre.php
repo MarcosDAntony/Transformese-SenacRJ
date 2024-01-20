@@ -75,6 +75,7 @@
   <div class="conteudo-texto">
     <h2 class="section-heading text-uppercase">Sobre a Empresa</h2>
     <br>
+    
     <p class="section-subheading text-muted">"Costure sua elegância com nossos tecidos de qualidade e transforme cada ponto em uma expressão única de estilo e sofisticação."</p>
     <br>
     <p class="section-subheading text-muted">

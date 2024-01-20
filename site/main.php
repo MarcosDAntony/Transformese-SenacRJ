@@ -34,8 +34,7 @@
     </style>
 </head>
 <!--================================================Main==========================================================================-->
-<main class="imgmain">
-
+<main>
 <a href="https://www.instagram.com/deluxuniformesprofissionais?igsh=MWJxZjMwaWJqaGR2Nw==" target="_blank" class="instagram animate-img">
   <img src="../site/conteudos/imagens/icons/atual/instagram.png" alt="instagram">
 </a>
