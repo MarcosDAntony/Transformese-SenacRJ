@@ -1,62 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu de Produtos</title>
+  <!-- Inclua os arquivos Bootstrap (opcional) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Estilos personalizados (opcional) -->
   <style>
     body {
-      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    #menu {
+      text-align: center;
+      margin-top: 20px;
+    }
+    #menu ul {
+      list-style: none;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f0f0; /* Cor de fundo para melhor visualização */
     }
-
-    header {
-      text-align: center;
-      padding: 20px;
+    #menu ul li {
+      display: inline-block;
+      margin-right: 20px;
     }
-
-    header img {
-    display: flexbox;
-    justify-content: center;
-    height: 111vh;
-    }
-
-    nav {
-      background:linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
-      color: #fff;
-      padding: 50px;
-    }
-
-    nav a {
-      color: #fff;
+    #menu a {
       text-decoration: none;
-      margin:  200px;
-    }
-
-    main {
-      background:linear-gradient(0deg, rgba(0,128,0,1) 10%, rgba(106,255,111,1) 79%);
-      text-align: center;
-      padding: 50px;
+      color: #333;
+      font-weight: bold;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-    <a href="#about">Sobre</a>
-    <a href="#contact">Produtos</a>
-    <a href="#male">Cadastro/Login</a>
-  </nav>
 
-    <img src="fundo sobre.png" alt="Imagem Centralizada">
-  </header>
+<div id="menu">
+  <ul>
+    <li><a href="#produtos-femininos">Feminino</a></li>
+    <li><a href="#produtos-masculinos">Masculino</a></li>
+  </ul>
+</div>
 
-  
-  <main>
-    <!-- Conteúdo do restante da página -->
-    <h2>Bem-vindo à Página Inicial</h2>
-    <p>Explore as seções disponíveis através do menu acima.</p>
-  </main>
+<section id="produtos-femininos">
+  <h2>Produtos Femininos</h2>
+  <ul>
+    <li>Vestidos</li>
+    <li>Sapatos</li>
+    <li>Bolsas</li>
+    <li>Acessórios</li>
+  </ul>
+</section>
+
+<section id="produtos-masculinos">
+  <h2>Produtos Masculinos</h2>
+  <ul>
+    <li>Camisas</li>
+    <li>Calças</li>
+    <li>Sapatos</li>
+    <li>Acessórios</li>
+  </ul>
+</section>
+
+<!-- Inclua os arquivos JavaScript do Bootstrap (opcional) -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 </html>
