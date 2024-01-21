@@ -27,7 +27,7 @@
             background: linear-gradient(0deg, rgba(0, 128, 0, 1) 10%, rgba(106, 255, 111, 1) 79%);
             text-align: center;
             padding: 20px; /* Adicione um preenchimento para dar espaço ao conteúdo */
-            color: white; /* Adicionei uma cor de texto para melhor contraste */
+            color: black; /* Adicionei uma cor de texto para melhor contraste */
         }
     </style>
 </head>

@@ -21,8 +21,7 @@
         }
 
         body {
-            background-size: cover;
-            background-image: url("../site/conteudos/imagens/Img-Ref/Atual/principal1.png");
+            background-color: #f5f5f5;
         }
 
         /* Ícones de Redes Sociais */

@@ -1,4 +1,4 @@
-<?php require_once("../site/banco-de-dados/config.php"); ?>
+<?php require_once("../site/banco-de-dados/config.php");?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
