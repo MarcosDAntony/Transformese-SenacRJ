@@ -96,7 +96,7 @@
 <div class="image-container">
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-1.png" alt="Product 1">
-      <p> Camisa tecido azul escuro - Oxford 100% poliéster </p>
+      <p> Uniforme de Camareira Vestido de Copeira + Avental de Camareira - Oxford 100% poliéster  </p>
       <br>
       <label for="quantity1">Quantidade:</label>
       <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
