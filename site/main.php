@@ -34,18 +34,19 @@
         }
 
         .whatsapp {
-            bottom: 10%;
+            bottom: 15%;
             right: 5%;
         }
 
         .instagram {
-            bottom: 18%;
+            bottom: 25%;
             right: 5%;
         }
     </style>
 </head>
     <!--================================================Main==========================================================================-->
     <main>
+        <img src="./conteudos/imagens/Img-Ref/Atual/principal1.png" alt="imgprincipal">
         <!-- Ícone do Instagram -->
         <a href="https://www.instagram.com/deluxuniformesprofissionais?igsh=MWJxZjMwaWJqaGR2Nw==" target="_blank" class="instagram animate-img">
             <img src="../site/conteudos/imagens/icons/atual/instagram.png" alt="Instagram">
