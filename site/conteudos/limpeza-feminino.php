@@ -3,20 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uniformes Beleza Femininos</title>
+  <title>Uniformes Feminino Limpeza</title>
   <style>
     body {
-      font-family: 'sans-serif';
-  /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background-color: #f5f5f5; /* Adicionando uma cor de fundo */
+      background-color: #f5f5f5;
     }
 
     header {
-      background-color: #333;
       color: #fff;
+      text-align: center;
+      padding: 350px;
+      background-image: url('../conteudos/imagens/Img-Ref/Atual/limpeza-feminina.png');
+      /* Imagem de fundo adicionada */
+      background-size: cover;
+    }
+
+    .principal {
       text-align: center;
       padding: 20px;
     }
@@ -28,25 +34,31 @@
       padding: 20px;
     }
 
-    .image-container > div {
+    .image-container>div {
       text-align: center;
       margin: 20px;
-      background-color: #fff; /* Fundo branco para destacar as imagens e descrições */
+      background-color: #fff;
+      /* Fundo branco para destacar as imagens e descrições */
       padding: 15px;
-      border-radius: 8px; /* Cantos arredondados */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-      transition: transform 0.3s ease; /* Efeito de transição suave */
+      border-radius: 8px;
+      /* Cantos arredondados */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* Sombra suave */
+      transition: transform 0.3s ease;
+      /* Efeito de transição suave */
     }
 
-    .image-container > div:hover {
-      transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
+    .image-container>div:hover {
+      transform: scale(1.05);
+      /* Aumenta ligeiramente ao passar o mouse */
     }
 
     .image-container img {
       width: 100%;
       height: auto;
       max-width: 200px;
-      border-radius: 8px; /* Cantos arredondados para as imagens */
+      border-radius: 8px;
+      /* Cantos arredondados para as imagens */
     }
 
     .image-container .description {
@@ -56,15 +68,27 @@
 
     @media screen and (max-width: 768px) {
       header {
-        font-size: 18px; /* Reduz a fonte no cabeçalho para dispositivos menores */
+        font-size: 18px;
+        /* Reduz a fonte no cabeçalho para dispositivos menores */
       }
 
-      .image-container > div {
-        width: 90%; /* Utiliza a largura máxima para dispositivos menores */
+      .image-container>div {
+        width: 90%;
+        /* Utiliza a largura máxima para dispositivos menores */
       }
     }
   </style>
 </head>
+
+<body>
+  <header>
+
+  </header>
+  <div class="principal">
+    <h1>Uniformes de Limpeza Feminina</h1>
+    <p>Explore nossa linha de uniformes de limpeza feminina, projetados para profissionais que se dedicam à manutenção e higiene de ambientes com estilo e conforto.</p>
+    <p>Nossos uniformes combinam praticidade e elegância, proporcionando um visual profissional enquanto realiza suas tarefas de limpeza com eficiência.</p>
+</header>
 <body>
   <div class="image-container">
     <div>
