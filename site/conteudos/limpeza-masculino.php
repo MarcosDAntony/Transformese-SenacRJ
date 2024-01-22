@@ -88,6 +88,10 @@
 <body>
 <?php include_once("heade.php");?>
   <header class="gourmetmasc"></header>
+  <div class="principal">
+    <h1>Uniformes de Limpeza Masculina</h1>
+    <p>Explore nossa linha de uniformes de limpeza masculina, projetados para profissionais dedicados à higiene e manutenção de ambientes com estilo e conforto.</p>
+    <p>Nossos uniformes combinam praticidade e elegância, proporcionando um visual profissional enquanto realiza suas tarefas de limpeza com eficiência.</p>
   <div class="image-container">
         <div>
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-1.png" alt="Product 1">

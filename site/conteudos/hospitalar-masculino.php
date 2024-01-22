@@ -88,7 +88,16 @@
 <body>
 <?php include_once("heade.php");?>
   <header class="hospitalarmasc"></header>
-  <div class="image-container">
+  <div class="principal">
+  <h1>Uniformes Masculino Hospitalar</h1>
+    <p>
+      Explore nossa linha de uniformes hospitalares masculinos, projetados para profissionais dedicados ao cuidado da saúde com estilo e conforto. 
+    </p>
+    <p>
+      Nossos uniformes combinam praticidade e elegância, proporcionando um visual profissional enquanto realiza suas importantes tarefas no ambiente hospitalar.
+    </p>
+  </div>
+    <div class="image-container">
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-1.png" alt="Product 1">
       <p>  </p>

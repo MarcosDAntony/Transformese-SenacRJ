@@ -88,6 +88,11 @@
 <body>
 <?php include_once("heade.php");?>
   <header class="gourmetmasc"></header>
+  <div class="principal">
+    <h1>Uniformes de Limpeza Feminina</h1>
+    <p>Explore nossa linha de uniformes de limpeza feminina, projetados para profissionais dedicadas à higiene e manutenção de ambientes com estilo e conforto.</p>
+    <p>Nossos uniformes combinam praticidade e elegância, proporcionando um visual profissional enquanto realiza suas tarefas de limpeza com eficiência.</p>
+  </div>
   <div class="image-container">
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-1.png" alt="Product 1">
