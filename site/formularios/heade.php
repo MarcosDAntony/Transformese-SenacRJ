@@ -57,12 +57,11 @@
         /**===================== */
     </style>
 </head>
-<body>
     <!-- =============================================Header=========================================================================-->
     <header>
         <div class="navbar navbar-expand-md text-black-80 container-fluid">
-            <a href="principal.php" class="animate-img w3-animate-left" target="_self">
-                <img src="../site/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
+            <a href="../principal.php" class="animate-img w3-animate-left" target="_self">
+                <img src="../conteudos/imagens/Img-Ref/Atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -77,7 +76,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav flex-grow-1 pe-3" style="font-size: 17px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../site/sobre.php">Sobre</a>
+                            <a class="nav-link active" aria-current="page" href="../sobre.php">Sobre</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -95,8 +94,8 @@
                                 Conta
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../site/formularios/cadastro.php">Cadastro</a></li>
-                                <li><a class="dropdown-item" href="../site/formularios/login.php">Login</a></li>
+                                <li><a class="dropdown-item" href="../formularios/cadastro.php">Cadastro</a></li>
+                                <li><a class="dropdown-item" href="../formularios/login.php">Login</a></li>
                             </ul>
                         </li>
 
@@ -108,7 +107,7 @@
                     <!-- Barra de Pesquisa -->
                     <div class="divBusca posicao-pesquisa">
                         <input name="Pesquisa" id="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post" />
-                        <a href="#Pesquisa" target="_top" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" /></a>
+                        <a href="#Pesquisa" target="_top" class="animate-img"><img src="../conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" /></a>
                     </div>
                 </div>
             </div>
@@ -117,5 +116,4 @@
 
     <!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 </html>

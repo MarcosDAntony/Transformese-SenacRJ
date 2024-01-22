@@ -1,8 +1,6 @@
 <?php require_once("../site/banco-de-dados/config.php");?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +17,6 @@
 
     <title>DeLux Uniformes Profissionais</title>
 </head>
-
-<body>
     <?php 
         // Inclusão do cabeçalho
         include_once("../site/heade.php");
@@ -31,6 +27,5 @@
         // Inclusão do rodapé
         include_once("../site/footer.php");
     ?>
-</body>
 
 </html>

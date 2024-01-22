@@ -13,7 +13,7 @@
   /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
 }
   
-  body {
+  body{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +26,12 @@
     width: 450px;
     overflow: hidden;
   }
-
-  
     </style>
     <title>Cadastre-se</title>
   </head>
-  
+  <?php include_once("../formularios/heade.php");?>
   <body>
-    <div class="container fluid">
+    <div class="container">
         <h2>Cadastro</h2>
         <form class="row g-3">
 
@@ -83,9 +81,9 @@
             <button type="submit" class="btn btn-">Enviar</button>
           </div>
         </form>
-    </div>
 </div>
 </body>
+<?php include_once("../formularios/footer.php");?>
 </html>
 
    

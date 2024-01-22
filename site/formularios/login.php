@@ -1,4 +1,4 @@
-<?php require_once("config.php"); ?>
+<?php require_once("config.php");  //Inclui Banco de Dados?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -47,7 +47,7 @@
     }
   </style>
 </head>
-
+<?php include_once("../formularios/heade.php");?>
 <body>
   <div class="container">
     <h2>Login</h2>
@@ -69,5 +69,5 @@
     </form>
   </div>
 </body>
-
+<?php include_once("../formularios/footer.php");?>
 </html>
