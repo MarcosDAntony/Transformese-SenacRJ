@@ -14,7 +14,7 @@
       background-color: #f5f5f5;
     }
 
-    .gourmetmasc {
+    .limpezamasc {
       color: #fff;
       text-align: center;
       padding: 350px;
@@ -87,7 +87,7 @@
 
 <body>
 <?php include_once("heade.php");?>
-  <header class="gourmetmasc"></header>
+  <header class="limpezamasc"></header>
   <div class="principal">
     <h1>Uniformes de Limpeza Masculina</h1>
     <p>Explore nossa linha de uniformes de limpeza masculina, projetados para profissionais dedicados à higiene e manutenção de ambientes com estilo e conforto.</p>

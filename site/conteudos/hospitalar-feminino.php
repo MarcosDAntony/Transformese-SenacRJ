@@ -14,7 +14,7 @@
       background-color: #f5f5f5;
     }
 
-    .gourmetmasc {
+    .hospitalarfem {
       color: #fff;
       text-align: center;
       padding: 350px;
@@ -87,7 +87,7 @@
 
 <body>
 <?php include_once("heade.php");?>
-  <header class="gourmetmasc"></header>
+  <header class="hospitalarfem"></header>
   <div class="principal">
     <h1>Uniformes Femininos Hospitalar</h1>
     <p>

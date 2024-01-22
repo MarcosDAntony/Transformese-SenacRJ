@@ -14,7 +14,7 @@
       background-color: #f5f5f5;
     }
 
-    .gourmetmasc {
+    .gourmetfem {
       color: #fff;
       text-align: center;
       padding: 350px;
@@ -87,7 +87,7 @@
 
 <body>
 <?php include_once("heade.php");?>
-  <header class="gourmetmasc"></header>
+  <header class="gourmetfem"></header>
   <div class="principal">
     <h1>Uniformes Gourmet Femininos</h1>
     <p>

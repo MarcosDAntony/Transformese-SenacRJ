@@ -14,7 +14,7 @@
       background-color: #f5f5f5;
     }
 
-    .gourmetmasc {
+    .limpezafem {
       color: #fff;
       text-align: center;
       padding: 350px;
@@ -87,7 +87,7 @@
 
 <body>
 <?php include_once("heade.php");?>
-  <header class="gourmetmasc"></header>
+  <header class="limpezafem"></header>
   <div class="principal">
     <h1>Uniformes de Limpeza Feminina</h1>
     <p>Explore nossa linha de uniformes de limpeza feminina, projetados para profissionais dedicadas à higiene e manutenção de ambientes com estilo e conforto.</p>
