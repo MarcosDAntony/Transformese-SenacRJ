@@ -39,15 +39,15 @@
         }
 
         .imgmain{
-            position:initial;
-            display: flex;
-            top: 25%;
+            position: relative;
+            left: 9%;
+  height: 90vh;
         }
     </style>
 </head>
     <!--================================================Main==========================================================================-->
     <main>
-        <img src="" class="imgmain" alt="imgprincipal">
+        <img src="../site/conteudos/imagens/Img-Ref/Atual/atual - fundo principal melhoradas.png" class="imgmain" alt="imgmain">
         <!-- Ícone do Instagram -->
         <a href="https://www.instagram.com/deluxuniformesprofissionais?igsh=MWJxZjMwaWJqaGR2Nw==" target="_blank" class="instagram animate-img">
             <img src="../site/conteudos/imagens/icons/atual/instagram.png" alt="Instagram">

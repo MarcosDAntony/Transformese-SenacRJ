@@ -84,8 +84,12 @@
                                 Produtos
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-item">Feminino</li>
-                                <li class="dropdown-item">Masculino</li>
+                            <li class="dropdown-item">Hospitalar Masculino</li>
+                                <li class="dropdown-item">Hospitalar Feminino</li>
+                                <li class="dropdown-item">Limpeza Masculino</li>
+                                <li class="dropdown-item">Limpeza Feminino</li>
+                                <li class="dropdown-item">Gourmet Masculino</li>
+                                <li class="dropdown-item">Gourmet Feminino</li>
                             </ul>
                         </li>
 

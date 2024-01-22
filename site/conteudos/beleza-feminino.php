@@ -81,12 +81,8 @@
     }
   </style>
 </head>
-
+<header></header>
 <body>
-  <header>
-
-  </header>
-
   <div class="principal">
     <h1>Uniformes Femininos de Beleza</h1>
     <p>

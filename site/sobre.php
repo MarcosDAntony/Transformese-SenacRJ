@@ -8,7 +8,6 @@
   <style>
     body {
   font-family: 'sans-serif';
-  font-size: 22px;
   margin: 0;
   padding: 0;
 }
@@ -34,8 +33,9 @@
 .conteudo-texto {
   flex: 1;
   text-align: left;
-  max-width: 50%;
+  max-width: 45%;
   margin-left: 20px;
+  font-size:xx-large;
 }
 
 .conteudo-texto h2 {
@@ -74,7 +74,7 @@
       <p class="section-subheading text-muted">"Costure sua elegância com nossos tecidos de qualidade e transforme cada ponto em uma expressão única de estilo e sofisticação."</p>
       <br>
       <p class="section-subheading text-muted">
-        A De Lux Uniformes Profissionais fabrica uma ampla variedade de jalecos para profissionais que atuam em hospitais, clínicas, consultórios, bem como para estudantes e outros profissionais que utilizam jalecos em suas atividades. Além disso, também produzimos vestimentas para funcionários de bares, lanchonetes, restaurantes, limpeza e serviços de beleza. Nossos produtos são especialmente projetados para profissionais que valorizam conforto e qualidade.
+        A De Lux Uniformes Profissionais fabrica uma ampla variedade de jalecos para profissionais que atuam em hospitais, clínicas, consultórios, bem como para estudantes e outros profissionais que utilizam jalecos em suas atividades. <br>Além disso, também produzimos vestimentas para funcionários de bares, lanchonetes, restaurantes, limpeza e serviços de beleza.  <br>Nossos produtos são especialmente projetados para profissionais que valorizam conforto e qualidade.
       </p>
     </div>
   </section>
