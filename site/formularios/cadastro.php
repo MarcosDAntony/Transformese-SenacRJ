@@ -13,24 +13,27 @@
   /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
 }
   
-  body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .position-cadastro{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
   }
   
   .container {
-    background: linear-gradient(0deg, rgba(106,255,111,1) 0%, green);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 450px;
-    overflow: hidden;
+    background: linear-gradient(0deg, rgba(106, 255, 111, 1) 0%, green);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      width: 450px;
+      overflow: hidden;
+      padding: 20px; /* Adiciona margem interna */
   }
     </style>
     <title>Cadastre-se</title>
   </head>
   <?php include_once("../formularios/heade.php");?>
   <body>
+    <div class="position-cadastro">
     <div class="container">
         <h2>Cadastro</h2>
         <form class="row g-3">
@@ -47,7 +50,7 @@
 
           <div class="col-md-6">
             <label for="senha" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="senha">
+            <input type="password" class="form-control" id="senha" placeholder="Senha">
           </div>
 
           <div class="col-md-4">
@@ -79,6 +82,7 @@
           </div>
           <div class="col-12">
             <button type="submit" class="btn btn-">Enviar</button>
+          </div>
           </div>
         </form>
 </div>

@@ -15,11 +15,10 @@
       /* Tahoma, Geneva, Verdana, sans-serif, Segoe UI */
     }
 
-    body {
+    .position-login {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0;
       height: 100vh;
     }
 
@@ -49,6 +48,7 @@
 </head>
 <?php include_once("../formularios/heade.php");?>
 <body>
+  <div class="position-login">
   <div class="container">
     <h2>Login</h2>
     <form class="row g-3">
@@ -67,6 +67,7 @@
         <button type="submit" class="btn btn-sucess">Entrar</button>
       </div>
     </form>
+  </div>
   </div>
 </body>
 <?php include_once("../formularios/footer.php");?>
