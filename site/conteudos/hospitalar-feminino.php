@@ -18,7 +18,7 @@
       color: #fff;
       text-align: center;
       padding: 350px;
-      background-image: url('../conteudos/imagens/Img-Ref/Atual/gourmet-feminino (2).png');
+      background-image: url('../conteudos/imagens/Img-Ref/Atual/hospitalar-feminino.png');
       /* Imagem de fundo adicionada */
       background-size: cover;
     

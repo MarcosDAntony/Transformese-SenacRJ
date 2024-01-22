@@ -18,7 +18,7 @@
       color: #fff;
       text-align: center;
       padding: 350px;
-      background-image: url('../conteudos/imagens/Img-Ref');
+      background-image: url('../conteudos/imagens/Img-Ref/Atual');
       /* Imagem de fundo adicionada */
       background-size: cover;
     

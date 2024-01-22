@@ -14,11 +14,11 @@
       background-color: #f5f5f5;
     }
 
-    .gourmetmasc {
+    .belezafem {
       color: #fff;
       text-align: center;
       padding: 350px;
-      background-image: url('../conteudos/imagens/Img-Ref/Atual/gourmet-feminino (2).png');
+      background-image: url('../conteudos/imagens/Img-Ref/Atual/beleza-feminina.png');
       /* Imagem de fundo adicionada */
       background-size: cover;
     
@@ -87,7 +87,7 @@
 
 <body>
 <?php include_once("heade.php");?>
-  <header class="gourmetmasc"></header>
+  <header class="belezafem"></header>
   <div class="principal">
     <h1>Uniformes Gourmet Femininos</h1>
     <p>
