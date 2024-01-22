@@ -14,11 +14,11 @@
       background-color: #f5f5f5;
     }
 
-    .beleza {
+    .gourmetmasc {
       color: #fff;
       text-align: center;
       padding: 350px;
-      background-image: url('../conteudos/imagens/Img-Ref/Atual/manequim-beleza.png');
+      background-image: url('../conteudos/imagens/Img-Ref/Atual/gourmet-feminino (2).png');
       /* Imagem de fundo adicionada */
       background-size: cover;
     
@@ -80,27 +80,28 @@
       }
     }
   </style>
+
+
+
 </head>
-<?php include_once("heade.php");?>
-<header class="beleza"></header>
+
 <body>
+<?php include_once("heade.php");?>
+  <header class="gourmetmasc"></header>
   <div class="principal">
-    <h1>Uniformes Femininos de Beleza</h1>
+    <h1>Uniformes Gourmet Femininos</h1>
     <p>
-      Aqui você encontra uma variedade de uniformes femininos para profissionais de beleza, como cabeleireiros, manicures, maquiadores e esteticistas.
+      Aqui você encontra uma variedade de uniformes gourmet femininos para profissionais da culinária, como chefs, confeiteiros e sommeliers.
     </p>
     <p>
-      Nossos uniformes são produzidos com tecidos de alta qualidade e design moderno, para que você se sinta confortável e elegante durante o seu trabalho.
+      Nossos uniformes são elaborados com tecidos premium e design sofisticado, proporcionando conforto e elegância em sua jornada culinária.
     </p>
   </div>
-
-  
-    <!-- Restante dos produtos... -->
-
+<body>
   <div class="image-container">
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-1.png" alt="Product 1">
-      <p>Kinomo Preto para salão de beleza</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-1.png" alt="Product 1">
+      <p>Avental liso para cozinha preto</p>
       <br>
       <label for="quantity1">Quantidade:</label>
       <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
@@ -109,8 +110,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-2.png" alt="Product 2">
-      <p>Máscara Rosa e Avental rosa / com detalhes azuis na manga </p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-2.png" alt="Product 2">
+      <p> Uniforme chef de cozinha feminino blusa branca com botões e saia azul </p>
       <br>
       <label for="quantity2">Quantidade:</label>
       <input type="number" id="quantity2" class="quantity-input" value="1" min="1">
@@ -119,8 +120,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-3.png" alt="Product 3">
-      <p> Kinomo Marrom com botões para salão de beleza </p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-3.png" alt="Product 3">
+      <p>Avental liso para cozinha azul esverdeado </p>
       <br>
       <label for="quantity3">Quantidade:</label>
       <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
@@ -129,8 +130,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-4.png" alt="Product 4">
-      <p>Avental azul para salão de beleza</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-4.png" alt="Product 4">
+      <p>Uniforme garçonete-conjunto colete,camiseta manga longa e calça</p>
       <br>
       <label for="quantity4">Quantidade:</label>
       <input type="number" id="quantity4" class="quantity-input" value="1" min="1">
@@ -139,8 +140,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-5.png" alt="Product 5">
-      <p>Avental preto para salão de beleza</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-5.png" alt="Product 5">
+      <p>Avental personalizado com flores</p>
       <br>
       <label for="quantity5">Quantidade:</label>
       <input type="number" id="quantity5" class="quantity-input" value="1" min="1">
@@ -149,8 +150,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-6.png" alt="Product 6">
-      <p>Blusa Scrub Feminino de Oxfordine Veterinária </p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-6.png" alt="Product 6">
+      <p>Avental branco com botões e bolso único</p>
       <br>
       <label for="quantity6">Quantidade:</label>
       <input type="number" id="quantity6" class="quantity-input" value="1" min="1">
@@ -159,8 +160,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-7.png" alt="Product 7">
-      <p>Avental Personalizado Roxo incluso logo na marca- com blusa   </p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-7.png" alt="Product 7">
+      <p>Uniforme garçonete com gravata - conjunto blusa e saia</p>
       <br>
       <label for="quantity7">Quantidade:</label>
       <input type="number" id="quantity7" class="quantity-input" value="1" min="1">
@@ -169,8 +170,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-8.png" alt="Product 8">
-      <p>Conjunto preto - blusa e calça para assistente de salão de beleza</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-8.png" alt="Product 8">
+      <p>Uniforme garçonete - conjunto blusa e saia com bolsos </p>
       <br>
       <label for="quantity8">Quantidade:</label>
       <input type="number" id="quantity8" class="quantity-input" value="1" min="1">
@@ -179,8 +180,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-9.png" alt="Product 9">
-      <p>Avental Branco sem manga</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-9.png" alt="Product 9">
+      <p>Uniforme chef de cozinha - conjunto blusa com botões e saia</p>
       <br>
       <label for="quantity9">Quantidade:</label>
       <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
@@ -189,8 +190,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-10.png" alt="Product 10">
-      <p>Avental Branco com bolsos para esteticistas</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-10.png" alt="Product 10">
+      <p>Avental Branco com bolso em cima e na parte de baixo</p>
       <br>
       <label for="quantity10">Quantidade:</label>
       <input type="number" id="quantity10" class="quantity-input" value="1" min="1">
@@ -199,8 +200,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-11.png" alt="Product 11">
-      <p>Avental Branco para manicure com laço</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-11.png" alt="Product 11">
+      <p>Avental Branco com bolso e laço</p>
       <br>
       <label for="quantity11">Quantidade:</label>
       <input type="number" id="quantity11" class="quantity-input" value="1" min="1">
@@ -209,8 +210,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-12.png" alt="Product 12">
-      <p>Avental Personalizado Verde e Preto para salão de beleza</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-12.png" alt="Product 12">
+      <p>Avental Personalizado Verde Oliva com bolso</p>
       <br>
       <label for="quantity12">Quantidade:</label>
       <input type="number" id="quantity12" class="quantity-input" value="1" min="1">
@@ -219,11 +220,5 @@
     </div>
   </div>
 </body>
-</html>
-
-
-  </div>
-</body>
 <?php include_once("footer.php");?>
 </html>
-
