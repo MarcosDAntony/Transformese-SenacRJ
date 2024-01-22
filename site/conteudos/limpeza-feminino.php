@@ -93,10 +93,10 @@
     <p>Explore nossa linha de uniformes de limpeza feminina, projetados para profissionais dedicadas à higiene e manutenção de ambientes com estilo e conforto.</p>
     <p>Nossos uniformes combinam praticidade e elegância, proporcionando um visual profissional enquanto realiza suas tarefas de limpeza com eficiência.</p>
   </div>
-  <div class="image-container">
+<div class="image-container">
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-1.png" alt="Product 1">
-      <p>   </p>
+      <p> Camisa tecido azul escuro - Oxford 100% poliéster </p>
       <br>
       <label for="quantity1">Quantidade:</label>
       <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
@@ -106,7 +106,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-2.png" alt="Product 2">
-      <p>    </p>
+      <p> Kit Vestido copeira com avental preto e branco - Oxford 100% poliéster   </p>
       <br>
       <label for="quantity2">Quantidade:</label>
       <input type="number" id="quantity2" class="quantity-input" value="1" min="1">
@@ -116,7 +116,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-3.png" alt="Product 3">
-      <p>  </p>
+      <p> Conjunto - Camisa verde + calça cinza - Oxford 100% poliéster  </p>
       <br>
       <label for="quantity3">Quantidade:</label>
       <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
@@ -126,7 +126,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-4.png" alt="Product 4">
-      <p>   </p>
+      <p> Colete Social azul marinho - Oxford 100% poliéster    </p>
       <br>
       <label for="quantity4">Quantidade:</label>
       <input type="number" id="quantity4" class="quantity-input" value="1" min="1">
@@ -136,7 +136,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-5.png" alt="Product 5">
-      <p>  </p>
+      <p>  Vestido copeira cinza - Oxford 100% poliéster </p>
       <br>
       <label for="quantity5">Quantidade:</label>
       <input type="number" id="quantity5" class="quantity-input" value="1" min="1">
@@ -146,7 +146,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-6.png" alt="Product 6">
-      <p>  </p>
+      <p> Avental para faxineira vermelho - 100% algodão </p>
       <br>
       <label for="quantity6">Quantidade:</label>
       <input type="number" id="quantity6" class="quantity-input" value="1" min="1">
@@ -156,7 +156,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-7.png" alt="Product 7">
-      <p>   </p>
+      <p> Avental branco com bolso - 100% poliéster   </p>
       <br>
       <label for="quantity7">Quantidade:</label>
       <input type="number" id="quantity7" class="quantity-input" value="1" min="1">
@@ -166,7 +166,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-8.png" alt="Product 8">
-      <p>   </p>
+      <p> Kit Avental azul com três bolsos com camisa - 100% poliéster </p>
       <br>
       <label for="quantity8">Quantidade:</label>
       <input type="number" id="quantity8" class="quantity-input" value="1" min="1">
@@ -176,7 +176,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-9.png" alt="Product 9">
-      <p>   </p>
+      <p> Avental branco com um bolso - 100% poliéster </p>
       <br>
       <label for="quantity9">Quantidade:</label>
       <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
@@ -186,7 +186,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-10.png" alt="Product 10">
-      <p>   </p>
+      <p> Macacão azul para faxineira - 100% brim  </p>
       <br>
       <label for="quantity10">Quantidade:</label>
       <input type="number" id="quantity10" class="quantity-input" value="1" min="1">
@@ -196,7 +196,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-11.png" alt="Product 11">
-      <p>  </p>
+      <p> Camisa amarela manga curta com três botões - 100% poliéster</p>
       <br>
       <label for="quantity11">Quantidade:</label>
       <input type="number" id="quantity11" class="quantity-input" value="1" min="1">
@@ -206,7 +206,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-12.png" alt="Product 12">
-      <p>  </p>
+      <p> Avental verde com bolso  - 100% poliéster</p>
       <br>
       <label for="quantity12">Quantidade:</label>
       <input type="number" id="quantity12" class="quantity-input" value="1" min="1">
