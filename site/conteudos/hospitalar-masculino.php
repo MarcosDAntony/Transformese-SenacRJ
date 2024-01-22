@@ -170,7 +170,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-8.png" alt="Product 8">
-      <p>  </p>
+      <p> Jaleco Masculino Tradicional Branco Gola Partida Punho Bolsos Fontais - 100% Poliéster </p>
       <br>
       <label for="quantity8">Quantidade:</label>
       <input type="number" id="quantity8" class="quantity-input" value="1" min="1">
