@@ -100,71 +100,71 @@
     <div class="image-container">
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-1.png" alt="Product 1">
-      <p>  </p>
+      <p> Conjunto de Pijama Cirúrgico azul claro incluso máscara , manga curta - Oxford 100% poliéster</p>
       <br>
       <label for="quantity1">Quantidade:</label>
       <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-2.png" alt="Product 2">
-      <p>  </p>
+      <p> Conjunto de Pijama Cirúrgico azul claro, manga curta - Oxford 100% poliéster </p>
       <br>
       <label for="quantity2">Quantidade:</label>
       <input type="number" id="quantity2" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-3.png" alt="Product 3">
-      <p> </p>
+      <p> Jaleco branco 3 bolsos frontais, sendo 1 no peito e 2 na cintura , manga longa - 100% Poliéster</p>
       <br>
       <label for="quantity3">Quantidade:</label>
       <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-4.png" alt="Product 4">
-      <p>   </p>
+      <p> Jaleco branco com 2 bolsos inferiores, um bolso superior, manga longa sem punho e gola esporte - 100% Poliéster </p>
       <br>
       <label for="quantity4">Quantidade:</label>
       <input type="number" id="quantity4" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-5.png" alt="Product 5">
-      <p>  </p>
+      <p> Conjunto de Pijama Cirúrgico azul escuro, manga curta - 100% Poliéster</p>
       <br>
       <label for="quantity5">Quantidade:</label>
       <input type="number" id="quantity5" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-6.png" alt="Product 6">
-      <p>  </p>
+      <p> Jaleco branco com 2 bolsos inferiores manga longa -  100% Poliéster</p>
       <br>
       <label for="quantity6">Quantidade:</label>
       <input type="number" id="quantity6" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-7.png" alt="Product 7">
-      <p>  </p>
+      <p> Jaleco com dois bolsos inferiores, um bolso superior, manga longa sem punho - 100% Poliéster </p>
       <br>
       <label for="quantity7">Quantidade:</label>
       <input type="number" id="quantity7" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -174,7 +174,7 @@
       <br>
       <label for="quantity8">Quantidade:</label>
       <input type="number" id="quantity8" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -184,37 +184,37 @@
       <br>
       <label for="quantity9">Quantidade:</label>
       <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-10.png" alt="Product 10">
-      <p>  </p>
+      <p> Jaleco Oxford com 2 bolsos na cintura , com gola social - 100% Poliéster </p>
       <br>
       <label for="quantity10">Quantidade:</label>
       <input type="number" id="quantity10" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-11.png" alt="Product 11">
-      <p>  </p>
+      <p> Camisa cinza sem manga com 3 bolsos , um bolso superior e dois na cintura   </p>
       <br>
       <label for="quantity11">Quantidade:</label>
       <input type="number" id="quantity11" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-12.png" alt="Product 12">
-      <p> </p>
+      <p> Calça azul com 2 bolsos 100% algodão</p>
       <br>
       <label for="quantity12">Quantidade:</label>
       <input type="number" id="quantity12" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
+      <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
     </div>
   </div>
