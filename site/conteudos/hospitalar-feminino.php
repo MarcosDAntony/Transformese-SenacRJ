@@ -107,7 +107,7 @@
       <br>
       <label for="quantity1">Quantidade:</label>
       <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -117,7 +117,7 @@
       <br>
       <label for="quantity2">Quantidade:</label>
       <input type="number" id="quantity2" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -127,7 +127,7 @@
       <br>
       <label for="quantity3">Quantidade:</label>
       <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -137,7 +137,7 @@
       <br>
       <label for="quantity4">Quantidade:</label>
       <input type="number" id="quantity4" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -147,7 +147,7 @@
       <br>
       <label for="quantity5">Quantidade:</label>
       <input type="number" id="quantity5" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -157,7 +157,7 @@
       <br>
       <label for="quantity6">Quantidade:</label>
       <input type="number" id="quantity6" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -167,7 +167,7 @@
       <br>
       <label for="quantity7">Quantidade:</label>
       <input type="number" id="quantity7" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -177,7 +177,7 @@
       <br>
       <label for="quantity8">Quantidade:</label>
       <input type="number" id="quantity8" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -187,7 +187,7 @@
       <br>
       <label for="quantity9">Quantidade:</label>
       <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -197,7 +197,7 @@
       <br>
       <label for="quantity10">Quantidade:</label>
       <input type="number" id="quantity10" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -207,7 +207,7 @@
       <br>
       <label for="quantity11">Quantidade:</label>
       <input type="number" id="quantity11" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
 
@@ -217,7 +217,7 @@
       <br>
       <label for="quantity12">Quantidade:</label>
       <input type="number" id="quantity12" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">+</button>
+      <button class="add-to-cart">🛒➕</button>
       <span class="cart-counter"> </span>
     </div>
   </div>
