@@ -14,7 +14,7 @@
       background-color: #f5f5f5;
     }
 
-    header {
+    .beleza {
       color: #fff;
       text-align: center;
       padding: 350px;
@@ -81,7 +81,8 @@
     }
   </style>
 </head>
-<header></header>
+<?php include_once("heade.php");?>
+<header class="beleza"></header>
 <body>
   <div class="principal">
     <h1>Uniformes Femininos de Beleza</h1>
@@ -223,6 +224,6 @@
 
   </div>
 </body>
-
+<?php include_once("footer.php");?>
 </html>
 

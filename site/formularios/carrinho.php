@@ -15,9 +15,11 @@
   /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
 }
 </style>
-
 </head>
+
+<?php include_once("../formularios/heade.php");?>
 <body>
     Seu produto será enviado para o whatsapp para a realização da compra...
 </body>
+<?php include_once("../formularios/footer.php");?>
 </html>

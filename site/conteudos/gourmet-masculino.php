@@ -82,9 +82,7 @@
 </head>
 
 <body>
-  <header>
-
-  </header>
+  <header></header>
   <div class="principal">
     <h1>Uniformes Gourmet Masculinos</h1>
     <p>

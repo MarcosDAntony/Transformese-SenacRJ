@@ -85,11 +85,13 @@
                             </a>
                             <ul class="dropdown-menu">
                             <li class="dropdown-item">Hospitalar Masculino</li>
-                                <li class="dropdown-item">Hospitalar Feminino</li>
-                                <li class="dropdown-item">Limpeza Masculino</li>
-                                <li class="dropdown-item">Limpeza Feminino</li>
-                                <li class="dropdown-item">Gourmet Masculino</li>
-                                <li class="dropdown-item">Gourmet Feminino</li>
+                            <li><a href="../conteudos/hospitalar-masculino.php" class="dropdown-item">Hospitalar Masculino</a></li>
+                                <li><a href="../conteudos/hospitalar-feminino.php" class="dropdown-item">Hospitalar Feminino</a></li>
+                                <li><a href="../conteudos/limpeza-masculino.php" class="dropdown-item">Limpeza Masculino</a></li>
+                                <li><a href="../conteudos/limpeza-feminino.php" class="dropdown-item">Limpeza Feminino</a></li>
+                                <li><a href="../conteudos/gourmet-masculino.php" class="dropdown-item">Gourmet Masculino</a></li>
+                                <li><a href="../conteudos/gourmet-feminino.php" class="dropdown-item">Gourmet Feminino</a></li>
+                                <li><a href="../conteudos/beleza-feminino.php" class="dropdown-item">Beleza Feminino</a></li>
                             </ul>
                         </li>
 

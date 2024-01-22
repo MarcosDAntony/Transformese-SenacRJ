@@ -82,9 +82,7 @@
 </head>
 
 <body>
-  <header>
-
-  </header>
+  <header></header>
   <div class="principal">
     <h1>Uniformes Femininos Hospitalar</h1>
     <p>

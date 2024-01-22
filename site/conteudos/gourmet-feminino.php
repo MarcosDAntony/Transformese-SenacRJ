@@ -14,7 +14,7 @@
       background-color: #f5f5f5;
     }
 
-    header {
+    .gourmetmasc {
       color: #fff;
       text-align: center;
       padding: 350px;
@@ -86,9 +86,8 @@
 </head>
 
 <body>
-  <header>
-
-  </header>
+<?php include_once("heade.php");?>
+  <header class="gourmetmasc"></header>
   <div class="principal">
     <h1>Uniformes Gourmet Femininos</h1>
     <p>
@@ -221,4 +220,5 @@
     </div>
   </div>
 </body>
+<?php include_once("footer.php");?>
 </html>
