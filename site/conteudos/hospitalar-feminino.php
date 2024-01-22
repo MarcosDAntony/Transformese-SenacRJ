@@ -89,19 +89,21 @@
 <?php include_once("heade.php");?>
   <header class="gourmetmasc"></header>
   <div class="principal">
-    <h1>Uniformes Gourmet Femininos</h1>
+    <h1>Uniformes Femininos Hospitalar</h1>
     <p>
-      Aqui você encontra uma variedade de uniformes gourmet femininos para profissionais da culinária, como chefs, confeiteiros e sommeliers.
+      Descubra a excelência em uniformes hospitalares femininos, desenvolvidos para profissionais da saúde comprometidas com o cuidado e o conforto dos pacientes.
     </p>
     <p>
-      Nossos uniformes são elaborados com tecidos premium e design sofisticado, proporcionando conforto e elegância em sua jornada culinária.
+      Nossos uniformes oferecem qualidade, durabilidade e um toque de elegância para mulheres que fazem a diferença no ambiente hospitalar.
     </p>
   </div>
+</head>
+
 <body>
   <div class="image-container">
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-1.png" alt="Product 1">
-      <p>Avental liso para cozinha preto</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-1.png" alt="Product 1">
+      <p>  </p>
       <br>
       <label for="quantity1">Quantidade:</label>
       <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
@@ -110,8 +112,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-2.png" alt="Product 2">
-      <p> Uniforme chef de cozinha feminino blusa branca com botões e saia azul </p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-2.png" alt="Product 2">
+      <p>  </p>
       <br>
       <label for="quantity2">Quantidade:</label>
       <input type="number" id="quantity2" class="quantity-input" value="1" min="1">
@@ -120,8 +122,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-3.png" alt="Product 3">
-      <p>Avental liso para cozinha azul esverdeado </p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-3.png" alt="Product 3">
+      <p> </p>
       <br>
       <label for="quantity3">Quantidade:</label>
       <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
@@ -130,8 +132,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-4.png" alt="Product 4">
-      <p>Uniforme garçonete-conjunto colete,camiseta manga longa e calça</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-4.png" alt="Product 4">
+      <p>   </p>
       <br>
       <label for="quantity4">Quantidade:</label>
       <input type="number" id="quantity4" class="quantity-input" value="1" min="1">
@@ -140,8 +142,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-5.png" alt="Product 5">
-      <p>Avental personalizado com flores</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-5.png" alt="Product 5">
+      <p>  </p>
       <br>
       <label for="quantity5">Quantidade:</label>
       <input type="number" id="quantity5" class="quantity-input" value="1" min="1">
@@ -150,8 +152,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-6.png" alt="Product 6">
-      <p>Avental branco com botões e bolso único</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-6.png" alt="Product 6">
+      <p>  </p>
       <br>
       <label for="quantity6">Quantidade:</label>
       <input type="number" id="quantity6" class="quantity-input" value="1" min="1">
@@ -160,8 +162,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-7.png" alt="Product 7">
-      <p>Uniforme garçonete com gravata - conjunto blusa e saia</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-7.png" alt="Product 7">
+      <p>  </p>
       <br>
       <label for="quantity7">Quantidade:</label>
       <input type="number" id="quantity7" class="quantity-input" value="1" min="1">
@@ -170,8 +172,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-8.png" alt="Product 8">
-      <p>Uniforme garçonete - conjunto blusa e saia com bolsos </p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-8.png" alt="Product 8">
+      <p>  </p>
       <br>
       <label for="quantity8">Quantidade:</label>
       <input type="number" id="quantity8" class="quantity-input" value="1" min="1">
@@ -180,8 +182,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-9.png" alt="Product 9">
-      <p>Uniforme chef de cozinha - conjunto blusa com botões e saia</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-9.png" alt="Product 9">
+      <p>  </p>
       <br>
       <label for="quantity9">Quantidade:</label>
       <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
@@ -190,8 +192,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-10.png" alt="Product 10">
-      <p>Avental Branco com bolso em cima e na parte de baixo</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-10.png" alt="Product 10">
+      <p>  </p>
       <br>
       <label for="quantity10">Quantidade:</label>
       <input type="number" id="quantity10" class="quantity-input" value="1" min="1">
@@ -200,8 +202,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-11.png" alt="Product 11">
-      <p>Avental Branco com bolso e laço</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-11.png" alt="Product 11">
+      <p>  </p>
       <br>
       <label for="quantity11">Quantidade:</label>
       <input type="number" id="quantity11" class="quantity-input" value="1" min="1">
@@ -210,8 +212,8 @@
     </div>
 
     <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-gourmet-12.png" alt="Product 12">
-      <p>Avental Personalizado Verde Oliva com bolso</p>
+      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-12.png" alt="Product 12">
+      <p> </p>
       <br>
       <label for="quantity12">Quantidade:</label>
       <input type="number" id="quantity12" class="quantity-input" value="1" min="1">
