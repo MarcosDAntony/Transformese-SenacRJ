@@ -81,9 +81,8 @@
 </head>
 
 <body>
-  <header>
-    
-</header>
+<?php include_once("heade.php");?>
+  <header></header>
     <div class="principal">
         <h1>Venda de Uniformes de Limpeza Masculina</h1>
         <p>Descubra a qualidade e durabilidade dos nossos uniformes de limpeza masculina, desenvolvidos para profissionais comprometidos com a manutenção de ambientes limpos e organizados.</p>
@@ -181,3 +180,4 @@
           <button class="add-to-cart">+</button>
           <span class="cart-counter"> </span>
         </div>
+        <?php include_once("footer.php");?>

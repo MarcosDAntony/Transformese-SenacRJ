@@ -66,6 +66,7 @@
   </style>
 </head>
 <body>
+<?php include_once("heade.php");?>
   <div class="image-container">
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-1.png" alt="Product 1">
@@ -188,4 +189,5 @@
     </div>
   </div>
 </body>
+<?php include_once("footer.php");?>
 </html>

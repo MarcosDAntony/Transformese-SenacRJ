@@ -81,9 +81,8 @@
 </head>
 
 <body>
-  <header>
-
-  </header>
+<?php include_once("heade.php");?>
+  <header></header>
   <div class="principal">
     <h1>Uniformes de Limpeza Feminina</h1>
     <p>Explore nossa linha de uniformes de limpeza feminina, projetados para profissionais que se dedicam à manutenção e higiene de ambientes com estilo e conforto.</p>
@@ -212,4 +211,5 @@
     </div>
   </div>
 </body>
+<?php include_once("footer.php");?>
 </html>

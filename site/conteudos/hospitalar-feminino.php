@@ -95,7 +95,8 @@
 </head>
 
 <body>
-  <div class="image-container">
+<?php include_once("heade.php");?>
+  <header class="image-container">
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-1.png" alt="Product 1">
       <p>  </p>
@@ -214,8 +215,9 @@
       <input type="number" id="quantity12" class="quantity-input" value="1" min="1">
       <button class="add-to-cart">+</button>
       <span class="cart-counter"> </span>
-    </div>
+  </header>
   </div>
 </body>
+<?php include_once("footer.php");?>
 </html>
 

@@ -82,6 +82,7 @@
 </head>
 
 <body>
+  <?php include_once("heade.php");?>
   <header></header>
   <div class="principal">
     <h1>Uniformes Gourmet Masculinos</h1>
@@ -216,6 +217,7 @@
     </div>
   </div>
 </body>
+<?php include_once("footer.php");?>
 </html>
 
 
