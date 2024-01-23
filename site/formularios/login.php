@@ -19,7 +19,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 90vh;
+      height: 70vh;
       width: 400px; /* Adjusted maximum width */
     }
 
