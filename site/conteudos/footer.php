@@ -29,16 +29,22 @@
             color: black; /* Adicionei uma cor de texto para melhor contraste */
         }
 
-        .formas-pagamento{
-            width: 350px;
-            height: 250px;
-            float: left;
+        .formas-pagamento img {
+            width: 90%;
+            height: auto;
         }
     </style>
 </head>
+<body>
+<div class="formas-pagamento">
+        <img src="../conteudos/imagens/Img-Ref/Atual/pagamento-removebg-preview.png" alt="Formas de pagamento">
+    </div>
+
 <!-- Footer -->
+
 <footer>
     <p>©<?php echo date("Y");?> - Todos os direitos reservados.
     </p>
 </footer>
+</body>
 </html>
