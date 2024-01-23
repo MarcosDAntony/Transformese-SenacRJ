@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14/12/2023 às 14:37
+-- Tempo de geração: 23/01/2024 às 14:00
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -24,44 +24,18 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `cadastro_usuarios`
+-- Estrutura para tabela `usuarios`
 --
 
-CREATE TABLE `cadastro_usuarios` (
-  `id_cadastro` int(11) NOT NULL,
-  `id_pedido` int(11) NOT NULL,
-  `Nome` varchar(25) NOT NULL,
-  `Email` varchar(25) NOT NULL,
-  `Senha` varchar(16) NOT NULL,
-  `Cidade` varchar(25) NOT NULL,
-  `Estado` varchar(2) NOT NULL,
-  `Tipo` int(11) NOT NULL COMMENT '1- Cliente/ 2- Administrador/ 3- Gerente'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `categorias`
---
-
-CREATE TABLE `categorias` (
-  `id_categoria` int(11) NOT NULL,
-  `tipo_categoria` int(11) NOT NULL,
-  `descricao_categoria` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `produtos`
---
-
-CREATE TABLE `produtos` (
-  `id_produto` int(11) NOT NULL,
-  `nome_produto` varchar(25) NOT NULL,
-  `descricao_produto` varchar(500) NOT NULL,
-  `preco` float NOT NULL,
-  `imagem` int(11) NOT NULL
+CREATE TABLE `usuarios` (
+  `ID-Usuario` int(11) NOT NULL,
+  `Nome` varchar(50) NOT NULL,
+  `Email` varchar(45) NOT NULL,
+  `Senha` varchar(8) NOT NULL,
+  `Endereco` varchar(100) NOT NULL,
+  `CEP` int(8) NOT NULL COMMENT 'Possivel API',
+  `Tipo-Cadastro` int(11) NOT NULL COMMENT '1-Usuario/ 2-Administrador / 3-Gerente',
+  `Carrinho` varchar(1500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -69,56 +43,20 @@ CREATE TABLE `produtos` (
 --
 
 --
--- Índices de tabela `cadastro_usuarios`
+-- Índices de tabela `usuarios`
 --
-ALTER TABLE `cadastro_usuarios`
-  ADD PRIMARY KEY (`id_cadastro`),
-  ADD KEY `id_pedido` (`id_pedido`);
-
---
--- Índices de tabela `categorias`
---
-ALTER TABLE `categorias`
-  ADD PRIMARY KEY (`id_categoria`),
-  ADD KEY `tipo_categoria` (`tipo_categoria`) USING BTREE;
-
---
--- Índices de tabela `produtos`
---
-ALTER TABLE `produtos`
-  ADD PRIMARY KEY (`id_produto`);
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`ID-Usuario`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT de tabela `cadastro_usuarios`
+-- AUTO_INCREMENT de tabela `usuarios`
 --
-ALTER TABLE `cadastro_usuarios`
-  MODIFY `id_cadastro` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `produtos`
---
-ALTER TABLE `produtos`
-  MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Restrições para tabelas despejadas
---
-
---
--- Restrições para tabelas `cadastro_usuarios`
---
-ALTER TABLE `cadastro_usuarios`
-  ADD CONSTRAINT `cadastro_usuarios_ibfk_1` FOREIGN KEY (`id_pedido`) REFERENCES `produtos` (`id_produto`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Restrições para tabelas `categorias`
---
-ALTER TABLE `categorias`
-  ADD CONSTRAINT `categorias_ibfk_1` FOREIGN KEY (`tipo_categoria`) REFERENCES `produtos` (`id_produto`);
+ALTER TABLE `usuarios`
+  MODIFY `ID-Usuario` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
