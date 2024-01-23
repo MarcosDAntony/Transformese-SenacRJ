@@ -35,40 +35,50 @@
     <div class="position-cadastro">
     <div class="container">
         <h2>Cadastro</h2>
-        <form class="row g-3">
+        <form class="row g-3" action="../banco-de-dados/config.php" method="post" enctype="multipart/form-data">
 
           <div class="col-md-6">
-            <label for="nome" class="form-label">Nome: </label>
-            <input type="email" class="form-control" id="nome" placeholder="Nome Completo">
+            <label for="Nome" class="form-label">Nome: </label>
+            <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nome Completo">
           </div>
 
           <div class="col-md-6">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Email">
+            <label for="Email" class="form-label">Email:</label>
+            <input type="Email" class="form-control" id="Email" name="Email" placeholder="Email">
           </div>
 
           <div class="col-md-6">
-            <label for="senha" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="senha" placeholder="Senha">
+            <label for="Senha" class="form-label">Senha:</label>
+            <input type="password" class="form-control" id="Senha" name="Senha" placeholder="Senha">
           </div>
 
           <div class="col-md-4">
-            <label for="uf" class="form-label">UF</label>
-            <select id="uf" class="uf">
+            <label for="Tipo-Cadastro" class="form-label">Tipo de Cadastro:</label>
+            <select id="Tipo-Cadastro" class="Tipo-Cadastro" name="Tipo-Cadastro">
+              <option selected>...</option>
+              <option value="Usuario">Usuario</option>
+              <option value="Administrador">Administrador</option>
+              <option value="Gerente">Gerente</option>
+            </select>
+          </div>
+
+          <div class="col-md-4">
+            <label for="UF" class="form-label">UF</label>
+            <select id="UF" class="UF" name="UF">
               <option selected>...</option>
               <option>RJ</option>
             </select>
           </div>
 
           <div class="col-12">
-            <label for="endereco" class="form-label">Endereço:</label>
-            <input type="text" class="form-control" id="endereco" placeholder="Cidade, Número, e Complemento">
+            <label for="Endereco" class="form-label">Endereço:</label>
+            <input type="text" class="form-control" id="Endereco" name="Endereco" placeholder="Cidade, bairro, complemento...">
           </div>
 
          
           <div class="col-md-2">
-            <label for="cep" class="form-label">CEP:</label>
-            <input type="text" class="form-control" id="cep" placeholder="00000-000" style="width:100px;">
+            <label for="CEP" class="form-label">CEP:</label>
+            <input type="number" class="form-control" id="CEP" name="CEP" placeholder="00000-000" style="width:100px;">
           </div>
 
           <div class="col-12">
