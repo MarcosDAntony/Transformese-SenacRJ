@@ -34,7 +34,7 @@
         }
 
         .instagram {
-            bottom: 25%;
+            bottom: 24%;
             right: 5%;
         }
 
