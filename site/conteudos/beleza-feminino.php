@@ -24,7 +24,7 @@
     
     }
 
-    .belezafem {
+    .principal {
       text-align: center;
       padding: 20px;
     }
@@ -87,6 +87,7 @@
 
 <body>
 <?php include_once("heade.php");?>
+<body>
   <header class="belezafem"></header>
   <body>
   <div class="principal">
@@ -226,3 +227,4 @@
 </body>
 <?php include_once("footer.php");?>
 </html>
+  
