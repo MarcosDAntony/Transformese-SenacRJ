@@ -60,7 +60,7 @@
   position: relative;
   left: 80px;
   top: 80px;
-  font-size: larger;
+  font-size:x-small;
 }
 
   </style>
@@ -69,8 +69,8 @@
   <?php include_once("../site/heade.php");?>
   <section class="imagem-de-fundo">
     <div class="conteudo-texto">
-      <h2 class="section-heading text-uppercase">Sobre a Empresa</h2>
       <br>
+      <h2 class="section-heading text-uppercase">Sobre a Empresa</h2>
       <p class="section-subheading text-muted">"Costure sua elegância com nossos tecidos de qualidade e transforme cada ponto em uma expressão única de estilo e sofisticação."</p>
       <br>
       <p class="section-subheading text-muted">
