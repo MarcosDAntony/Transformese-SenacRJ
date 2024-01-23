@@ -106,7 +106,7 @@
   <div class="image-container">
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-1.png" alt="Product 1">
-      <p>Kinomo Preto para salão de beleza - - 100% Poliéster</p>
+      <p>Kinomo Preto para salão de beleza - 100% Poliéster</p>
       <br>
       <label for="quantity1">Quantidade:</label>
       <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
@@ -116,7 +116,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-2.png" alt="Product 2">
-      <p>Máscara Rosa e Avental rosa / com detalhes azuis na manga com dois bolsos na cintura- 100% Poliéster</p>
+      <p>Máscara Rosa e Avental rosa / com detalhes azuis na manga com dois bolsos na cintura - 100% Poliéster</p>
       <br>
       <label for="quantity2">Quantidade:</label>
       <input type="number" id="quantity2" class="quantity-input" value="1" min="1">
@@ -126,7 +126,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-3.png" alt="Product 3">
-      <p> Kinomo Marrom com botões para salão de beleza com um bolso na cintura- 100% Poliéster </p>
+      <p> Kinomo Marrom com botões para salão de beleza com um bolso na cintura - 100% Poliéster </p>
       <br>
       <label for="quantity3">Quantidade:</label>
       <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
@@ -136,7 +136,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-4.png" alt="Product 4">
-      <p>Avental azul para salão de beleza um bolso na cintura - - 100% Poliéster</p>
+      <p>Avental azul para salão de beleza um bolso na cintura -  100% Poliéster</p>
       <br>
       <label for="quantity4">Quantidade:</label>
       <input type="number" id="quantity4" class="quantity-input" value="1" min="1">
@@ -186,7 +186,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-9.png" alt="Product 9">
-      <p>Avental Branco sem manga - - 100% Poliéster</p>
+      <p>Avental Branco sem manga - 100% Poliéster</p>
       <br>
       <label for="quantity9">Quantidade:</label>
       <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
@@ -227,4 +227,5 @@
 </body>
 <?php include_once("footer.php");?>
 </html>
+  
   
