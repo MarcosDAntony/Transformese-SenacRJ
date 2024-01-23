@@ -18,7 +18,7 @@
       color: #fff;
       text-align: center;
       padding: 350px;
-      background-image: url('../conteudos/imagens/Img-Ref/hospitalar-masc.png');
+      background-image: url('../conteudos/imagens/Img-Ref/Atual/hospitalar-masc.png');
       /* Imagem de fundo adicionada */
       background-size: cover;
     
