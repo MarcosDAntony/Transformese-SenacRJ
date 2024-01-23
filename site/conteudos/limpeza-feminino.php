@@ -116,7 +116,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-3.png" alt="Product 3">
-      <p> Conjunto - Camisa verde 🛒➕ calça cinza - Oxford 100% Poliéster  </p>
+      <p> Conjunto - Camisa verde ➕ calça cinza - Oxford 100% Poliéster  </p>
       <br>
       <label for="quantity3">Quantidade:</label>
       <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
