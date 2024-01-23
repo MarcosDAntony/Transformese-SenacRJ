@@ -180,7 +180,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-9.png" alt="Product 9">
-      <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta verde água  - Oxford 100% </p>
+      <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta verde água  - 100% Poliéster</p>
       <br>
       <label for="quantity9">Quantidade:</label>
       <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
@@ -221,3 +221,4 @@
 </body>
 <?php include_once("footer.php");?>
 </html>
+
