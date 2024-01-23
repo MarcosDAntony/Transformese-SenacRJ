@@ -19,55 +19,40 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 90vh;
+      width: 400px; /* Adjusted maximum width */
     }
 
     .container {
       background: linear-gradient(0deg, rgba(106, 255, 111, 1) 0%, green);
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      width: 450px;
-      overflow: hidden;
-      padding: 20px; /* Adiciona margem interna */
     }
 
-    .form-label {
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .btn-entrar {
-      background-color: #28a745; /* Cor verde do Bootstrap para botões de sucesso */
-      color: white;
-    }
-
-    h2 {
-      margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
-    }
   </style>
 </head>
 <?php include_once("../formularios/heade.php");?>
 <body>
   <div class="position-login">
-  <div class="container">
-    <h2>Login</h2>
-    <form class="row g-3">
+    <div class="container">
+      <h2>Login</h2>
+      <form class="row g-3">
 
-      <div class="col-md-12">
-        <label for="email" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="E-mail">
-      </div>
+        <div class="col-md-12">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="E-mail">
+        </div>
 
-      <div class="col-md-12">
-        <label for="senha" class="form-label">Senha:</label>
-        <input type="password" class="form-control" id="senha" placeholder="Senha">
-      </div>
+        <div class="col-md-12">
+          <label for="senha" class="form-label">Senha:</label>
+          <input type="password" class="form-control" id="senha" placeholder="Senha">
+        </div>
 
-      <div class="col-md-12">
-        <button type="submit" class="btn btn-sucess">Entrar</button>
-      </div>
-    </form>
-  </div>
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-">Entrar</button>
+        </div>
+      </form>
+    </div>
   </div>
 </body>
 <?php include_once("../formularios/footer.php");?>
