@@ -78,7 +78,7 @@
          
           <div class="col-md-2">
             <label for="CEP" class="form-label">CEP:</label>
-            <input type="number" class="form-control" id="CEP" name="CEP" placeholder="00000-000" style="width:100px;">
+            <input class="form-control" id="CEP" name="CEP" placeholder="00000-000" style="width:100px;">
           </div>
 
           <div class="col-12">
