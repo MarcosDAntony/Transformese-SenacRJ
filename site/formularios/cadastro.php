@@ -52,7 +52,7 @@
             <input type="password" class="form-control" id="Senha" name="Senha" placeholder="Senha">
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-6">
             <label for="Tipo-Cadastro" class="form-label">Tipo de Cadastro:</label>
             <select id="Tipo-Cadastro" class="Tipo-Cadastro" name="Tipo-Cadastro">
               <option selected>...</option>
@@ -62,7 +62,7 @@
             </select>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-6">
             <label for="UF" class="form-label">UF</label>
             <select id="UF" class="UF" name="UF">
               <option selected>...</option>
@@ -89,7 +89,7 @@
               </label>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-6">
             <button type="submit" class="btn btn-">Enviar</button>
           </div>
           </div>
