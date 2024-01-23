@@ -103,7 +103,7 @@
   <div class="image-container">
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-1.png" alt="Product 1">
-      <p>  </p>
+      <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta gola V marsala- 100% Poliéster </p>
       <br>
       <label for="quantity1">Quantidade:</label>
       <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
@@ -113,7 +113,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-2.png" alt="Product 2">
-      <p>  </p>
+      <p> Jaleco manga longa 3 bolsos 1 superior e 2 na cintura , gola V branco - 100% Poliéster </p>
       <br>
       <label for="quantity2">Quantidade:</label>
       <input type="number" id="quantity2" class="quantity-input" value="1" min="1">
@@ -123,7 +123,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-3.png" alt="Product 3">
-      <p> </p>
+      <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta verde - 100% Poliéster </p>
       <br>
       <label for="quantity3">Quantidade:</label>
       <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
@@ -133,7 +133,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-4.png" alt="Product 4">
-      <p>   </p>
+      <p> Camisa com um bolso superior , rosa - 100% Poliéster </p>
       <br>
       <label for="quantity4">Quantidade:</label>
       <input type="number" id="quantity4" class="quantity-input" value="1" min="1">
@@ -143,7 +143,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-5.png" alt="Product 5">
-      <p>  </p>
+      <p> Blusa branca personalizada gola em V, dois bolsos - 100% Poliéster </p>
       <br>
       <label for="quantity5">Quantidade:</label>
       <input type="number" id="quantity5" class="quantity-input" value="1" min="1">
@@ -153,7 +153,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-6.png" alt="Product 6">
-      <p>  </p>
+      <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta gola V rosa - 100% Poliéster  </p>
       <br>
       <label for="quantity6">Quantidade:</label>
       <input type="number" id="quantity6" class="quantity-input" value="1" min="1">
@@ -163,7 +163,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-7.png" alt="Product 7">
-      <p>  </p>
+      <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta verde - 100% Poliéster  </p>
       <br>
       <label for="quantity7">Quantidade:</label>
       <input type="number" id="quantity7" class="quantity-input" value="1" min="1">
@@ -173,7 +173,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-8.png" alt="Product 8">
-      <p>  </p>
+      <p> Jaleco manga longa 3 bolsos 1 superior e 2 na cintura , detalhe azul na gola - 100% Poliéster  </p>
       <br>
       <label for="quantity8">Quantidade:</label>
       <input type="number" id="quantity8" class="quantity-input" value="1" min="1">
@@ -183,7 +183,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-9.png" alt="Product 9">
-      <p>  </p>
+      <p> Camisa com 2 bolsos na cintura azul claro -  100% Poliéster </p>
       <br>
       <label for="quantity9">Quantidade:</label>
       <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
@@ -193,7 +193,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-10.png" alt="Product 10">
-      <p>  </p>
+      <p> Camisa com um bolso superior , e 2 bolsos na cintura azul escuro - 100% Poliéster  </p>
       <br>
       <label for="quantity10">Quantidade:</label>
       <input type="number" id="quantity10" class="quantity-input" value="1" min="1">
@@ -203,7 +203,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-11.png" alt="Product 11">
-      <p>  </p>
+      <p> Blusa - Pijama Cirúrgico Estampado - 100% Poliéster </p>
       <br>
       <label for="quantity11">Quantidade:</label>
       <input type="number" id="quantity11" class="quantity-input" value="1" min="1">
@@ -213,7 +213,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-12.png" alt="Product 12">
-      <p> </p>
+      <p> Camisa pijama cirúrgico verde - 100% Poliéster  </p>
       <br>
       <label for="quantity12">Quantidade:</label>
       <input type="number" id="quantity12" class="quantity-input" value="1" min="1">

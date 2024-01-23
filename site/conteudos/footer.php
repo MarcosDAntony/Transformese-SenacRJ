@@ -38,7 +38,7 @@
 </head>
 <!-- Footer -->
 <footer>
-    <p>&copy;<?php echo date("Y");?> - Todos os direitos reservados.
+    <p>©<?php echo date("Y");?> - Todos os direitos reservados.
     </p>
 </footer>
 </html>
