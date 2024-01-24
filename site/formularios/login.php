@@ -6,7 +6,7 @@
   <!-- Funções Bootstrap --> <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> 
   <!-- W3schools--> <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- Funções W3Schools --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-  <!--FavIcon--> <link rel="shortcut icon" href="../imagens/icons/atual/cadastro.ico" type="image/x-icon">
+  <!--FavIcon--> <link rel="shortcut icon" href="../conteudos/imagens/icons/atual/cadastro.ico" type="image/x-icon">
     <style>
 *{
   font-family: 'sans-serif';
@@ -42,7 +42,7 @@
 }
 
     </style>
-    <title>Cadastre-se</title>
+    <title>Logar-se</title>
   </head>
   <?php include_once("../formularios/heade.php");?>
   <body class="imglogin">

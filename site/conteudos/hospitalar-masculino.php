@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--FavIcon--> <link rel="shortcut icon" href="../conteudos/imagens/icons/atual/produtos.ico" type="image/x-icon">
   <title>Uniformes Masculino Hospitalar</title>
   <style>
     body {
@@ -220,5 +219,4 @@
   </div>
 </body>
 <?php include_once("footer.php");?>
-</html>
 
