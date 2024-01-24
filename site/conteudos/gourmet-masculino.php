@@ -102,7 +102,7 @@
   <div class="image-container">
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-1.png" alt="Product 1">
-      <p>  </p>
+      <p> Avental Premium preto sem bolsos - 100% Oxford </p>
       <br>
       <label for="quantity1">Quantidade:</label>
       <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
@@ -112,7 +112,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-2.png" alt="Product 2">
-      <p>Dolmã chefe de cozinha </p>
+      <p>Dolmã chefe de cozinha branco manga 3/4 - 100% Poliéster </p>
       <br>
       <label for="quantity2">Quantidade:</label>
       <input type="number" id="quantity2" class="quantity-input" value="1" min="1">
@@ -122,7 +122,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-3.png" alt="Product 3">
-      <p> </p>
+      <p> Conjunto Colete Social Forrado  para Garçons + camisa branca com gravata borboleta preta - 100% Poliéster </p>
       <br>
       <label for="quantity3">Quantidade:</label>
       <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
@@ -132,7 +132,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-4.png" alt="Product 4">
-      <p>   </p>
+      <p> Avental preto sem bolso + camisa branca com gravata borboleta preta - 100% Poliéster   </p>
       <br>
       <label for="quantity4">Quantidade:</label>
       <input type="number" id="quantity4" class="quantity-input" value="1" min="1">
@@ -142,7 +142,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-5.png" alt="Product 5">
-      <p>  </p>
+      <p> Avental preto sem bolso - 100% Poliéster </p>
       <br>
       <label for="quantity5">Quantidade:</label>
       <input type="number" id="quantity5" class="quantity-input" value="1" min="1">
@@ -152,7 +152,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-6.png" alt="Product 6">
-      <p>Kimono Sushiman Hapi Uniforme Cozinha Oriental um bolsos na frente vermelho- Oxford </p>
+      <p>Kimono Sushiman Hapi Uniforme Cozinha Oriental um bolsos na frente vermelho - 100% Oxford </p>
       <br>
       <label for="quantity6">Quantidade:</label>
       <input type="number" id="quantity6" class="quantity-input" value="1" min="1">
@@ -162,7 +162,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-7.png" alt="Product 7">
-      <p>  </p>
+      <p> Avental de cintura preto com bolso na cintura -  100% Oxford   </p>
       <br>
       <label for="quantity7">Quantidade:</label>
       <input type="number" id="quantity7" class="quantity-input" value="1" min="1">
@@ -172,7 +172,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-8.png" alt="Product 8">
-      <p>  </p>
+      <p> Avental preto sem bolso + camisa branca - 100% Poliéster  </p>
       <br>
       <label for="quantity8">Quantidade:</label>
       <input type="number" id="quantity8" class="quantity-input" value="1" min="1">
@@ -182,7 +182,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-9.png" alt="Product 9">
-      <p>  </p>
+      <p> Bandana Preta Chef Cozinha Uniforme Restaurante - 100% Poliéster </p>
       <br>
       <label for="quantity9">Quantidade:</label>
       <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
@@ -202,7 +202,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-11.png" alt="Product 11">
-      <p>  </p>
+      <p> Uniforme calça preta social +  camisa branca com colete preto + gravata preto - 100 %  Poliéster </p>
       <br>
       <label for="quantity11">Quantidade:</label>
       <input type="number" id="quantity11" class="quantity-input" value="1" min="1">
@@ -212,7 +212,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-12.png" alt="Product 12">
-      <p> </p>
+      <p> Uniforme colete dourado +  camisa branca com gravata + avental para cintura preto -  100 %  Poliéster  </p>
       <br>
       <label for="quantity12">Quantidade:</label>
       <input type="number" id="quantity12" class="quantity-input" value="1" min="1">
