@@ -21,33 +21,34 @@
         }
 
         /* Ícones de Redes Sociais */
-        .whatsapp, .instagram {
+        .whatsapp {
             display: flex;
             position: fixed;
+            bottom: 15%;
+            right: 5%;
             width: 30px;
             height: 30px;
         }
 
-        .whatsapp {
-            bottom: 15%;
-            right: 5%;
-        }
-
         .instagram {
+            display: flex;
+            position: fixed;
             bottom: 24%;
             right: 5%;
+            width: 30px;
+            height: 30px;
         }
 
         .imgmain{
-            position: relative;
-            left: 9%;
-  height: 90vh;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
         }
     </style>
 </head>
     <!--================================================Main==========================================================================-->
     <main>
-        <img src="../site/conteudos/imagens/Img-Ref/Atual/atual - fundo principal melhoradas.png" class="imgmain" alt="imgmain">
+        <img src="../site/conteudos/imagens/Img-Ref/Atual/principal3-rmk.jpg" class="imgmain" alt="imgmain">
         <!-- Ícone do Instagram -->
         <a href="https://www.instagram.com/deluxuniformesprofissionais?igsh=MWJxZjMwaWJqaGR2Nw==" target="_blank" class="instagram animate-img">
             <img src="../site/conteudos/imagens/icons/atual/instagram.png" alt="Instagram">
