@@ -40,21 +40,22 @@
         }
 
         .imgmain{
-          background-size: cover;
+        background-image: url(../site/conteudos/imagens/Img-Ref/Atual/principal3-rmk-slide.jpg);
           width: 100%;
           height: 100%;
         }
     </style>
 </head>
     <!--================================================Main==========================================================================-->
-    <main>
-        <img src="../site/conteudos/imagens/Img-Ref/Atual/principal3-rmk-slide.jpg" class="imgmain" alt="imgmain">
-        <!-- Ícone do Instagram -->
+    <main>   
+    <img src="../site/conteudos/imagens/Img-Ref/Atual/principal3-rmk-slide.jpg" class="imgmain" alt="imgmain">
+       
+    <!-- Ícone do Instagram -->
         <a href="https://www.instagram.com/deluxuniformesprofissionais?igsh=MWJxZjMwaWJqaGR2Nw==" target="_blank" class="instagram animate-img">
             <img src="../site/conteudos/imagens/icons/atual/instagram.png" alt="Instagram">
         </a>
 
-        <!-- Ícone do WhatsApp -->
+    <!-- Ícone do WhatsApp -->
         <a href="https://wa.me/5521968603959" target="_blank" class="whatsapp animate-img">
             <img src="../site/conteudos/imagens/icons/atual/whatsapp.png" alt="WhatsApp">
         </a>
