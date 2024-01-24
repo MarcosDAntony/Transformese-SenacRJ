@@ -192,7 +192,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-10.png" alt="Product 10">
-      <p>  </p>
+      <p> Camiseta manga longa cozinheiro uniforme de inverno - 100 %  Poliéster</p>
       <br>
       <label for="quantity10">Quantidade:</label>
       <input type="number" id="quantity10" class="quantity-input" value="1" min="1">
