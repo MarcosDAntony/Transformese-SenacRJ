@@ -152,7 +152,7 @@
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-6.png" alt="Product 6">
-      <p>  </p>
+      <p>Kimono Sushiman Hapi Uniforme Cozinha Oriental um bolsos na frente vermelho- Oxford </p>
       <br>
       <label for="quantity6">Quantidade:</label>
       <input type="number" id="quantity6" class="quantity-input" value="1" min="1">
