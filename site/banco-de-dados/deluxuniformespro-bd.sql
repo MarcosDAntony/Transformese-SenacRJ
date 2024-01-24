@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24/01/2024 às 18:51
+-- Tempo de geração: 24/01/2024 às 23:28
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -20,6 +20,17 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `deluxuniformespro-bd`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `carrinhos`
+--
+
+CREATE TABLE `carrinhos` (
+  `id-carrinho` int(11) NOT NULL,
+  `id-pedido` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -55,6 +66,12 @@ CREATE TABLE `usuarios` (
 --
 
 --
+-- Índices de tabela `carrinhos`
+--
+ALTER TABLE `carrinhos`
+  ADD PRIMARY KEY (`id-carrinho`);
+
+--
 -- Índices de tabela `produtos`
 --
 ALTER TABLE `produtos`
@@ -69,6 +86,12 @@ ALTER TABLE `usuarios`
 --
 -- AUTO_INCREMENT para tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `carrinhos`
+--
+ALTER TABLE `carrinhos`
+  MODIFY `id-carrinho` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
