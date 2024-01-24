@@ -12,31 +12,43 @@
   font-family: 'sans-serif';
   /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
 }
-  
+
+
 .position-cadastro {
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 90vh;
-      width: 400px; /* Adjusted maximum width */
+      justify-content: center;
+      min-height: 100vh;
     }
 
-    .container {
+
+
+    form {
       background: linear-gradient(0deg, rgba(106, 255, 111, 1) 0%, green);
       border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);     
+      padding: 20px;
+      border-radius: 8px;
+      width: 450px;
     }
+  
+    .imgcadastro {
+  background-image: url(../conteudos/imagens/Img-Ref/Atual/fundo-forms.jpg);
+  background-size: cover;
+  background-position: center; /* Adiciona esta linha para posicionar no centro */
+  background-attachment: fixed; /* Adiciona esta linha se quiser que a imagem seja fixa durante o scroll */
+  width: 100%;
+  height: 115%;
+}
 
     </style>
     <title>Cadastre-se</title>
   </head>
   <?php include_once("../formularios/heade.php");?>
-  <body>
-    <div class="position-cadastro">
-    <div class="container">
-        <h2>Cadastro</h2>
+  <body class="imgcadastro">
+    <div class="position-cadastro container">
         <form class="row g-3" action="../banco-de-dados/config.php" method="post" enctype="multipart/form-data">
-
+        <h2>Cadastro</h2>
           <div class="col-md-6">
             <label for="Nome" class="form-label">Nome: </label>
             <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nome Completo">
@@ -54,17 +66,16 @@
 
           <div class="col-md-6">
             <label for="Tipo-Cadastro" class="form-label">Tipo de Cadastro:</label>
-            <select id="Tipo-Cadastro" class="Tipo-Cadastro" name="Tipo-Cadastro">
+            <select id="Tipo-Cadastro" class="form-control" name="Tipo-Cadastro">
               <option selected>...</option>
-              <option value="Usuario">Usuario</option>
+              <option value="Usuario">Usuário</option>
               <option value="Administrador">Administrador</option>
-              <option value="Gerente">Gerente</option>
             </select>
           </div>
 
           <div class="col-md-6">
             <label for="UF" class="form-label">UF</label>
-            <select id="UF" class="UF" name="UF">
+            <select id="UF" class="form-control" name="UF">
               <option selected>...</option>
               <option>RJ</option>
             </select>
@@ -92,9 +103,8 @@
           <div class="col-6">
             <button type="submit" class="btn btn-">Enviar</button>
           </div>
-          </div>
         </form>
-</div>
+  </div>
 </body>
 <?php include_once("../formularios/footer.php");?>
 </html>

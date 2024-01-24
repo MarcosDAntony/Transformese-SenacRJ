@@ -48,7 +48,7 @@
 </head>
     <!--================================================Main==========================================================================-->
     <main>
-        <img src="../site/conteudos/imagens/Img-Ref/Atual/principal3-rmk.jpg" class="imgmain" alt="imgmain">
+        <img src="../site/conteudos/imagens/Img-Ref/Atual/principal3-rmk-slide.jpg" class="imgmain" alt="imgmain">
         <!-- Ícone do Instagram -->
         <a href="https://www.instagram.com/deluxuniformesprofissionais?igsh=MWJxZjMwaWJqaGR2Nw==" target="_blank" class="instagram animate-img">
             <img src="../site/conteudos/imagens/icons/atual/instagram.png" alt="Instagram">
