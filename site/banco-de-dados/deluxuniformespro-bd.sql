@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23/01/2024 às 18:17
+-- Tempo de geração: 24/01/2024 às 18:51
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -29,7 +29,6 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `produtos` (
   `id-produto` int(11) NOT NULL,
-  `Descricao` varchar(1000) NOT NULL,
   `Imagem` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -47,7 +46,7 @@ CREATE TABLE `usuarios` (
   `uf` int(2) NOT NULL COMMENT 'Somente estado do RJ.',
   `endereco` varchar(100) NOT NULL,
   `cep` int(8) NOT NULL COMMENT 'Possivel API',
-  `tipo-cadastro` int(11) NOT NULL COMMENT '1-Usuario/ 2-Administrador / 3-Gerente',
+  `tipo-cadastro` int(11) NOT NULL COMMENT '1-Usuario/ 2-Administrador',
   `carrinho` varchar(1500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

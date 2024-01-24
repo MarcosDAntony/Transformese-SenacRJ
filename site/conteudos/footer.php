@@ -29,9 +29,10 @@
             color: black; /* Adicionei uma cor de texto para melhor contraste */
         }
 
-        .formas-pagamento img {
-            width: 90%;
-            height: auto;
+        .formas-pagamento {
+            display: flex;
+            justify-content: center;
+            height: 15vh;
         }
     </style>
 </head>
