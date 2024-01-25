@@ -61,6 +61,8 @@
             <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
           </div>
 
+          
+
           <div class="col-md-6">
             <label for="senha" class="form-label">Senha:</label>
             <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>

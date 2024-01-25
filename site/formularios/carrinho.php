@@ -23,6 +23,26 @@
             font-family: 'sans-serif';
             /* Tahoma, Geneva, Verdana, sans-serif, Segoe UI */
         }
+
+
+        .position-carrinho {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+
+
+    .form_carrinho {
+      background: linear-gradient(0deg, rgba(106, 255, 111, 1) 0%, green);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);     
+      padding: 20px;
+      border-radius: 8px;
+      width: 450px;
+    }
+  
     </style>
 </head>
 
@@ -30,8 +50,10 @@
 
 <body>
     <div class="container">
+        <form class="" action="">
         <h2>Carrinho</h2>
-        <p>Seu produto será enviado para o WhatsApp para a realização da compra...</p>
+        
+        </form>
     </div>
 </body>
 
