@@ -25,13 +25,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
         // Se as credenciais estiverem corretas, redirecione para a página desejada
-        $_SESSION['email'] = true;
-        $_SESSION['senha'] = true;
-        header("Location: area-usuario.php");
+        $_SESSION['email'] = $row['email'];
+        $_SESSION['tipo_cadastro'] = $row['tipo_cadastro'];
+
+    var_dump($row);
+        if ($row ["tipo_cadastro"] == "Administrador"){
+           header("Location: area-adm.php");
+        } else{
+            header("Location: area-usuario.php");
+        }
+
         exit;
-    } else {
-        echo "Usuário ou senha incorretos.";
+    }
+    else {
+        header("Location: login.php");
     }
 
     // Feche a conexão com o banco de dados

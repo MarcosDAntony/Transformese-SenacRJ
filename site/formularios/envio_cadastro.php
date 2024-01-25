@@ -26,9 +26,10 @@ $tipo_cadastro = $_POST['tipo_cadastro'];
 $sql = "INSERT INTO usuarios (nome, email, senha, uf, endereco, cep, tipo_cadastro) VALUES ('$nome', '$email', '$senha', '$uf', '$endereco', '$cep', '$tipo_cadastro')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Registro inserido com sucesso!";
-} else {
-    echo "Erro ao inserir registro: " . $conn->error;
+    header("Location: login.php");
+} 
+else{
+    header("Location: cadastro.php"). $conn->error;
 }
 
 // Fechar a conexão
