@@ -91,6 +91,7 @@
                                 <li><a href="./gourmet-masculino.php" class="dropdown-item">Gourmet Masculino</a></li>
                                 <li><a href="./gourmet-feminino.php" class="dropdown-item">Gourmet Feminino</a></li>
                                 <li><a href="./beleza-feminino.php" class="dropdown-item">Beleza Feminino</a></li>
+                                <li><a href="./bordados.php" class="dropdown-item">Bordados</a></li>
                             </ul>
                         </li>
 
