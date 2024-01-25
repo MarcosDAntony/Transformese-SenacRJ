@@ -1,4 +1,4 @@
-<?php require_once("../banco-de-dados/config.php");  //Inclui Banco de Dados?>
+<?php include("post_cadastro.php");  //Inclui Banco de Dados?>
 <head>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,26 +47,28 @@
   <?php include_once("../formularios/heade.php");?>
   <body class="imgcadastro">
     <div class="position-cadastro container">
-        <form class="row g-3" action="../banco-de-dados/config.php" method="post" enctype="multipart/form-data">
+
+        <form class="row g-3" action="./post_cadastro.php" method="post" enctype="multipart/form-data">
         <h2>Cadastro</h2>
+
           <div class="col-md-6">
-            <label for="Nome" class="form-label">Nome: </label>
-            <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nome Completo">
+            <label for="nome" class="form-label">Nome: </label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
           </div>
 
           <div class="col-md-6">
-            <label for="Email" class="form-label">Email:</label>
-            <input type="Email" class="form-control" id="Email" name="Email" placeholder="Email">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
           </div>
 
           <div class="col-md-6">
-            <label for="Senha" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="Senha" name="Senha" placeholder="Senha">
+            <label for="senha" class="form-label">Senha:</label>
+            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
           </div>
 
           <div class="col-md-6">
-            <label for="Tipo-Cadastro" class="form-label">Tipo de Cadastro:</label>
-            <select id="Tipo-Cadastro" class="form-control" name="Tipo-Cadastro">
+            <label for="tipo_cadastro" class="form-label">Tipo de Cadastro:</label>
+            <select id="tipo_cadastro" class="form-control" name="tipo_cadastro">
               <option selected>...</option>
               <option value="Usuario">Usuário</option>
               <option value="Administrador">Administrador</option>
@@ -74,22 +76,22 @@
           </div>
 
           <div class="col-md-6">
-            <label for="UF" class="form-label">UF</label>
-            <select id="UF" class="form-control" name="UF">
+            <label for="uf" class="form-label">UF</label>
+            <select id="uf" class="form-control" name="uf">
               <option selected>...</option>
               <option>RJ</option>
             </select>
           </div>
 
           <div class="col-12">
-            <label for="Endereco" class="form-label">Endereço:</label>
-            <input type="text" class="form-control" id="Endereco" name="Endereco" placeholder="Cidade, bairro, complemento...">
+            <label for="endereco" class="form-label">Endereço:</label>
+            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Cidade, bairro, complemento...">
           </div>
 
          
           <div class="col-md-2">
-            <label for="CEP" class="form-label">CEP:</label>
-            <input class="form-control" id="CEP" name="CEP" placeholder="00000-000" style="width:100px;">
+            <label for="cep" class="form-label">CEP:</label>
+            <input class="form-control" id="cep" name="cep" placeholder="00000-000" style="width:100px;">
           </div>
 
           <div class="col-12">
@@ -101,9 +103,10 @@
             </div>
           </div>
           <div class="col-6">
-            <button type="submit" class="btn btn-">Enviar</button>
+            <input type="submit" class="btn btn-">Enviar</input>
           </div>
         </form>
+
   </div>
 </body>
 <?php include_once("../formularios/footer.php");?>

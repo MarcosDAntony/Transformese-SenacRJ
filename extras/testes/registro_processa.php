@@ -1,8 +1,8 @@
 <?php
 // Conectar ao banco de dados (substitua as credenciais pelos seus próprios)
 $servername = "localhost";
-$username = "seu_usuario";
-$password = "sua_senha";
+$username = "root";
+$password = "";
 $dbname = "deluxuniformespro-bd";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

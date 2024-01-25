@@ -9,8 +9,8 @@ session_start();
 
 // Conectar ao banco de dados (substitua as credenciais pelos seus próprios)
 $servername = "localhost";
-$username = "seu_usuario";
-$password = "sua_senha";
+$username = "root";
+$password = "";
 $dbname = "deluxuniformespro-bd";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
 
     // Verificar a senha
     if (password_verify($senha, $row["senha"])) {
-        $_SESSION["usuario_id"] = $row["id"];
+        $_SESSION["id-usuario"] = $row["id"];
         header("Location: area_usuario.php");
     } else {
         echo "Senha incorreta.";

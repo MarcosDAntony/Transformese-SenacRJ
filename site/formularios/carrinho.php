@@ -1,4 +1,4 @@
-<?php require_once("config.php"); // Inclui Banco de Dados ?>
+<?php require_once("../banco-de-dados/config.php"); // Inclui Banco de Dados ?>
 <head>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"

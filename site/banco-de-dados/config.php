@@ -9,9 +9,9 @@ $base = "deluxuniformespro-bd"; //nome do banco de dados
 $conn = new mysqli($host, $user, $pass, $base);
 
 // Checando a conexão. Se falhar, exibe mensagem de erro e finaliza o script
-///if ($conn->connect_error) {
-  //  die("Banco de Dados do Site teve algum problema!" . $conn->connect_error);
-//}
-// echo "Banco de Dados do Site Funcionando!";
+if ($conn->connect_error) {
+    die("Banco de Dados do Site teve algum problema!" . $conn->connect_error);
+}
+ echo "Banco de Dados do Site Funcionando!";
 
 ?>

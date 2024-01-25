@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24/01/2024 às 23:28
+-- Tempo de geração: 25/01/2024 às 02:25
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -57,9 +57,20 @@ CREATE TABLE `usuarios` (
   `uf` int(2) NOT NULL COMMENT 'Somente estado do RJ.',
   `endereco` varchar(100) NOT NULL,
   `cep` int(8) NOT NULL COMMENT 'Possivel API',
-  `tipo-cadastro` int(11) NOT NULL COMMENT '1-Usuario/ 2-Administrador',
+  `tipo_cadastro` enum('Usuario','Administrador','','') NOT NULL COMMENT '1-Usuario/ 2-Administrador',
   `carrinho` varchar(1500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id-usuario`, `nome`, `email`, `senha`, `uf`, `endereco`, `cep`, `tipo_cadastro`, `carrinho`) VALUES
+(1, '', '', '$2y$10$e', 0, '', 0, '', ''),
+(2, '', '', '$2y$10$.', 0, '', 0, '', ''),
+(3, '', '', '$2y$10$U', 0, '', 0, '', ''),
+(4, '', '', '$2y$10$6', 0, '', 0, '', ''),
+(5, '', '', '$2y$10$X', 0, '', 0, '', '');
 
 --
 -- Índices para tabelas despejadas
@@ -103,7 +114,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id-usuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id-usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
