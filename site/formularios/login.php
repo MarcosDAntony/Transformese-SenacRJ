@@ -1,4 +1,4 @@
-<?php require_once("../banco-de-dados/config.php");  //Inclui Banco de Dados?>
+
 <head>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +47,7 @@
   <?php include_once("../formularios/heade.php");?>
   <body class="imglogin">
     <div class="position-login container">
-        <form class="row g-3" action="../banco-de-dados/config.php" method="post" enctype="multipart/form-data">
+        <form class="row g-3" action="#" method="post" enctype="multipart/form-data">
         <h2>Login</h2>
 
           <div class="col-md-6">

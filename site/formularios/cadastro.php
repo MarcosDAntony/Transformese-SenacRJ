@@ -1,4 +1,4 @@
-<?php include("post_cadastro.php");  //Inclui Banco de Dados?>
+
 <head>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -103,7 +103,7 @@
             </div>
           </div>
           <div class="col-6">
-            <input type="submit" class="btn btn-">Enviar</input>
+            <button type="submit" class="btn btn-">Enviar</button>
           </div>
         </form>
 

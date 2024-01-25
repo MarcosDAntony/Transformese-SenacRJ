@@ -20,10 +20,10 @@ $uf = $_POST['uf'];
 $endereco = $_POST['endereco'];
 $cep = $_POST['cep'];
 $tipo_cadastro = $_POST['tipo_cadastro'];
-$carrinho = $_POST['carrinho'];
+// Parece ser daqui mas não é  apesar de ser mesma tabela $carrinho = $_POST['carrinho'];
 
 // Inserir dados no banco de dados
-$sql = "INSERT INTO usuarios (nome, email, senha, uf, endereco, cep, tipo_cadastro, carrinho) VALUES ('$nome', '$email', '$senha', '$uf', '$endereco', '$cep', '$tipo_cadastro', '$carrinho')";
+$sql = "INSERT INTO usuarios (nome, email, senha, uf, endereco, cep, tipo_cadastro) VALUES ('$nome', '$email', '$senha', '$uf', '$endereco', '$cep', '$tipo_cadastro')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Registro inserido com sucesso!";
