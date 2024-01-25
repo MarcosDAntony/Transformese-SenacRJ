@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25/01/2024 às 02:40
+-- Tempo de geração: 25/01/2024 às 12:58
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `carrinhos` (
-  `id-carrinho` int(11) NOT NULL,
-  `id-pedido` int(11) NOT NULL
+  `id_carrinho` int(11) NOT NULL,
+  `id_pedido` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -39,8 +39,8 @@ CREATE TABLE `carrinhos` (
 --
 
 CREATE TABLE `produtos` (
-  `id-produto` int(11) NOT NULL,
-  `Imagem` varchar(1000) NOT NULL
+  `id_produto` int(11) NOT NULL,
+  `imagem` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -50,7 +50,7 @@ CREATE TABLE `produtos` (
 --
 
 CREATE TABLE `usuarios` (
-  `id-usuario` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
   `nome` varchar(50) NOT NULL,
   `email` varchar(45) NOT NULL,
   `senha` varchar(8) NOT NULL,
@@ -62,13 +62,6 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `usuarios`
---
-
-INSERT INTO `usuarios` (`id-usuario`, `nome`, `email`, `senha`, `uf`, `endereco`, `cep`, `tipo_cadastro`, `carrinho`) VALUES
-(9, 'Marcos', 'm@k.com', '121212', '0', 'dadwdawdwad', 123456789, 'Usuario', '');
-
---
 -- Índices para tabelas despejadas
 --
 
@@ -76,19 +69,19 @@ INSERT INTO `usuarios` (`id-usuario`, `nome`, `email`, `senha`, `uf`, `endereco`
 -- Índices de tabela `carrinhos`
 --
 ALTER TABLE `carrinhos`
-  ADD PRIMARY KEY (`id-carrinho`);
+  ADD PRIMARY KEY (`id_carrinho`);
 
 --
 -- Índices de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  ADD PRIMARY KEY (`id-produto`);
+  ADD PRIMARY KEY (`id_produto`);
 
 --
 -- Índices de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id-usuario`);
+  ADD PRIMARY KEY (`id_usuario`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
@@ -98,19 +91,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `carrinhos`
 --
 ALTER TABLE `carrinhos`
-  MODIFY `id-carrinho` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_carrinho` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id-produto` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id-usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

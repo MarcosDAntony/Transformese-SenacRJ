@@ -1,4 +1,5 @@
 
+
 <head>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,20 +45,21 @@
     </style>
     <title>Logar-se</title>
   </head>
+  
   <?php include_once("../formularios/heade.php");?>
   <body class="imglogin">
     <div class="position-login">
-        <form class="row g-3" action="../banco-de-dados/form_login.php" method="post" enctype="multipart/form-data">
+        <form class="row g-3" action="validacao_login.php" method="post" enctype="multipart/form-data">
         <h2>Login</h2>
 
           <div class="col-md-6">
-            <label for="Email" class="form-label">Email:</label>
-            <input type="Email" class="form-control" id="Email" name="Email" placeholder="Email">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
           </div>
 
           <div class="col-md-6">
-            <label for="Senha" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="Senha" name="Senha" placeholder="Senha">
+            <label for="senha" class="form-label">Senha:</label>
+            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
           </div>
 
           

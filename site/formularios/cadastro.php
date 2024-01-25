@@ -46,29 +46,29 @@
   </head>
   <?php include_once("../formularios/heade.php");?>
   <body class="imgcadastro">
-    <div class="position-cadastro container">
+    <div class="position-cadastro">
 
-        <form class="row g-3" action="../banco-de-dados/form_cadastro.php" method="post" enctype="multipart/form-data">
+        <form class="row g-3" action="envio_cadastro.php" method="post" enctype="multipart/form-data">
         <h2>Cadastro</h2>
 
           <div class="col-md-6">
             <label for="nome" class="form-label">Nome: </label>
-            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo" required>
           </div>
 
           <div class="col-md-6">
             <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
           </div>
 
           <div class="col-md-6">
             <label for="senha" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
           </div>
 
           <div class="col-md-6">
             <label for="tipo_cadastro" class="form-label">Tipo de Cadastro:</label>
-            <select id="tipo_cadastro" class="form-control" name="tipo_cadastro">
+            <select id="tipo_cadastro" class="form-control" name="tipo_cadastro" required>
               <option selected>...</option>
               <option value="Usuario">Usuário</option>
               <option value="Administrador">Administrador</option>
@@ -77,7 +77,7 @@
 
           <div class="col-md-6">
             <label for="uf" class="form-label">UF</label>
-            <select id="uf" class="form-control" name="uf">
+            <select id="uf" class="form-control" name="uf" required>
               <option selected>...</option>
               <option>RJ</option>
             </select>
@@ -85,13 +85,13 @@
 
           <div class="col-12">
             <label for="endereco" class="form-label">Endereço:</label>
-            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Cidade, bairro, complemento...">
+            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Cidade, bairro, complemento..." required>
           </div>
 
          
           <div class="col-md-2">
             <label for="cep" class="form-label">CEP:</label>
-            <input class="form-control" id="cep" name="cep" placeholder="00000-000" style="width:100px;">
+            <input class="form-control" id="cep" name="cep" placeholder="00000-000" style="width:100px;" required>
           </div>
 
           <div class="col-12">
