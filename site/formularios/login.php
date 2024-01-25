@@ -46,8 +46,8 @@
   </head>
   <?php include_once("../formularios/heade.php");?>
   <body class="imglogin">
-    <div class="position-login container">
-        <form class="row g-3" action="#" method="post" enctype="multipart/form-data">
+    <div class="position-login">
+        <form class="row g-3" action="../banco-de-dados/form_login.php" method="post" enctype="multipart/form-data">
         <h2>Login</h2>
 
           <div class="col-md-6">

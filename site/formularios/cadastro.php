@@ -48,7 +48,7 @@
   <body class="imgcadastro">
     <div class="position-cadastro container">
 
-        <form class="row g-3" action="./post_cadastro.php" method="post" enctype="multipart/form-data">
+        <form class="row g-3" action="../banco-de-dados/form_cadastro.php" method="post" enctype="multipart/form-data">
         <h2>Cadastro</h2>
 
           <div class="col-md-6">
