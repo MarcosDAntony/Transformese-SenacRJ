@@ -34,7 +34,7 @@
     }
   
     .imglogin {
-  background-image: url(../conteudos/imagens/Img-Ref/Atual/fundo-forms.jpg);
+  background-image: url(../site/conteudos/imagens/Img-Ref/Atual/fundo-forms.jpg);
   background-size: cover;
   background-position: center; /* Adiciona esta linha para posicionar no centro */
   background-attachment: fixed; /* Adiciona esta linha se quiser que a imagem seja fixa durante o scroll */
@@ -46,7 +46,7 @@
     <title>Logar-se</title>
   </head>
   
-  <?php include_once("../formularios/heade.php");?>
+  <?php include("heade.php");?>
   <body class="imglogin">
     <div class="position-login">
         <form class="row g-3" action="validacao_login.php" method="post" enctype="multipart/form-data">
@@ -77,7 +77,7 @@
         </form>
   </div>
 </body>
-<?php include_once("../formularios/footer.php");?>
+<?php include("footer.php");?>
 </html>
 
    

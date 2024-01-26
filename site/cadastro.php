@@ -33,7 +33,7 @@
     }
   
     .imgcadastro {
-  background-image: url(../conteudos/imagens/Img-Ref/Atual/fundo-forms.jpg);
+  background-image: url(../site/conteudos/imagens/Img-Ref/Atual/fundo-forms.jpg);
   background-size: cover;
   background-position: center; /* Adiciona esta linha para posicionar no centro */
   background-attachment: fixed; /* Adiciona esta linha se quiser que a imagem seja fixa durante o scroll */
@@ -44,7 +44,7 @@
     </style>
     <title>Cadastre-se</title>
   </head>
-  <?php include_once("../formularios/heade.php");?>
+  <?php include("heade.php");?>
   <body class="imgcadastro">
     <div class="position-cadastro">
 
@@ -110,7 +110,7 @@
 
   </div>
 </body>
-<?php include_once("../formularios/footer.php");?>
+<?php include("footer.php");?>
 </html>
 
    

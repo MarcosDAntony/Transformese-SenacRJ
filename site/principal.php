@@ -18,13 +18,13 @@
 </head>
     <?php 
         // Inclusão do cabeçalho
-        include_once("../site/heade.php");
+        include("../site/heade.php");
         
         // Inclusão do conteúdo principal
-        include_once("../site/main.php");
+        include("../site/main.php");
         
         // Inclusão do rodapé
-        include_once("../site/footer.php");
+        include("../site/footer.php");
     ?>
 
 </html>

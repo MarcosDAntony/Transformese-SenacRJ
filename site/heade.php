@@ -101,8 +101,8 @@
                                 Conta
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../site/formularios/cadastro.php">Cadastro</a></li>
-                                <li><a class="dropdown-item" href="../site/formularios/login.php">Login</a></li>
+                                <li><a class="dropdown-item" href="cadastro.php">Cadastro</a></li>
+                                <li><a class="dropdown-item" href="login.php">Login</a></li>
                             </ul>
                         </li>
 
