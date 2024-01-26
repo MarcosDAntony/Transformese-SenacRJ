@@ -46,7 +46,7 @@
     </style>
 </head>
 
-<?php include_once("../formularios/heade.php");?>
+<?php include("heade.php");?>
 
 <body>
     <div class="container">
@@ -57,6 +57,6 @@
     </div>
 </body>
 
-<?php include_once("../formularios/footer.php");?>
+<?php include("footer.php");?>
 
 </html>
