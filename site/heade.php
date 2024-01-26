@@ -111,7 +111,7 @@
                         </li>
                     </ul>
 
-                    <!-- Barra de Pesquisa -->
+                    <!-- Barra de Pesquisa-->
                     <div class="divBusca posicao-pesquisa">
                         <input name="Pesquisa" id="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post" />
                         <a href="#Pesquisa" target="_top" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" /></a>

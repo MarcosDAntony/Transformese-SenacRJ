@@ -6,78 +6,79 @@
   <title>Sobre a DeLux</title>
   <link rel="stylesheet" href="css/styles.css">
   <style>
-    body {
-  font-family: 'sans-serif';
-  margin: 0;
-  padding: 0;
-}
+    * {
+      font-family: 'sans-serif';
+      line-height: 1.6; /* Espaçamento entre linhas */
+    }
 
-.imagem-de-fundo {
-  background-image: url('../site/conteudos/imagens/Img-Ref/Atual/fundo-sobre_ok.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: black;
-}
+    .imagem-sobre {
+      background-image: url('../site/conteudos/imagens/Img-Ref/Atual/fundo-sobre_ok.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh; /* Alterado para min-height */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: black;
+    }
 
-@media (max-width: 768px) {
-  .imagem-de-fundo {
-    height: 100%;
-  }
-}
+    .conteudo-texto {
+      flex: 1;
+      text-align: left;
+      max-width: 45%;
+      margin-left: 20px;
+      font-size: 18px; /* Tamanho da fonte ajustado */
+    }
 
-.conteudo-texto {
-  flex: 1;
-  text-align: left;
-  max-width: 45%;
-  margin-left: 20px;
-  font-size:xx-large;
+    .section-subheading {
+  font-size: 24px; /* Tamanho da fonte ajustado */
+  text-align: center; /* Centralizar o texto */
+  font-weight: bold; /* Negrito adicionado */
 }
+    .valores {
+      font-size: 20px; /* Tamanho da fonte ajustado */
+      margin-top: 20px; /* Espaçamento superior adicionado */
+    }
 
-.conteudo-texto h2 {
-  margin-bottom: 20px;
-}
-
-.section-subheading,
-.tahoma-50,
-.lead {
-  font-size: 25px;
-}
-
-.caixa-sobre-empresa {
-  border: 1px transparent;
-  width: 400px;
-  border-radius: 2%;
-  padding: 10px;
-  background: linear-gradient(1deg, rgba(106, 255, 111, 1) 0%, green);
-}
-
-.sobre-empresa-posicao {
-  position: relative;
-  left: 80px;
-  top: 80px;
-  font-size:x-small;
-}
-
+    .empresa{
+      font-size: 20px; /* Tamanho da fonte ajustado */
+      margin-top: 20px; /* Espaçamento superior adicionado */
+      text-align: center; /* Centralizar o texto */
+    }
   </style>
 </head>
 <body>
-  <?php include_once("../site/heade.php");?>
-  <section class="imagem-de-fundo">
+  <?php include("heade.php"); ?>
+
+  <section class="imagem-sobre">
     <div class="conteudo-texto">
-      <br>
-      <h2 class="section-heading text-uppercase">Sobre a Empresa</h2>
-      <p class="section-subheading text-muted">"Costure sua elegância com nossos tecidos de qualidade e transforme cada ponto em uma expressão única de estilo e sofisticação."</p>
-      <br>
-      <p class="section-subheading text-muted">
-        A De Lux Uniformes Profissionais fabrica uma ampla variedade de jalecos para profissionais que atuam em hospitais, clínicas, consultórios, bem como para estudantes e outros profissionais que utilizam jalecos em suas atividades. <br>Além disso, também produzimos vestimentas para funcionários de bares, lanchonetes, restaurantes, limpeza e serviços de beleza.  <br>Nossos produtos são especialmente projetados para profissionais que valorizam conforto e qualidade.
+      <br><br>
+      <p class="section-subheading text-muted">"<b>Costure sua elegância com nossos tecidos de qualidade e transforme cada ponto em uma expressão única de estilo e sofisticação.</b>"</p>
+      <br><br>
+      <p class="empresa text-muted">
+        A missão da <b>DeLux Uniformes Profissionais</b> é fornecer vestimentas de alta qualidade e conforto, atendendo às necessidades específicas de profissionais da área da saúde, estudantes e outros segmentos que exigem uniformes especializados. Buscamos não apenas fornecer produtos, mas também contribuir para a segurança, identidade e bem-estar dos nossos clientes, através de soluções inovadoras e design personalizado.
+      </p>
+      <br><br><br>
+
+      <p class="valores text-muted">
+        <b>Qualidade:</b> Oferecemos produtos de excelência, utilizando materiais duráveis e técnicas de fabricação avançadas, garantindo a satisfação e confiança dos nossos clientes.
+        <br><br>
+
+      <b>Conforto:</b> Priorizamos o conforto em cada peça que produzimos, reconhecendo a importância do bem-estar dos profissionais em seu ambiente de trabalho.
+      <br><br>
+ 
+     <b>Inovação:</b> Buscamos constantemente a inovação em design e funcionalidade, mantendo-nos atualizados com as últimas tendências e avanços tecnológicos no setor de uniformes profissionais.
+     <br><br>
+
+    <b>Comprometimento com o Cliente:</b> Estamos dedicados a entender e superar as expectativas dos nossos clientes, proporcionando um atendimento personalizado e soluções sob medida para suas necessidades específicas.
+     <br><br>
+
+   <b>Identidade Profissional:</b> Reconhecemos a importância da identidade profissional e, portanto, projetamos nossos uniformes para refletir a seriedade, confiança e profissionalismo exigidos em diferentes setores.
+   <br><br>
+
       </p>
     </div>
   </section>
-  <?php include_once("../site/footer.php");?>
-</body>
+  <?php include("footer.php");?>
 </html>
