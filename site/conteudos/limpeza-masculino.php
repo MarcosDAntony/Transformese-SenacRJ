@@ -85,7 +85,7 @@
 </head>
 
 <body>
-<?php include_once("heade.php");?>
+<?php include_once("heade-produtos.php");?>
   <header class="limpezamasc"></header>
   <div class="principal">
     <h1>Uniformes de Limpeza Masculina</h1>

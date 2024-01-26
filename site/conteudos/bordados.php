@@ -74,7 +74,7 @@
 </head>
 
 <body>
-  <?php include_once("heade.php"); ?>
+  <?php include_once("heade-produtos.php"); ?>
   <header class="bordados"></header>
   <div class="main-content">
     <h1>Bordados em Uniformes Profissionais</h1>
