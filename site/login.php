@@ -61,18 +61,11 @@
             <label for="senha" class="form-label">Senha:</label>
             <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
           </div>
-
-          
+ 
           <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Lembrar sempre
-              </label>
-            </div>
-          </div>
-          <div class="col-6">
-            <button type="submit" class="btn btn-">Enviar</button>
+            <button type="submit" class="btn btn-">
+                Enviar
+            </button>
           </div>
         </form>
   </div>
