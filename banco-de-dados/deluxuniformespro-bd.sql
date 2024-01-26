@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25/01/2024 às 12:58
+-- Tempo de geração: 26/01/2024 às 13:23
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -52,13 +52,14 @@ CREATE TABLE `produtos` (
 CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
   `nome` varchar(50) NOT NULL,
-  `email` varchar(45) NOT NULL,
-  `senha` varchar(8) NOT NULL,
-  `uf` char(2) NOT NULL COMMENT 'Somente estado do RJ.',
+  `email` varchar(254) NOT NULL,
+  `senha` varchar(16) NOT NULL,
+  `numero` varchar(14) NOT NULL,
+  `uf` char(2) NOT NULL,
+  `cep` int(8) NOT NULL,
   `endereco` varchar(100) NOT NULL,
-  `cep` int(8) NOT NULL COMMENT 'Possivel API',
-  `tipo_cadastro` enum('Usuario','Administrador','','') NOT NULL COMMENT '1-Usuario/ 2-Administrador',
-  `carrinho` varchar(1500) NOT NULL
+  `tipo_cadastro` enum('Usuario','Administrador','','') NOT NULL COMMENT '1 - Usuario / 2 - Administrador',
+  `carrinho` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -103,7 +104,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
