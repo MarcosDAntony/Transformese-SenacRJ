@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26/01/2024 às 13:23
+-- Tempo de geração: 26/01/2024 às 20:27
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -24,6 +24,20 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura para tabela `administradores`
+--
+
+CREATE TABLE `administradores` (
+  `id_adm` int(11) NOT NULL,
+  `nome` varchar(30) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `senha` int(16) NOT NULL,
+  `anotacoes_pedido` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura para tabela `carrinhos`
 --
 
@@ -40,6 +54,7 @@ CREATE TABLE `carrinhos` (
 
 CREATE TABLE `produtos` (
   `id_produto` int(11) NOT NULL,
+  `descricao` varchar(500) NOT NULL,
   `imagem` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -63,8 +78,22 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Despejando dados para a tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usuario`, `nome`, `email`, `senha`, `numero`, `uf`, `cep`, `endereco`, `tipo_cadastro`, `carrinho`) VALUES
+(3, 'Marcos', 'marcosantony.asp@gmail.com', '181143/marcola', '21964986068', 'RJ', 2147483647, 'Rua do Adm Nova Iguaçu', 'Administrador', ''),
+(4, '', '', '', '', '', 0, '', '', '');
+
+--
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices de tabela `administradores`
+--
+ALTER TABLE `administradores`
+  ADD PRIMARY KEY (`id_adm`);
 
 --
 -- Índices de tabela `carrinhos`
@@ -89,6 +118,12 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de tabela `administradores`
+--
+ALTER TABLE `administradores`
+  MODIFY `id_adm` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de tabela `carrinhos`
 --
 ALTER TABLE `carrinhos`
@@ -98,13 +133,13 @@ ALTER TABLE `carrinhos`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

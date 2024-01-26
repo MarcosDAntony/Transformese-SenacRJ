@@ -50,7 +50,7 @@
 
 <body>
     <div class="container">
-        <form class="" action="">
+        <form class="form_carrinho" action="">
         <h2>Carrinho</h2>
         
         </form>
