@@ -53,7 +53,7 @@
 
           <div class="col-md-6">
             <label for="nome" class="form-label">Nome: </label>
-            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo" required>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
           </div>
 
           <div class="col-md-6">
@@ -66,6 +66,11 @@
           <div class="col-md-6">
             <label for="senha" class="form-label">Senha:</label>
             <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="numero" class="form-label">Número de Celular:</label>
+            <input class="form-control" id="numero" name="numero" placeholder="+55 (21)00000-0000" required>
           </div>
 
           <div class="col-md-6">
@@ -97,17 +102,11 @@
           </div>
 
           <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Lembrar sempre
-              </label>
-            </div>
+            <button type="submit" class="btn btn-">
+                Enviar
+            </button>
           </div>
-          <div class="col-6">
-            <button type="submit" class="btn btn-">Enviar</button>
-          </div>
-        </form>
+         
 
   </div>
 </body>
