@@ -66,7 +66,13 @@
             <button type="submit" class="btn btn-">
                 Enviar
             </button>
+
+            <br><br>
+            <a href="cadastro.php" style="text-decoration: none;">Cadastre-se</a>
+            <br>
+            <a href="#" style="text-decoration: none;">Esqueceu a senha?</a>
           </div>
+
         </form>
   </div>
 </body>

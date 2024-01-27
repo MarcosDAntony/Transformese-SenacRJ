@@ -96,18 +96,11 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                                Conta
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="cadastro.php">Cadastro</a></li>
-                                <li><a class="dropdown-item" href="login.php">Login</a></li>
-                            </ul>
-                        </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="carrinho.php" style="font-size: 24px;"><i class="fa fa-cart-plus"></i></a>
+                            <a class="nav-link active" aria-current="page" href="login.php">
+                            <img src="../site/conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
+                          </a>
                         </li>
                     </ul>
 

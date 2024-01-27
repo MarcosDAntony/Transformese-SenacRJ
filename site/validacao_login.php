@@ -32,9 +32,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     var_dump($row);
         if ($row ["tipo_cadastro"] == "Administrador"){
-           header("Location: area-adm.php");
+           header("Location: http://localhost/projeto-integrador-transformese/site_adm/area-adm.php");
         } else{
-            header("Location: area-usuario.php");
+            header("Location: http://localhost/projeto-integrador-transformese/site_user/principal-user.php");
         }
 
         exit;
