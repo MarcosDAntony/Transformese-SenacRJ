@@ -96,11 +96,15 @@
                             </ul>
                         </li>
 
-
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="login.php">
                             <img src="../site/conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
                           </a>
+                        </li>
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="login.php">Registre-se!</a>
                         </li>
                     </ul>
 
