@@ -106,6 +106,7 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="login.php">Registre-se!</a>
                         </li>
+                        
                     </ul>
 
                     <!-- Barra de Pesquisa-->
