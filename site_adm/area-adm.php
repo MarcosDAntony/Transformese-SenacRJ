@@ -86,7 +86,7 @@
     <header>
         <div class="navbar navbar-expand-md text-black-80 container-fluid">
             <a class="animate-img w3-animate-left" target="_self">
-                <img src="../site/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
+                <img src="../site_adm/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -101,11 +101,11 @@
                 <div class="offcanvas-body">
                    
                           <a href="#">
-                            <img src="../site/conteudos/imagens/icons/atual/home-vector-icon-removebg-preview.png" alt="home" style="height: 30px; width:auto;" class="nav-link active" aria-current="page">
+                            <img src="../conteudos/imagens/icons/atual/home-vector-icon-removebg-preview.png" alt="home" style="height: 30px; width:auto;" class="nav-link active" aria-current="page">
                           </a>
 
                           <a href="#">
-                            <img src="../site/conteudos/imagens/icons/atual/carrinho-removebg-preview (1).png" alt="home" style="height: 20px; width:auto;" class="nav-link active" aria-current="page">
+                            <img src="../conteudos/imagens/icons/atual" alt="carrinho" style="height: 20px; width:auto;" class="nav-link active" aria-current="page">
                           </a>
                 </div>
             </div>

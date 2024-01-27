@@ -85,14 +85,14 @@
                                 Produtos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="../site/conteudos/hospitalar-masculino.php" class="dropdown-item">Hospitalar Masculino</a></li>
-                                <li><a href="../site/conteudos/hospitalar-feminino.php" class="dropdown-item">Hospitalar Feminino</a></li>
-                                <li><a href="../site/conteudos/limpeza-masculino.php" class="dropdown-item">Limpeza Masculino</a></li>
-                                <li><a href="../site/conteudos/limpeza-feminino.php" class="dropdown-item">Limpeza Feminino</a></li>
-                                <li><a href="../site/conteudos/gourmet-masculino.php" class="dropdown-item">Gourmet Masculino</a></li>
-                                <li><a href="../site/conteudos/gourmet-feminino.php" class="dropdown-item">Gourmet Feminino</a></li>
-                                <li><a href="../site/conteudos/beleza-feminino.php" class="dropdown-item">Beleza Feminino</a></li>
-                                <li><a href="../site/conteudos/bordados.php" class="dropdown-item">Bordados</a></li>
+                                <li><a href="hospitalar-masculino.php" class="dropdown-item">Hospitalar Masculino</a></li>
+                                <li><a href="hospitalar-feminino.php" class="dropdown-item">Hospitalar Feminino</a></li>
+                                <li><a href="limpeza-masculino.php" class="dropdown-item">Limpeza Masculino</a></li>
+                                <li><a href="limpeza-feminino.php" class="dropdown-item">Limpeza Feminino</a></li>
+                                <li><a href="gourmet-masculino.php" class="dropdown-item">Gourmet Masculino</a></li>
+                                <li><a href="gourmet-feminino.php" class="dropdown-item">Gourmet Feminino</a></li>
+                                <li><a href="beleza-feminino.php" class="dropdown-item">Beleza Feminino</a></li>
+                                <li><a href="bordados.php" class="dropdown-item">Bordados</a></li>
                             </ul>
                         </li>
 
