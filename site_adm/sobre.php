@@ -49,7 +49,7 @@
   </style>
 </head>
 <body>
-  <?php include("heade-user.php"); ?>
+  <?php include("heade-adm.php"); ?>
 
   <section class="imagem-sobre">
     <div class="conteudo-texto">

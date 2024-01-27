@@ -61,8 +61,8 @@
     <!-- =============================================Header=========================================================================-->
     <header>
         <div class="navbar navbar-expand-md text-black-80 container-fluid">
-            <a href="../principal-user.php" class="animate-img w3-animate-left" target="_self">
-                <img src="../conteudos/imagens/Img-Ref/Atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
+            <a href="../principal-adm.php" class="animate-img w3-animate-left" target="_self">
+                <img src="imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -97,29 +97,23 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../area-usuario.php">
-                              <img src="../conteudos/imagens/icons/atual/conta.png" style="height:20px; width:20px;" alt="home" >
+                            <a class="nav-link active" aria-current="page" href="../area-adm.php">
+                              <img src="imagens/icons/atual/contdeadm.png" style="height:20px; width:20px;" alt="contadeadm" >
                             </a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../carrinho.php">
-                            <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
-                          </a>
-                        </li>
                     </ul>
 
                     <!-- Barra de Pesquisa-->
                     <div class="divBusca posicao-pesquisa">
                         <input name="Pesquisa" id="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post" />
-                        <a href="#Pesquisa" target="_top" class="animate-img"><img src="../conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" /></a>
+                        <a href="#Pesquisa" target="_top" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" /></a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-    <!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script
 </html>

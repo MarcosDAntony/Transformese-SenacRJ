@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,15 @@
     <title>Página de Administração</title>
     <style>
         
-        *{
-  font-family: 'sans-serif';
-  /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
-}
+        * {
+            font-family: 'sans-serif';
+            /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
+        }
 
-
+        /*======================================================== Style Header=========================================================*/
         header {
             background: linear-gradient(0deg, rgba(106, 255, 111, 1) 0%, green);
-            padding: 1em;
-            text-align: center;
-            height: 190px;
+            height: 180px;
         }
 
         .logo {
@@ -31,15 +29,32 @@
             height: 250px;
         }
 
-        .admin-panel {
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 10px;
-            width: 80%;
-            max-width: 600px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /**Barra de Pesquisa */
+        .posicao-pesquisa {
+            position: relative;
+            right: 15px;
         }
+
+        .divBusca {
+            border-radius: 3px;
+            width: 295px;
+            height: 32px;
+            background-color: white;
+        }
+
+        .inputBusca {
+            border-radius: 3px;
+            width: 260px;
+            height: 32px;
+            border: transparent;
+        }
+
+        .lupa {
+            width: 2px;
+            height: 2px;
+        }
+
+        /**==================================================================================================== */
 
 
         button {
@@ -70,7 +85,7 @@
       width: 450px;
     }
   
-    .imgadm {
+    .imguser {
   background-image: url(../site/conteudos/imagens/Img-Ref/Atual/atual\ -\ fundo\ principal\ melhoradas.png);
   background-size: cover;
   background-position: center; /* Adiciona esta linha para posicionar no centro */
@@ -81,12 +96,12 @@
 
     </style>
 </head>
-<body class="imgadm">
-    <!-- =============================================Header=========================================================================-->
-    <header>
+<body>
+  <!-- =============================================Header=========================================================================-->
+  <header>
         <div class="navbar navbar-expand-md text-black-80 container-fluid">
-            <a class="animate-img w3-animate-left" target="_self">
-                <img src="../site_adm/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
+            <a href="#" class="animate-img w3-animate-left" target="_self">
+                <img src="../site/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -99,41 +114,31 @@
                 </div>
 
                 <div class="offcanvas-body">
-                   
-                          <a href="#">
-                            <img src="../conteudos/imagens/icons/atual/home-vector-icon-removebg-preview.png" alt="home" style="height: 30px; width:auto;" class="nav-link active" aria-current="page">
-                          </a>
+                    <ul class="navbar-nav flex-grow-1 pe-3" style="font-size: 17px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="principal-adm.php">
+                              <img src="../site_user/conteudos/imagens/icons/atual/home.png" style="height:25px; width:25px;" alt="home" >
+                            </a>
+                        </li>
 
-                          <a href="#">
-                            <img src="../conteudos/imagens/icons/atual" alt="carrinho" style="height: 20px; width:auto;" class="nav-link active" aria-current="page">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="logout.php">
+                            <img src="../site_user/conteudos/imagens/icons/atual/sair.png" style="height:20px; width:20px;" alt="logout">
                           </a>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="position-registro-produtos">
+    <form action="">
 
-        <form class="row g-3" action="registrar_produtos.php" method="post" enctype="multipart/form-data">
-        <h2>Registro dos Produtos</h2>
-
-          <div class="col-md-6">
-            <label for="nome" class="form-label">Descrição: </label>
-            <input type="text" class="form-control" name="descricao" placeholder="Descrição">
-          </div>
-
-          <div class="col-md-6">
-            <label for="nome" class="form-label">Imagem: </label>
-            <input type="file" class="form-control" name="imagem" placeholder="Caminho da Imagem">
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-">
-                Enviar
-            </button>
-          </div>
-        </form>
-
-    </div>
+    </form>
+    
 </body>
+<!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <?php include("../site/footer.php");?>
 </html>
