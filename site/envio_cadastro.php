@@ -24,7 +24,7 @@ $tipo_cadastro = $_POST['tipo_cadastro'];
 // Parece ser daqui mas não é  apesar de ser mesma tabela $carrinho = $_POST['carrinho'];
 
 // Inserir dados no banco de dados
-$sql = "INSERT INTO usuarios (nome, email, senha, numero, uf, endereco, cep, tipo_cadastro) VALUES ('$nome', '$email', '$senha','$numero', '$uf', '$endereco', '$cep', '$tipo_cadastro')";
+$sql = "INSERT INTO cadastros (nome, email, senha, numero, uf, endereco, cep, tipo_cadastro) VALUES ('$nome', '$email', '$senha','$numero', '$uf', '$endereco', '$cep', '$tipo_cadastro')";
 
 if ($conn->query($sql) === TRUE) {
     header("Location: login.php");

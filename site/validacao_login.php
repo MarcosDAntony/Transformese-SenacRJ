@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST['senha'];
 
     // Consulta SQL para verificar as credenciais
-    $sql = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+    $sql = "SELECT * FROM cadastros WHERE email = '$email' AND senha = '$senha'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
