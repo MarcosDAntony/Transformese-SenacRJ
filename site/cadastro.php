@@ -73,6 +73,7 @@
             <input class="form-control" id="numero" name="numero" placeholder="+55 (21)00000-0000" required>
           </div>
 
+          <!--
           <div class="col-md-6">
             <label for="tipo_cadastro" class="form-label">Tipo de Cadastro:</label>
             <select id="tipo_cadastro" class="form-control" name="tipo_cadastro" required>
@@ -81,7 +82,7 @@
               <option value="Administrador">Administrador</option>
             </select>
           </div>
-
+-->
           <div class="col-md-6">
             <label for="uf" class="form-label">UF</label>
             <select id="uf" class="form-control" name="uf" required>
