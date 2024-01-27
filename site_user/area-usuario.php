@@ -129,7 +129,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="logout.php">
                             <img src="../site_user/conteudos/imagens/icons/atual/sair.png" style="height:20px; width:20px;" alt="logout">
                           </a>
                         </li>
