@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem = $_POST['mensagem'];
 
     // Número de telefone para onde você deseja direcionar o usuário
-    $numero_whatsapp = "SEU-NUMERO-DE-TELEFONE-NO-WHATSAPP";
+    $numero_whatsapp = "+5521972606501";
 
     // Monta a URL do WhatsApp com a mensagem pré-definida
     $url_whatsapp = "https://wa.me/{$numero_whatsapp}?text=" . urlencode("Olá, {$nome}! Recebemos sua mensagem: '{$mensagem}'. Como podemos ajudar?");
