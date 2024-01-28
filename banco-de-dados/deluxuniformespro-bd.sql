@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28/01/2024 às 14:59
--- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.0.28
+-- Tempo de geração: 28/01/2024 às 16:07
+-- Versão do servidor: 10.4.32-MariaDB
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,16 +32,20 @@ CREATE TABLE `cadastros` (
   `nome` varchar(50) NOT NULL,
   `email` varchar(254) NOT NULL,
   `senha` varchar(16) NOT NULL,
-  `tipo_cadastro` enum('Usuario','Administrador') NOT NULL COMMENT '1 - Usuario / 2 - Administrador'
+  `numero` varchar(14) NOT NULL,
+  `uf` enum('RJ') NOT NULL,
+  `endereco` varchar(100) NOT NULL,
+  `cep` int(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `cadastros`
 --
 
-INSERT INTO `cadastros` (`id`, `nome`, `email`, `senha`, `tipo_cadastro`) VALUES
-(1, 'Marcos', 'marcosantony.asp@gmail.com', '181143/marcola', 'Administrador'),
-(2, 'Victor', 'v@k.co', '1234', 'Usuario');
+INSERT INTO `cadastros` (`id`, `nome`, `email`, `senha`, `numero`, `uf`, `endereco`, `cep`) VALUES
+(1, 'Marcos', 'marcosantony.asp@gmail.com', '181143/marcola', '', 'RJ', '', 0),
+(2, 'Victor', 'v@k.co', '1234', '', 'RJ', '', 0),
+(3, 'user', 'u@s.com', '123', '34324324324324', 'RJ', 'sfsfsfesfesfesfes', 231232131);
 
 -- --------------------------------------------------------
 
@@ -146,7 +150,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `cadastros`
 --
 ALTER TABLE `cadastros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `pedidos`
