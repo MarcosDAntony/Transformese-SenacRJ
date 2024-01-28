@@ -1,12 +1,5 @@
 <?php
-// Configurações do banco de dados
-$servername = "localhost"; // endereço do servidor
-$username = "root"; // nome de usuário do banco de dados
-$password = ""; // senha do banco de dados
-$dbname = "deluxuniformespro-bd"; // nome do banco de dados
-
-// Conexão com o banco de dados
-$conn = new mysqli($servername, $username, $password, $dbname);
+    include './connect.php';
 
 // Verifica se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

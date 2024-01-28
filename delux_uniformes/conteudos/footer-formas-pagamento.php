@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,7 @@
     <!-- Funções W3Schools -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <!-- FavIcon das Páginas -->
-    <link rel="shortcut icon" href="../conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
 
     <style>
         * {
@@ -30,16 +29,23 @@
             color: black; /* Adicionei uma cor de texto para melhor contraste */
         }
 
-        .formas-pagamento{
-            width: 350px;
-            height: 250px;
-            float: left;
+        .formas-pagamento {
+            display: flex;
+            justify-content: center;
+            height: 15vh;
         }
     </style>
 </head>
+<body>
+<div class="formas-pagamento">
+        <img src="./imagens/Img-Ref/Atual/pagamento-removebg-preview.png" alt="Formas de pagamento">
+    </div>
+
 <!-- Footer -->
+
 <footer>
-    <p>&copy;<?php echo date("Y");?> - Todos os direitos reservados.
+    <p>©<?php echo date("Y");?> - Todos os direitos reservados.
     </p>
 </footer>
+</body>
 </html>

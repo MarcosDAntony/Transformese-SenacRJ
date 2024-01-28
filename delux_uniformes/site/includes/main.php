@@ -11,7 +11,7 @@
     <!-- Funções W3Schools -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <!-- FavIcon das Páginas -->
-    <link rel="shortcut icon" href="../site/conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
 
     <style>
         /*=======================================Style Main=============================================*/
@@ -40,7 +40,7 @@
         }
 
         .imgmain{
-        background-image: url(../site/conteudos/imagens/Img-Ref/Atual/principal3-rmk-slide.jpg);
+        background-image: url(../conteudos/imagens/Img-Ref/Atual/principal3-rmk-slide.jpg);
           width: 100%;
           height: 100%;
         }
@@ -48,16 +48,16 @@
 </head>
     <!--================================================Main==========================================================================-->
     <main>   
-    <img src="../site/conteudos/imagens/Img-Ref/Atual/principal3-rmk-slide.jpg" class="imgmain" alt="imgmain">
+    <img src="../conteudos/imagens/Img-Ref/Atual/principal3-rmk-slide.jpg" class="imgmain" alt="imgmain">
        
     <!-- Ícone do Instagram -->
         <a href="https://www.instagram.com/deluxuniformesprofissionais?igsh=MWJxZjMwaWJqaGR2Nw==" target="_blank" class="instagram animate-img">
-            <img src="../site/conteudos/imagens/icons/atual/instagram.png" alt="Instagram">
+            <img src="../conteudos/imagens/icons/atual/instagram.png" alt="Instagram">
         </a>
 
     <!-- Ícone do WhatsApp -->
         <a href="https://wa.me/5521968603959" target="_blank" class="whatsapp animate-img">
-            <img src="../site/conteudos/imagens/icons/atual/whatsapp.png" alt="WhatsApp">
+            <img src="../conteudos/imagens/icons/atual/whatsapp.png" alt="WhatsApp">
         </a>
     </main>
 </html>

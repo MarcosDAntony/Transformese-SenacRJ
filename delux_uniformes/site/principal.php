@@ -17,6 +17,7 @@
     <title>DeLux Uniformes Profissionais</title>
 </head>
     <?php 
+
         // Inclusão do cabeçalho
         include("./includes/heade.php");
         

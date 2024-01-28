@@ -10,7 +10,7 @@ $connection = new mysqli("localhost","root","","deluxuniformespro-bd");
 if (!empty($email) && $_SERVER["REQUEST_METHOD"] == "POST") {
     $email = mysqli_real_escape_string($connection, $email);
 
-    $query = "UPDATE cadastros SET senha = '$nova_senha' where email = '$email'";
+    $query = "UPDATE usuarios SET senha = '$nova_senha' where email = '$email'";
 
     mysqli_query($connection, $query);
 
