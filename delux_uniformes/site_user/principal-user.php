@@ -12,19 +12,21 @@
     <!-- Funções W3Schools -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- FavIcon das Páginas -->
-    <link rel="shortcut icon" href="../site/conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
 
     <title>DeLux Uniformes Profissionais</title>
 </head>
     <?php 
+
         // Inclusão do cabeçalho
-        include("heade-user.php");
+        include("./heade-user.php");
         
         // Inclusão do conteúdo principal
-        include("main.php");
+        include("./main.php");
         
         // Inclusão do rodapé
-        include("../site/footer.php");
+        include("../site/includes/footer.php");
+
     ?>
 
 </html>

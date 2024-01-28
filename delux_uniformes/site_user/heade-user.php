@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- FavIcon das Páginas -->
-    <link rel="shortcut icon" href="../site/conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
     <style>
         * {
             font-family: 'sans-serif';
@@ -62,7 +61,7 @@
     <header>
         <div class="navbar navbar-expand-md text-black-80 container-fluid">
             <a href="principal-user.php" class="animate-img w3-animate-left" target="_self">
-                <img src="../site_user/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
+                <img src="../conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -84,27 +83,41 @@
                             <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                                 Produtos
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="../site_user/conteudos/hospitalar-masculino.php" class="dropdown-item">Hospitalar Masculino</a></li>
-                                <li><a href="../site_user/conteudos/hospitalar-feminino.php" class="dropdown-item">Hospitalar Feminino</a></li>
-                                <li><a href="../site_user/conteudos/limpeza-masculino.php" class="dropdown-item">Limpeza Masculino</a></li>
-                                <li><a href="../site_user/conteudos/limpeza-feminino.php" class="dropdown-item">Limpeza Feminino</a></li>
-                                <li><a href="../site_user/conteudos/gourmet-masculino.php" class="dropdown-item">Gourmet Masculino</a></li>
-                                <li><a href="../site_user/conteudos/gourmet-feminino.php" class="dropdown-item">Gourmet Feminino</a></li>
-                                <li><a href="../site_user/conteudos/beleza-feminino.php" class="dropdown-item">Beleza Feminino</a></li>
-                                <li><a href="../site_user/conteudos/bordados.php" class="dropdown-item">Bordados</a></li>
-                            </ul>
+                            <?php
+
+                            include_once '../site/config/connect.php';
+
+                            $sql = "SELECT DISTINCT tipo FROM produtos";
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                                echo '<ul class="dropdown-menu">';
+                                
+                                while ($row = $result->fetch_assoc()) {
+                                    $tipo = $row['tipo'];
+                                    $link = strtolower(str_replace(' ', '-', $tipo)) . '.php';
+                                    
+                                    echo '<li><a href="../conteudos/' . $link . '" class="dropdown-item">' . $tipo . '</a></li>';
+                                }
+                                echo '</ul>';
+                            } else {
+                                echo "Sem tipos de produto no momento.";
+                            }
+
+
+                            $conn->close();
+                            ?>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="area-usuario.php">
-                              <img src="../site_user/conteudos/imagens/icons/atual/conta.png" style="height:20px; width:20px;" alt="home" >
+                              <img src="../conteudos/imagens/icons/atual/conta.png" style="height:20px; width:20px;" alt="home" >
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="carrinho.php">
-                            <img src="../site_user/conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
+                            <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
                           </a>
                         </li>
                     </ul>
@@ -112,7 +125,7 @@
                     <!-- Barra de Pesquisa-->
                     <div class="divBusca posicao-pesquisa">
                         <input name="Pesquisa" id="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post" />
-                        <a href="#Pesquisa" target="_top" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" /></a>
+                        <a href="#Pesquisa" target="_top" class="animate-img"><img src="../conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" /></a>
                     </div>
                 </div>
             </div>

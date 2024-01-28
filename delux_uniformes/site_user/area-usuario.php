@@ -73,7 +73,7 @@ button{
   <header>
         <div class="navbar navbar-expand-md text-black-80 container-fluid">
             <a href="#" class="animate-img w3-animate-left" target="_self">
-                <img src="../site/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
+                <img src="../conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -89,20 +89,20 @@ button{
                     <ul class="navbar-nav flex-grow-1 pe-3" style="font-size: 17px;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="principal-user.php">
-                              <img src="../site_user/conteudos/imagens/icons/atual/home.png" style="height:25px; width:25px;" alt="home" >
+                              <img src="../conteudos/imagens/icons/atual/home.png" style="height:25px; width:25px;" alt="home" >
                             </a>
                         </li>
 
 
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="carrinho.php">
-                            <img src="../site_user/conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
+                            <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
                           </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="logout.php">
-                            <img src="../site_user/conteudos/imagens/icons/atual/sair.png" style="height:20px; width:20px;" alt="logout">
+                            <img src="../conteudos/imagens/icons/atual/sair.png" style="height:20px; width:20px;" alt="logout">
                           </a>
                         </li>
                     </ul>
@@ -114,7 +114,7 @@ button{
         <form action="#" method="post" enctype="multipart/form-data">
 
         <div class="round-image">
-        <img src="../site_adm/conteudos/imagens/Img-Ref/Atual/deluxpro-semmaquina-removebg-preview.png" alt="Imagem Redonda">
+        <img src="../conteudos/imagens/Img-Ref/Atual/deluxpro-semmaquina-removebg-preview.png" alt="Imagem Redonda">
         </div>
 
           <div class="col-md-6">
@@ -170,5 +170,6 @@ button{
 </body>
 <!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<?php include("../site/footer.php");?>
+<?php include("../site/includes/footer.php");?>
+
 </html>
