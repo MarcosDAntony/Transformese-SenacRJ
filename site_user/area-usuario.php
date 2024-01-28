@@ -10,16 +10,17 @@
   <!--FavIcon--> <link rel="shortcut icon" href="../conteudos/imagens/icons/atual/cadastro.ico" type="image/x-icon">
     <title>Página de Administração</title>
     <style>
-        
-        * {
-            font-family: 'sans-serif';
-            /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
-        }
+        *{
+  font-family: 'sans-serif';
+  /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
+}
 
-        /*======================================================== Style Header=========================================================*/
+
         header {
             background: linear-gradient(0deg, rgba(106, 255, 111, 1) 0%, green);
-            height: 180px;
+            padding: 1em;
+            text-align: center;
+            height: 190px;
         }
 
         .logo {
@@ -29,62 +30,29 @@
             height: 250px;
         }
 
-        /**Barra de Pesquisa */
-        .posicao-pesquisa {
-            position: relative;
-            right: 15px;
+/**Painel do Usuário====================================================================================*/
+        .painel-adm {
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            
         }
 
-        .divBusca {
-            border-radius: 3px;
-            width: 295px;
-            height: 32px;
-            background-color: white;
-        }
-
-        .inputBusca {
-            border-radius: 3px;
-            width: 260px;
-            height: 32px;
-            border: transparent;
-        }
-
-        .lupa {
-            width: 2px;
-            height: 2px;
-        }
-
-        /**==================================================================================================== */
-
-
-        button {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-
-.position-registro-produtos {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-
-
-
-    form {
-      background: linear-gradient(0deg, rgba(106, 255, 111, 1) 0%, green);
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);     
-      padding: 20px;
-      border-radius: 8px;
-      width: 450px;
-    }
   
+
+    .round-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; /* Define o border-radius como 50% para criar uma forma circular */
+        overflow: hidden; /* Garante que a imagem seja cortada para se ajustar ao círculo */
+    }
+
+    .round-image img {
+        width: 100%; /* Garante que a imagem preencha completamente o círculo */
+        height: auto; /* Mantém a proporção da imagem */
+        display: block; /* Remove qualquer espaço extra em torno da imagem */
+    }
+       
     .imguser {
   background-image: url(../site/conteudos/imagens/Img-Ref/Atual/atual\ -\ fundo\ principal\ melhoradas.png);
   background-size: cover;
@@ -94,6 +62,10 @@
   height: 115%;
 }
 
+button{
+    background: linear-gradient(0deg, rgba(106, 255, 111, 1) 0%, green);
+}
+/**================================================================================================= */
     </style>
 </head>
 <body>
@@ -134,15 +106,66 @@
                           </a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
     </header>
+    <div class="painel-adm">
+        <form action="#" method="post" enctype="multipart/form-data">
 
-    <form action="">
+        <div class="round-image">
+        <img src="../site_adm/conteudos/imagens/Img-Ref/Atual/deluxpro-semmaquina-removebg-preview.png" alt="Imagem Redonda">
+        </div>
 
-    </form>
+          <div class="col-md-6">
+            <label for="nome" class="form-label">Nome: </label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
+          </div>
+
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+          </div>
+
+          
+
+          <div class="col-md-6">
+            <label for="senha" class="form-label">Senha:</label>
+            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="numero" class="form-label">Número de Celular:</label>
+            <input class="form-control" id="numero" name="numero" placeholder="+55 (21)00000-0000" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="uf" class="form-label">UF</label>
+            <select id="uf" class="form-control" name="uf" required>
+              <option selected>...</option>
+              <option>RJ</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label for="endereco" class="form-label">Endereço:</label>
+            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Cidade, bairro, complemento..." style="width: 300px;" required>
+          </div>
+
+         
+          <div class="col-md-2">
+            <label for="cep" class="form-label">CEP:</label>
+            <input class="form-control" id="cep" name="cep" placeholder="00000-000" style="width:100px;" required>
+          </div>
+
+          <br>
+          <div class="col-12">
+            <button type="submit" class="btn btn-">
+                Alterar dados
+            </button>
+          </div>
+       </form>
+</div>
     
 </body>
 <!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->

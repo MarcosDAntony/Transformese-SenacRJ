@@ -96,8 +96,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-1.png" alt="Product 1">
           <p> Camisa azul com bolso superior gola V - 100% Algodão </p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
@@ -110,8 +109,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-2.png" alt="Product 2">
           <p> Kit Macação Azul 3 bolsos 1 superior e 2 dois na cintura = camisa branca - 100% Algodão   </p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
@@ -124,8 +122,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-3.png" alt="Product 3">
           <p> Macação Azul 3 bolsos 1 superior e 2 dois na cintura com alças reforçadas - 100% Algodão  </p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
@@ -138,8 +135,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-4.png" alt="Product 4">
           <p> Calça Brim Pesado Reforçada para trabalho pesado 2 bolsos na cintura cinza - 100%  Algodão</p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
@@ -151,8 +147,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-5.png" alt="Product 5">
           <p> Uniforme Cinza Profissional Calça + Camisa Brim com Manga Curta cinza - 100% Algodão </p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
@@ -165,8 +160,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-6.png" alt="Product 6">
           <p> Calça Oxford 2 bolsos na cintura cinza - 100% Algodão</p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
@@ -179,8 +173,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-7.png" alt="Product 7">
           <p> Camisa Brim com Manga Curta bolso superior azul escuro - 100% Algodão</p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
@@ -193,8 +186,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-8.png" alt="Product 8">
           <p>  Macacão Reforçado de Brim Pesado com Faixa Refletivo com Manga Longa - 4 bolsos dois superiores e 2 na cintura cinza - 100% Algodão</p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
@@ -207,8 +199,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-9.png" alt="Product 9">
           <p> Jaleco brim profissional 3/4 com Manga Curta - 3 bolsos 1 superior e 2 na cintura cinza - 100% Algodão</p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
@@ -221,8 +212,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-10.png" alt="Product 10">
           <p> Camisa  cinzamanga longa para Pedreiro em malha fria - 65% poliéster 35% viscose</p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
@@ -235,8 +225,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-11.png" alt="Product 11">
           <p> Calça preta Oxford Para Trabalho Leve Uniforme Pedreiro Mecânico Obra</p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
@@ -249,8 +238,7 @@
           <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-limpeza-12.png" alt="Product 12">
           <p> Calça preta Reforçada Brim pesado com faixa reflexiva Para Trabalho Leve Uniforme Pedreiro Mecânico Obra</p>
           <br>
-          <label for="quantity">Qtd:</label>
-          <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+          <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
           <br>
       <br>
       <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
