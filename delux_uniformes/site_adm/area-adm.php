@@ -10,10 +10,11 @@
   <!--FavIcon--> <link rel="shortcut icon" href="../conteudos/imagens/icons/atual/cadastro.ico" type="image/x-icon">
     <title>Página de Administração</title>
     <style>
-        
+        /* ata */
         *{
   font-family: 'sans-serif';
   /*, Tahoma, Geneva, Verdana, sans-serif, Segoe UI*/
+
 }
 
 
