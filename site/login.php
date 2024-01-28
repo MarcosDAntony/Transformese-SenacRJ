@@ -30,7 +30,7 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);     
       padding: 20px;
       border-radius: 8px;
-      width: 450px;
+      width: 300px;
     }
   
     .imglogin {
@@ -50,29 +50,35 @@
   <body class="imglogin">
     <div class="position-login">
         <form class="row g-3" action="validacao_login.php" method="post" enctype="multipart/form-data">
-        <h2>Login</h2>
+        <h2 style="text-align: center;">Login</h2>
 
-          <div class="col-md-6">
+          <div class="col-12">
             <label for="email" class="form-label">Email:</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
           </div>
-
-          <div class="col-md-6">
+          <br>
+          <div class="col-12">
             <label for="senha" class="form-label">Senha:</label>
             <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
           </div>
  
           <div class="col-12">
             <button type="submit" class="btn btn-">
-                Enviar
+                Entrar
             </button>
-
-            <br><br>
-            <a href="cadastro.php" style="text-decoration: none;">Cadastre-se</a>
             <br>
-            <a href="esqueci_minha_senha.php" style="text-decoration: none;">Esqueceu a senha?</a>
           </div>
+          
+          <div class="col-12">
+            <a class="btn btn-" href="cadastro.php">
+              Cadastre-se
+            </a>
+            <br>
 
+            <a class="btn btn-" href="esqueci_minha_senha.php">
+              Esqueceu a senha?
+            </a>
+          </div>
         </form>
   </div>
 </body>

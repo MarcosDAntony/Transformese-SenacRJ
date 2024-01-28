@@ -29,7 +29,7 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);     
       padding: 20px;
       border-radius: 8px;
-      width: 450px;
+      width: 500px;
     }
   
     .imgcadastro {
@@ -49,7 +49,7 @@
     <div class="position-cadastro">
 
         <form class="row g-3" action="envio_cadastro.php" method="post" enctype="multipart/form-data">
-        <h2>Cadastro</h2>
+        <h2 style="text-align: center;">Cadastro</h2>
 
           <div class="col-md-6">
             <label for="nome" class="form-label">Nome: </label>

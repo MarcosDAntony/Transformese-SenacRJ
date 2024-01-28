@@ -85,7 +85,7 @@
 </head>
 
 <body>
-<?php include("heade-produtos.php");?>
+<?php include_once("heade-produtos.php");?>
   <header class="limpezafem"></header>
   <div class="principal">
     <h1>Uniformes de Limpeza Feminina</h1>
@@ -97,121 +97,157 @@
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-1.png" alt="Product 1">
       <p> Uniforme de Camareira Vestido de Copeira + Avental de Camareira - Oxford 100% Poliéster  </p>
       <br>
-      <label for="quantity1">Quantidade:</label>
-      <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-2.png" alt="Product 2">
       <p> Kit Vestido copeira com avental preto e branco - Oxford 100% Poliéster  </p>
       <br>
-      <label for="quantity2">Quantidade:</label>
-      <input type="number" id="quantity2" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-3.png" alt="Product 3">
       <p> Conjunto - Camisa verde ➕ calça cinza - Oxford 100% Poliéster  </p>
       <br>
-      <label for="quantity3">Quantidade:</label>
-      <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-4.png" alt="Product 4">
       <p> Colete Social azul marinho - Oxford 100% Poliéster  </p>
       <br>
-      <label for="quantity4">Quantidade:</label>
-      <input type="number" id="quantity4" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-5.png" alt="Product 5">
       <p>  Vestido copeira cinza - Oxford 100% Poliéster </p>
       <br>
-      <label for="quantity5">Quantidade:</label>
-      <input type="number" id="quantity5" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-6.png" alt="Product 6">
       <p> Avental para faxineira vermelho - 100% Algodão </p>
       <br>
-      <label for="quantity6">Quantidade:</label>
-      <input type="number" id="quantity6" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-7.png" alt="Product 7">
       <p> Avental branco com bolso - 100% Poliéster   </p>
       <br>
-      <label for="quantity7">Quantidade:</label>
-      <input type="number" id="quantity7" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-8.png" alt="Product 8">
       <p> Kit Avental azul com três bolsos com camisa - 100% Poliéster </p>
       <br>
-      <label for="quantity8">Quantidade:</label>
-      <input type="number" id="quantity8" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-9.png" alt="Product 9">
       <p> Avental branco com um bolso - 100% Poliéster </p>
       <br>
-      <label for="quantity9">Quantidade:</label>
-      <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-10.png" alt="Product 10">
       <p> Macacão azul para faxineira - 100% Brim </p>
       <br>
-      <label for="quantity10">Quantidade:</label>
-      <input type="number" id="quantity10" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-11.png" alt="Product 11">
       <p> Camisa amarela manga curta com três botões - 100% Poliéster</p>
       <br>
-      <label for="quantity11">Quantidade:</label>
-      <input type="number" id="quantity11" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-12.png" alt="Product 12">
       <p> Avental verde com bolso  - 100% Poliéster</p>
       <br>
-      <label for="quantity12">Quantidade:</label>
-      <input type="number" id="quantity12" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
   </div>
 </body>
-<?php include("footer-formas-pagamento.php");?>
+<?php include_once("footer-formas-pagamento.php");?>

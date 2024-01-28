@@ -101,18 +101,13 @@
                             <img src="../site/conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
                           </a>
                         </li>
-
-                        
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="login.php">Registre-se!</a>
-                        </li>
-                        
+  
                     </ul>
 
                     <!-- Barra de Pesquisa-->
                     <div class="divBusca posicao-pesquisa">
                         <input name="Pesquisa" id="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post" />
-                        <a href="#Pesquisa" target="_top" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" /></a>
+                        <a href="#Pesquisa" target="_self" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" /></a>
                     </div>
                 </div>
             </div>

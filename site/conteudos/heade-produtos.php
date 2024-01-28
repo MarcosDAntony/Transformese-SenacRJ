@@ -99,7 +99,7 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../login.php">
                             <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
-                          </a>
+                        </a>
                         </li>
                     </ul>
 

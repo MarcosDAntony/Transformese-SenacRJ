@@ -85,7 +85,7 @@
 </head>
 
 <body>
-<?php include("heade-produtos.php");?>
+<?php include_once("heade-produtos.php");?>
   <header class="gourmetmasc"></header>
   <div class="principal">
     <h1>Uniformes Gourmet Masculinos</h1>
@@ -103,122 +103,158 @@
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-1.png" alt="Product 1">
       <p> Avental Premium preto sem bolsos - 100% Oxford </p>
       <br>
-      <label for="quantity1">Quantidade:</label>
-      <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-2.png" alt="Product 2">
       <p>Dolmã chefe de cozinha branco manga 3/4 - 100% Poliéster </p>
       <br>
-      <label for="quantity2">Quantidade:</label>
-      <input type="number" id="quantity2" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-3.png" alt="Product 3">
       <p> Conjunto Colete Social Forrado  para Garçons + camisa branca com gravata borboleta preta - 100% Poliéster </p>
       <br>
-      <label for="quantity3">Quantidade:</label>
-      <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-4.png" alt="Product 4">
       <p> Avental preto sem bolso + camisa branca com gravata borboleta preta - 100% Poliéster   </p>
       <br>
-      <label for="quantity4">Quantidade:</label>
-      <input type="number" id="quantity4" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-5.png" alt="Product 5">
       <p> Avental preto sem bolso - 100% Poliéster </p>
       <br>
-      <label for="quantity5">Quantidade:</label>
-      <input type="number" id="quantity5" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-6.png" alt="Product 6">
       <p>Kimono Sushiman Hapi Uniforme Cozinha Oriental um bolsos na frente vermelho - 100% Oxford </p>
       <br>
-      <label for="quantity6">Quantidade:</label>
-      <input type="number" id="quantity6" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-7.png" alt="Product 7">
       <p> Avental de cintura preto com bolso na cintura -  100% Oxford   </p>
       <br>
-      <label for="quantity7">Quantidade:</label>
-      <input type="number" id="quantity7" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-8.png" alt="Product 8">
       <p> Avental preto sem bolso + camisa branca - 100% Poliéster  </p>
       <br>
-      <label for="quantity8">Quantidade:</label>
-      <input type="number" id="quantity8" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-9.png" alt="Product 9">
       <p> Bandana Preta Chef Cozinha Uniforme Restaurante - 100% Poliéster </p>
       <br>
-      <label for="quantity9">Quantidade:</label>
-      <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-10.png" alt="Product 10">
       <p> Camiseta manga longa cozinheiro uniforme de inverno - 100 %  Poliéster</p>
       <br>
-      <label for="quantity10">Quantidade:</label>
-      <input type="number" id="quantity10" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-11.png" alt="Product 11">
       <p> Uniforme calça preta social +  camisa branca com colete preto + gravata preto - 100 %  Poliéster </p>
       <br>
-      <label for="quantity11">Quantidade:</label>
-      <input type="number" id="quantity11" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity1">Qtd:</label>
+      <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-12.png" alt="Product 12">
       <p> Uniforme colete dourado +  camisa branca com gravata + avental para cintura preto -  100 %  Poliéster  </p>
       <br>
-      <label for="quantity12">Quantidade:</label>
-      <input type="number" id="quantity12" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
   </div>
 </body>
-<?php include("footer-formas-pagamento.php");?>
+<?php include_once("footer-formas-pagamento.php");?>
 

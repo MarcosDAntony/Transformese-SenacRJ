@@ -85,7 +85,7 @@
 </head>
 
 <body>
-<?php include("heade-produtos.php");?>
+<?php include_once("heade-produtos.php");?>
   <header class="hospitalarfem"></header>
   <div class="principal">
     <h1>Uniformes Femininos Hospitalar</h1>
@@ -104,121 +104,157 @@
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-1.png" alt="Product 1">
       <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta gola V marsala- 100% Poliéster </p>
       <br>
-      <label for="quantity1">Quantidade:</label>
-      <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-2.png" alt="Product 2">
       <p> Jaleco manga longa 3 bolsos 1 superior e 2 na cintura , gola V branco - 100% Poliéster </p>
       <br>
-      <label for="quantity2">Quantidade:</label>
-      <input type="number" id="quantity2" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-3.png" alt="Product 3">
       <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta verde - 100% Poliéster </p>
       <br>
-      <label for="quantity3">Quantidade:</label>
-      <input type="number" id="quantity3" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-4.png" alt="Product 4">
       <p> Camisa com um bolso superior , rosa - 100% Poliéster </p>
       <br>
-      <label for="quantity4">Quantidade:</label>
-      <input type="number" id="quantity4" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-5.png" alt="Product 5">
       <p> Blusa branca personalizada gola em V, dois bolsos - 100% Poliéster </p>
       <br>
-      <label for="quantity5">Quantidade:</label>
-      <input type="number" id="quantity5" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-6.png" alt="Product 6">
       <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta gola V rosa - 100% Poliéster  </p>
       <br>
-      <label for="quantity6">Quantidade:</label>
-      <input type="number" id="quantity6" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-7.png" alt="Product 7">
       <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta verde - 100% Poliéster  </p>
       <br>
-      <label for="quantity7">Quantidade:</label>
-      <input type="number" id="quantity7" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-8.png" alt="Product 8">
       <p> Jaleco manga longa 3 bolsos 1 superior e 2 na cintura , detalhe azul na gola - 100% Poliéster  </p>
       <br>
-      <label for="quantity8">Quantidade:</label>
-      <input type="number" id="quantity8" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-9.png" alt="Product 9">
       <p> Camisa com 2 bolsos na cintura azul claro -  100% Poliéster </p>
       <br>
-      <label for="quantity9">Quantidade:</label>
-      <input type="number" id="quantity9" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-10.png" alt="Product 10">
       <p> Camisa com um bolso superior , e 2 bolsos na cintura azul escuro - 100% Poliéster  </p>
       <br>
-      <label for="quantity10">Quantidade:</label>
-      <input type="number" id="quantity10" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-11.png" alt="Product 11">
       <p> Blusa - Pijama Cirúrgico Estampado - 100% Poliéster </p>
       <br>
-      <label for="quantity11">Quantidade:</label>
-      <input type="number" id="quantity11" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity1">Qtd:</label>
+      <input type="number" id="quantity1" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
 
     <div>
       <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-12.png" alt="Product 12">
       <p> Camisa pijama cirúrgico verde - 100% Poliéster  </p>
       <br>
-      <label for="quantity12">Quantidade:</label>
-      <input type="number" id="quantity12" class="quantity-input" value="1" min="1">
-      <button class="add-to-cart">🛒➕</button>
-      <span class="cart-counter"> </span>
+      <label for="quantity">Qtd:</label>
+      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+<br>
+      <br>
+      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
+      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
+    </a>
     </div>
   </div>
 </body>
-<?php include("footer-formas-pagamento.php");?>
+<?php include_once("footer-formas-pagamento.php");?>
