@@ -1,121 +1,56 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Tempo de geração: 27/01/2024 às 20:50
--- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.2.12
+CREATE DATABASE IF NOT EXISTS `deluxuniformespro-bd` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
+USE `deluxuniformespro-bd`;
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Banco de dados: `deluxuniformespro-bd`
---
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `cadastros`
---
-
+-- Tabela `cadastros`
 CREATE TABLE `cadastros` (
-  `id_usuario` int(11) NOT NULL,
+  `id` int(11) PRIMARY KEY AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
   `email` varchar(254) NOT NULL,
   `senha` varchar(16) NOT NULL,
-  `numero` varchar(14) NOT NULL,
+  `tipo_cadastro` enum('Usuario', 'Administrador') NOT NULL COMMENT '1 - Usuario / 2 - Administrador'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Inserir dados na tabela `cadastros`
+INSERT INTO `cadastros` (`nome`, `email`, `senha`, `tipo_cadastro`) VALUES
+('Marcos', 'marcosantony.asp@gmail.com', '181143/marcola', 'Administrador'),
+('Victor', 'v@k.co', '1234', 'Usuario');
+
+-- Tabela `usuarios`
+CREATE TABLE `usuarios` (
+  `id_usuario` int(11) PRIMARY KEY,
+  `endereco` varchar(200) NOT NULL,
+  `rua` varchar(100) NOT NULL,
+  `numero` varchar(10) NOT NULL,
+  `bairro` varchar(50) NOT NULL,
+  `cidade` varchar(50) NOT NULL,
   `uf` char(2) NOT NULL,
   `cep` int(8) NOT NULL,
-  `endereco` varchar(100) NOT NULL,
-  `tipo_cadastro` enum('Usuario','Administrador','','') NOT NULL COMMENT '1 - Usuario / 2 - Administrador',
-  `carrinho` varchar(500) NOT NULL
+  FOREIGN KEY (`id_usuario`) REFERENCES `cadastros` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Despejando dados para a tabela `cadastros`
---
+INSERT INTO `usuarios` (`id_usuario`, `endereco`, `rua`, `numero`, `bairro`, `cidade`, `uf`, `cep`) VALUES
+(1, 'Nova Iguaçu', 'Rua do Adm', '123', 'Centro', 'Rio de Janeiro', 'RJ', 2147483647),
+(2, 'Outro Endereço', 'Rua XYZ', '456', 'Bairro XYZ', 'São Paulo', 'SP', 32421434);
 
-INSERT INTO `cadastros` (`id_usuario`, `nome`, `email`, `senha`, `numero`, `uf`, `cep`, `endereco`, `tipo_cadastro`, `carrinho`) VALUES
-(3, 'Marcos', 'marcosantony.asp@gmail.com', '181143/marcola', '21964986068', 'RJ', 2147483647, 'Rua do Adm Nova Iguaçu', 'Administrador', ''),
-(5, 'Victor', 'v@k.co', '1234', '23214124423423', 'RJ', 32421434, 'efefesfefssf', 'Usuario', '');
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `carrinhos`
---
-
-CREATE TABLE `carrinhos` (
-  `id_carrinho` int(11) NOT NULL,
-  `id_pedido` int(11) NOT NULL
+----------------------------------------------------------------------------------------------
+CREATE TABLE `pedidos` (
+  `id_pedido` int(11) PRIMARY KEY AUTO_INCREMENT,
+  `id_usuario` int(11) NOT NULL,
+  FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `produtos`
---
 
 CREATE TABLE `produtos` (
-  `id_produto` int(11) NOT NULL,
+  `id_produto` int(11) PRIMARY KEY AUTO_INCREMENT,
   `descricao` varchar(500) NOT NULL,
   `imagem` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Índices para tabelas despejadas
---
-
---
--- Índices de tabela `cadastros`
---
-ALTER TABLE `cadastros`
-  ADD PRIMARY KEY (`id_usuario`);
-
---
--- Índices de tabela `carrinhos`
---
-ALTER TABLE `carrinhos`
-  ADD PRIMARY KEY (`id_carrinho`);
-
---
--- Índices de tabela `produtos`
---
-ALTER TABLE `produtos`
-  ADD PRIMARY KEY (`id_produto`);
-
---
--- AUTO_INCREMENT para tabelas despejadas
---
-
---
--- AUTO_INCREMENT de tabela `cadastros`
---
-ALTER TABLE `cadastros`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT de tabela `carrinhos`
---
-ALTER TABLE `carrinhos`
-  MODIFY `id_carrinho` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `produtos`
---
-ALTER TABLE `produtos`
-  MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+-- Tabela produto_pedido para relacionamento entre `produtos` e `pedidos`
+CREATE TABLE `produto_pedido` (
+  `id_produto` int(11) NOT NULL,
+  `id_pedido` int(11) NOT NULL,
+  PRIMARY KEY (`id_produto`, `id_pedido`),
+  FOREIGN KEY (`id_produto`) REFERENCES `produtos` (`id_produto`) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (`id_pedido`) REFERENCES `pedidos` (`id_pedido`) ON DELETE CASCADE ON UPDATE CASCADE
+);
