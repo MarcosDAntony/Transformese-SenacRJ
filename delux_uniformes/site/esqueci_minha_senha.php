@@ -32,7 +32,7 @@
       width: 400px;
     }
   
-    .imgcadastro {
+    .img-esqueci-senha {
   background-image: url(../conteudos/imagens/Img-Ref/Atual/fundo-forms.jpg);
   background-size: cover;
   background-position: center; /* Adiciona esta linha para posicionar no centro */
@@ -43,7 +43,7 @@
 
     </style>
 </head>
-<body>
+<body class="img-esqueci-senha">
 <?php include("./includes/heade.php");?>
   <div class="position-esqueci-senha">
 
