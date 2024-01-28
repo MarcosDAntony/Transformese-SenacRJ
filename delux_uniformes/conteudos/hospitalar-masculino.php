@@ -85,7 +85,7 @@
 </head>
 
 <body>
-<?php include_once("heade-produtos.php");?>
+<?php include("heade-produtos.php");?>
   <header class="hospitalarmasc"></header>
   <div class="principal">
   <h1>Uniformes Masculino Hospitalar</h1>
@@ -101,7 +101,7 @@
 
     <?php 
 
-    include_once '../site/config/connect.php';
+  include '../site/config/connect.php';
 
     $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'hospitalar-masculino'";
     $resultProdutos = $conn->query($sqlProdutos);

@@ -12,7 +12,7 @@
     }
 
     .imagem-sobre {
-      background-image: url('../site/conteudos/imagens/Img-Ref/Atual/fundo-sobre_ok.png');
+      background-image: url('../conteudos/imagens/Img-Ref/Atual/fundo-sobre_ok.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;

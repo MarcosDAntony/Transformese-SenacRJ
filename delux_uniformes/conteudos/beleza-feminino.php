@@ -104,12 +104,11 @@
   <div class="image-container">
   <?php 
 
-include_once '../site/config/connect.php';
+include '../site/config/connect.php';
 
 $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'beleza-feminino'";
 $resultProdutos = $conn->query($sqlProdutos);
 
-// Exibir os produtos dinamicamente
 while ($rowProduto = $resultProdutos->fetch_assoc()) {
     echo '<div>';
     echo '<img src="./imagens/Img-Produtos/Img-Feminino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';

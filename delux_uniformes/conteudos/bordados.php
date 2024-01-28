@@ -91,7 +91,7 @@
   <div class="image-container">
   <?php 
 
-include_once '../site/config/connect.php';
+include '../site/config/connect.php';
 
 $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'bordados'";
 $resultProdutos = $conn->query($sqlProdutos);

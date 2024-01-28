@@ -85,7 +85,7 @@
 </head>
 
 <body>
-<?php include_once("heade-produtos.php");?>
+<?php include("heade-produtos.php");?>
   <header class="hospitalarfem"></header>
   <div class="principal">
     <h1>Uniformes Femininos Hospitalar</h1>
