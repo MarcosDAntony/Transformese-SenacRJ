@@ -49,14 +49,42 @@
 <?php include("heade-user.php");?>
 
 <body>
-    <div class="container">
-        <form class="form_carrinho" action="">
-        <h2>Carrinho</h2>
-        
+    <div class="position-carrinho">
+        <h1>Carrinho de Compras</h1>
+        <form class="form_carrinho" method="post">
+            <div class="mb-3">
+                <label for="produto" class="form-label">Nome do Produto:</label>
+                <input type="text" class="form-control" id="produto" name="produto" required>
+            </div>
+            <div class="mb-3">
+                <label for="quantidade" class="form-label">Quantidade:</label>
+                <input type="number" class="form-control" id="quantidade" name="quantidade" required>
+            </div>
+            <div class="mb-3">
+                <label for="preco" class="form-label">Preço:</label>
+                <input type="number" class="form-control" id="preco" name="preco" step="0.01" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Adicionar ao Carrinho</button>
         </form>
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $produto = $_POST['produto'];
+            $quantidade = $_POST['quantidade'];
+            $preco = $_POST['preco'];
+            
+            // Formatar os dados para enviar via WhatsApp
+            $mensagem = "Olá! Gostaria de comprar $quantidade unidades do produto $produto por R$$preco cada. Total: R$$total";
+            $numero_whatsapp = ['numero'];
+            
+            // Montar a URL do WhatsApp com a mensagem
+            $url_whatsapp = "https://wa.me/$numero_whatsapp?text=" . urlencode($mensagem);
+            
+            // Redirecionar para o WhatsApp
+            header("Location: $url_whatsapp");
+            exit;
+        }
+        ?>
     </div>
 </body>
-
 <?php include("../site/footer.php");?>
-
 </html>

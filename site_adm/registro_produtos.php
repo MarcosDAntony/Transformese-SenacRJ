@@ -42,7 +42,17 @@
         }
 
 
-.position-adm {
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+.position-registro-produtos {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -60,15 +70,23 @@
       width: 450px;
     }
   
+    .imgadm {
+  background-image: url(../site/conteudos/imagens/Img-Ref/Atual/atual\ -\ fundo\ principal\ melhoradas.png);
+  background-size: cover;
+  background-position: center; /* Adiciona esta linha para posicionar no centro */
+  background-attachment: fixed; /* Adiciona esta linha se quiser que a imagem seja fixa durante o scroll */
+  width: 100%;
+  height: 115%;
+}
 
     </style>
 </head>
-<body>
+<body class="imgadm">
      <!-- =============================================Header=========================================================================-->
   <header>
         <div class="navbar navbar-expand-md text-black-80 container-fluid">
             <a href="#" class="animate-img w3-animate-left" target="_self">
-                <img src="../site_adm/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
+                <img src="../site/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -90,8 +108,8 @@
 
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="registro_produtos.php">
-                            <img src="../site_adm/conteudos/imagens/icons/atual/registro_produtos.png" style="height:20px; width:20px;" alt="carrinho">
+                            <a class="nav-link active" aria-current="page" href="area-adm.php">
+                            <img src="../site_adm/conteudos/imagens/icons/atual/seta.png" style="height:20px; width:20px;" alt="carrinho">
                           </a>
                         </li>
 
@@ -107,9 +125,28 @@
         </div>
     </header>
 
-    <form action="">
+    <div class="position-registro-produtos">
 
-    </form>
+        <form class="row g-3" action="registrar_produtos.php" method="post" enctype="multipart/form-data">
+        <h2>Registro dos Produtos</h2>
+
+          <div class="col-md-6">
+            <label for="nome" class="form-label">Descrição: </label>
+            <input type="text" class="form-control" name="descricao" placeholder="Descrição">
+          </div>
+
+          <div class="col-md-6">
+            <label for="nome" class="form-label">Imagem: </label>
+            <input type="file" class="form-control" name="imagem" placeholder="Caminho da Imagem">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-">
+                Enviar
+            </button>
+          </div>
+        </form>
+
+    </div>
 </body>
 <?php include("../site/footer.php");?>
 </html>
