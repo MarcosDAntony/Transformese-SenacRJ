@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 
 // Adicionando produto ao carrinho
@@ -18,7 +18,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['carrinho'][] = $produto;
 }
 
+// Remover produto do carrinho
+if (isset($_GET['action']) && $_GET['action'] == 'remover_item' && isset($_GET['item_key'])) {
+    $item_key = $_GET['item_key'];
 
+    // Verifica se o índice do item existe no carrinho
+    if (isset($_SESSION['carrinho'][$item_key])) {
+        // Remove o item do carrinho
+        unset($_SESSION['carrinho'][$item_key]);
+    }
+}
 ?>
 
 
@@ -76,12 +85,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </style>
 </head>
 <body>
-    <div class="position-carrinho">
+<div class="position-carrinho">
         <h1>Carrinho de Compras</h1>
 
         <?php if (!empty($_SESSION['carrinho'])) : ?>
             <form class="form_carrinho" method="post">
-                <?php foreach ($_SESSION['carrinho'] as $produto) : ?>
+                <?php foreach ($_SESSION['carrinho'] as $key => $produto) : ?>
                     <div class="mb-3">
                         <label for="produto" class="form-label">Nome do Produto:</label>
                         <input type="text" class="form-control" id="produto" name="descricao[]" value="<?= $produto['descricao'] ?>" readonly>
@@ -90,17 +99,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <label for="quantidade" class="form-label">Quantidade:</label>
                         <input type="number" class="form-control" id="quantidade" name="quantidade[]" value="<?= $produto['quantidade'] ?>" readonly>
                     </div>
+                    <a href="?action=remover_item&item_key=<?= $key ?>" class="btn btn-danger">Remover</a>
                 <?php endforeach; ?>
                 <a href="?action=fazer_pedido" class="btn btn-success">Fazer Pedido</a>
             </form>
-
-            
         <?php else : ?>
             <p>O carrinho está vazio.</p>
         <?php endif; ?>
-
     </div>
-
     <?php
 
     // Redirecionar para o WhatsApp se o carrinho não estiver vazio
