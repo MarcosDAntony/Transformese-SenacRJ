@@ -168,3 +168,9 @@ INSERT INTO produtos (descricao, imagem, tipo, quantidade_estoque) VALUES
 ('Patch Bordado Termocolante - Socorrista - 8 cm', 'feminino-bordado-10.jpg', 'Bordados', 30),
 ('Patch Bordado Termocolante - Farmácia - 8 cm', 'feminino-bordado-11.jpg', 'Bordados', 25),
 ('Patch Bordado Termocolante - Assistente Social - 8 cm', 'feminino-bordado-12.jpg', 'Bordados', 35);
+
+
+-- ALTER TABLE `produtos` ADD COLUMN `preco` DECIMAL(10, 2) NOT NULL DEFAULT 0;
+-- UPDATE produtos
+-- SET preco = ROUND(RAND() * (100.00 - 20.00) + 20.00, 2);
+-- nao tem preco entao deixa!

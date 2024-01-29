@@ -1,11 +1,5 @@
 <?php
-// Só to verificando se o usuário está autenticado. o session é importante nao remova!!!
 session_start();
-
-if (!isset($_SESSION['email']) && $_SESSION['tipo-cadastro' != 'Usuario']) {
-    header("Location: ../site/login.php");
-    exit();
-}
 
 include '../site/config/connect.php';
 
@@ -35,6 +29,7 @@ if ($result->num_rows > 0) {
 }
 
 $conn->close();
+
 ?>
 
 
@@ -138,13 +133,13 @@ button{
 
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="carrinho.php">
+                            <a class="nav-link active" aria-current="page" href="./carrinho.php">
                             <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
                           </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../site/principal.php">
+                            <a class="nav-link active" aria-current="page" href="logout.php">
                             <img src="../conteudos/imagens/icons/atual/sair.png" style="height:20px; width:20px;" alt="logout">
                           </a>
                         </li>

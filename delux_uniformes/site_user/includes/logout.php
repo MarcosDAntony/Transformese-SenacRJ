@@ -1,10 +1,14 @@
-<?php 
+<<?php 
+session_start();
 
+// Limpar todas as variáveis de sessão
+session_unset();
+
+// Destruir a sessão
 session_destroy();
 
-header('Location:../../site/principal.php');
-
-
+// Redirecionar para a página principal
+header('Location: ../../site/principal.php');
+exit; 
 ?>
-
 
