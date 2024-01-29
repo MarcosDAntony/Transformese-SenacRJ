@@ -1,3 +1,43 @@
+<?php
+// Só to verificando se o usuário está autenticado. o session é importante nao remova!!!
+session_start();
+
+if (!isset($_SESSION['email']) && $_SESSION['tipo-cadastro' != 'Usuario']) {
+    header("Location: ../site/login.php");
+    exit();
+}
+
+include '../site/config/connect.php';
+
+$email = $_SESSION['email'];
+
+$sql = "SELECT * FROM usuarios WHERE email = '$email'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+
+    // Preenche as variáveis com os dados do usuário
+    $nome = $row['nome'];
+    $senha = $row['senha'];
+    $telefone = $row['telefone'];
+    $cep = $row['cep'];
+    $rua = $row['rua'];
+    $numero = $row['numero'];
+    $bairro = $row['bairro'];
+    $cidade = $row['cidade'];
+    $uf = $row['uf'];
+
+} else {
+    // Trate o caso em que o usuário não é encontrado no banco de dados
+    echo "Usuário não encontrado";
+    exit();
+}
+
+$conn->close();
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,6 +48,9 @@
   <!-- W3schools--> <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- Funções W3Schools --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   <!--FavIcon--> <link rel="shortcut icon" href="../conteudos/imagens/icons/atual/cadastro.ico" type="image/x-icon">
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- api de cep -->
+  
     <title>Página de Administração</title>
     <style>
         *{
@@ -54,7 +97,7 @@
     }
        
     .imguser {
-  background-image: url(../site/conteudos/imagens/Img-Ref/Atual/atual\ -\ fundo\ principal\ melhoradas.png);
+  background-image: url('../site/conteudos/imagens/Img-Ref/Atual/atual\ -\ fundo\ principal\ melhoradas.png');
   background-size: cover;
   background-position: center; /* Adiciona esta linha para posicionar no centro */
   background-attachment: fixed; /* Adiciona esta linha se quiser que a imagem seja fixa durante o scroll */
@@ -111,62 +154,119 @@ button{
         </div>
     </header>
     <div class="painel-adm">
-        <form action="#" method="post" enctype="multipart/form-data">
+    <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Seus campos de formulário -->
+            <div class="round-image">
+                <img src="../conteudos/imagens/Img-Ref/Atual/deluxpro-semmaquina-removebg-preview.png" alt="Imagem Redonda">
+            </div>
 
-        <div class="round-image">
-        <img src="../conteudos/imagens/Img-Ref/Atual/deluxpro-semmaquina-removebg-preview.png" alt="Imagem Redonda">
-        </div>
+            <div class="col-md-6">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo" value="<?php echo $nome; ?>" required>
+            </div>
 
-          <div class="col-md-6">
-            <label for="nome" class="form-label">Nome: </label>
-            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
-          </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo $email; ?>" required readonly>
+            </div>
 
-          <div class="col-md-6">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-          </div>
+            <div class="col-md-6">
+                <label for="senha" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" value="<?php echo $senha; ?>" required>
+            </div>
 
-          
+            <div class="col-md-6">
+                <label for="telefone" class="form-label">Número de Celular:</label>
+                <input class="form-control" id="telefone" name="telefone" placeholder="+55 (21)00000-0000" value="<?php echo $telefone; ?>" required>
+            </div>
 
-          <div class="col-md-6">
-            <label for="senha" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
-          </div>
+            <div class="col-md-2">
+                <label for="cep" class="form-label">CEP:</label>
+                <input type="text" class="form-control" id="cep" name="cep" placeholder="00000-000" style="width:100px;" value="<?php echo $cep; ?>" required>
+            </div>
 
-          <div class="col-md-6">
-            <label for="numero" class="form-label">Número de Celular:</label>
-            <input class="form-control" id="numero" name="numero" placeholder="+55 (21)00000-0000" required>
-          </div>
+            <div class="col-md-2">
+                <label for="rua" class="form-label">RUA:</label>
+                <input class="form-control" id="street" name="rua" style="width:100px;" value="<?php echo $rua; ?>" required>
+            </div>
 
-          <div class="col-md-6">
-            <label for="uf" class="form-label">UF</label>
-            <select id="uf" class="form-control" name="uf" required>
-              <option selected>...</option>
-              <option>RJ</option>
-            </select>
-          </div>
+            <div class="col-md-2">
+                <label for="numero" class="form-label">NÚMERO:</label>
+                <input class="form-control" id="numero" name="numero" style="width:100px;" value="<?php echo $numero; ?>" required>
+            </div>
 
-          <div class="col-12">
-            <label for="endereco" class="form-label">Endereço:</label>
-            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Cidade, bairro, complemento..." style="width: 300px;" required>
-          </div>
+            <div class="col-md-2">
+                <label for="bairro" class="form-label">BAIRRO:</label>
+                <input class="form-control" id="neighborhood" name="bairro" style="width:100px;" value="<?php echo $bairro; ?>" required>
+            </div>
 
-         
-          <div class="col-md-2">
-            <label for="cep" class="form-label">CEP:</label>
-            <input class="form-control" id="cep" name="cep" placeholder="00000-000" style="width:100px;" required>
-          </div>
+            <div class="col-md-2">
+                <label for="cidade" class="form-label">CIDADE:</label>
+                <input class="form-control" id="city" name="cidade" style="width:100px;" value="<?php echo $cidade; ?>" required>
+            </div>
 
-          <br>
-          <div class="col-12">
-            <button type="submit" class="btn btn-">
-                Alterar dados
-            </button>
-          </div>
-       </form>
+            <div class="col-md-6">
+                <label for="uf" class="form-label">UF</label>
+                <input type="text" class="form-control" name="uf" id="state" placeholder="UF do estado. Ex: RJ" style="width:100px;" value="<?php echo $uf; ?>">
+            </div>
+
+            <br>
+            <div class="col-12">
+                <button type="submit" class="btn btn-">
+                    Alterar dados
+                </button>
+            </div>
+        </form>
 </div>
     
+
+<script>
+
+        window.onload = () => {
+            const cepInput = document.getElementById('cep');
+            cepInput.addEventListener('keyup', async (event) => {
+                var cep = cepInput.value.replace(/([.-])/g, '');
+
+
+                if(cep.length == 8) {
+
+                    const data = await findCEP(cep);
+
+                    if(data.erro){
+                        cepInput.style.border = '1px solid #a53c3c';
+                    } else {
+                        cepInput.style.border = '1px solid #ccc';
+                        document.getElementById('neighborhood').value = data.bairro || '...';
+                        document.getElementById('street').value = data.logradouro || '...';
+                        document.getElementById('city').value = data.localidade || '...';
+                        document.getElementById('state').value = data.uf || '...';
+                    }
+                } else {
+                    cepInput.style.border = '1px solid #ccc';
+                    document.getElementById('neighborhood').value = '';
+                    document.getElementById('street').value = '';
+                    document.getElementById('city').value = '';
+                    document.getElementById('state').value = '';
+                }
+
+                if(cep.length > 8) {
+                    cepInput.style.border = '1px solid #a53c3c';
+                }
+
+            });
+
+        }
+
+        async function findCEP(cep) {
+            
+            const response = await axios.get(`https://viacep.com.br/ws/${cep}/json/`);
+            const data = response.data;
+
+            return data;
+        }
+
+    </script>
+
 </body>
 <!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

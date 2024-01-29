@@ -16,7 +16,7 @@
     <!-- FavIcon -->
     <link rel="shortcut icon" href="../site/conteudos/imagens/icons/atual/carrinho.ico" type="image/x-icon">
 
-    <title>Envie aqui sua compra :)</title>
+    <title>Envie aqui sua compra</title>
 
     <style>
         * {

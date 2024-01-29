@@ -137,38 +137,47 @@
             <input type="text" class="form-control" name="descricao" placeholder="Descrição">
           </div>
 
-          <?php
-          include '../site/config/connect.php';
 
-          $sql = "SELECT DISTINCT tipo FROM produtos";
-          $result = $conn->query($sql);
+          <div class="col-md-6">
+              <label for="nome" class="form-label">Tipo: </label><br>
+              <select name="tipo" id="tipo" class="form-control">
+                  <?php
+                  include '../site/config/connect.php';
 
-          if ($result->num_rows > 0) {
-              echo '<div class="col-md-6">
-                  <label for="nome" class="form-label">Tipo: </label>
-                  <select name="tipo" id="tipo">';
-              while ($row = $result->fetch_assoc()) {
-                  $tipo = $row['tipo'];
-                  $link = strtolower(str_replace(' ', '-', $tipo)) . '.php';
+                  $sql = "SELECT DISTINCT tipo FROM produtos";
+                  $result = $conn->query($sql);
 
+                  while ($row = $result->fetch_assoc()) {
+                      $tipo = $row['tipo'];
+                      $tipo = ucwords(str_replace('-', ' ', $tipo));
+                      echo '<option value="' . $tipo . '">' . $tipo . '</option>';
+                  }
 
-                  
+                  echo '<option value="novo_tipo">Novo Tipo</option>';
+                  $conn->close();
+                  ?>
+              </select>
 
+              <div id="novo_tipo_container" style="display: none;">
+                  <label for="nome" class="form-label">Novo Tipo: </label>
+                  <input type="text" class="form-control" name="novo_tipo" placeholder="Novo Tipo" id="novo_tipo">
+              </div>
 
-                  echo '<option value="' . $tipo . '">' .$tipo.'</option>'; 
+              <script>
+                  document.getElementById('tipo').addEventListener('change', function () {
+                      var novoTipoContainer = document.getElementById('novo_tipo_container');
+                      var novoTipoInput = document.getElementById('novo_tipo');
 
-                  
-
-              }
-              echo '
-                  </select>
-                </div>';
-      
-          }
-          $conn->close();
-          ?>
-
-
+                      if (this.value === 'novo_tipo') {
+                          novoTipoContainer.style.display = 'block';
+                          novoTipoInput.required = true;
+                      } else {
+                          novoTipoContainer.style.display = 'none';
+                          novoTipoInput.required = false;
+                      }
+                  });
+              </script>
+          </div>
 
           <div class="col-md-6">
             <label for="nome" class="form-label">Imagem: </label>
@@ -183,5 +192,5 @@
 
     </div>
 </body>
-<?php include("../site/footer.php");?>
+<?php include("../site/includes/footer.php");?>
 </html>
