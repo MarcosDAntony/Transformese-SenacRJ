@@ -99,36 +99,39 @@
     <div class="image-container">
       <!-- dinamico aqui -->
 
-    <?php 
+      <?php
 
-    include '../config/connect.php';
+include '../config/connect.php';
 
-  if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
-      $searchTerm = filter_input(INPUT_GET, 'search');
-      $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'hospitalar-masculino' AND descricao LIKE '%$searchTerm%'";
-  } else {
-      $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'hospitalar-masculino'";
-  }
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
+    $searchTerm = filter_input(INPUT_GET, 'search');
+    $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'hospitalar-masculino' AND descricao LIKE '%$searchTerm%'";
+} else {
+    $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'hospitalar-masculino'";
+}
+$resultProdutos = $conn->query($sqlProdutos);
 
-    
-    $resultProdutos = $conn->query($sqlProdutos);
-    
-    // Exibir os produtos dinamicamente
-    while ($rowProduto = $resultProdutos->fetch_assoc()) {
-        echo '<div>';
-        echo '<img src="./imagens/Img-Produtos/Img-Masculino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
-        echo '<p>' . $rowProduto['descricao'] . '</p>';
-        echo '<br>';
-        echo '<input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
-        echo '<br>';
-        echo '<br>';
-        echo '<a class="add-to-cart" style="text-decoration: none;" href="../login.php">';
-        echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
-        echo '</a>';
-        echo '</div>';
-    }
-    
-    ?>
+while ($rowProduto = $resultProdutos->fetch_assoc()) {
+
+    echo '<div>';
+    echo '<img src="./imagens/Img-Produtos/Img-Feminino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
+    echo '<p>' . $rowProduto['descricao'] . '</p>';
+    echo '<br>';
+    echo '<form method="post" action="../carrinho.php">';
+    echo '<input type="number" class="form-control" name="quantidade" min="1" placeholder="Qtd:" style="width:80px;">';
+    echo '<input type="hidden" name="product_id" value="' . $rowProduto['id_produto'] . '">';
+    echo '<input type="hidden" name="descricao" value="' . $rowProduto['descricao'] . '">';
+    echo '<br>';
+    echo '<br>';
+    echo '<button type="submit" class="add-to-cart" style="text-decoration: none;">';
+    echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
+    echo '</button>';
+    echo '</form>';
+    echo '</div>';
+
+}
+
+?>
     <!-- ------------------------------- -->
 
   </div>
