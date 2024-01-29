@@ -1,6 +1,26 @@
 <?php
 session_start();
 
+
+    // Redirecionar para o WhatsApp se o carrinho não estiver vazio
+    if (isset($_GET['action']) && $_GET['action'] == 'fazer_pedido' && !empty($_SESSION['carrinho'])) {
+        $mensagem = "Olá! Gostaria de fazer um pedido. Itens no carrinho:";
+
+        foreach ($_SESSION['carrinho'] as $produto) {
+            $mensagem .= "\n{$produto['quantidade']} x {$produto['descricao']}";
+        }
+
+        // Verificar se o telefone está disponível na sessão
+        $numero_whatsapp = isset($_SESSION['telefone']) ? $_SESSION['telefone'] : '5521968603959'; // esse ultimo é o seu numero
+
+        // Montar a URL do WhatsApp com a mensagem
+        $url_whatsapp = "https://wa.me/{$numero_whatsapp}?text=" . urlencode($mensagem);
+
+        // Redirecionar para o WhatsApp
+        header("Location: {$url_whatsapp}");
+        exit;
+    }
+
 // Adicionando produto ao carrinho
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $produto = [
@@ -214,7 +234,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'remover_item' && isset($_GET['
                     <a href="?action=remover_item&item_key=<?= $key ?>" class="btn btn-danger">Remover</a>
                 <?php endforeach; ?>
 
-                <a href="?action=fazer_pedido" class="btn btn-">Envie Pedido</a>
+                <a href="?action=fazer_pedido" class="btn btn-success">Envie Pedido</a>
             </form>
         <?php else : ?>
             <p>O carrinho está vazio.</p>
@@ -222,24 +242,6 @@ if (isset($_GET['action']) && $_GET['action'] == 'remover_item' && isset($_GET['
     </div>
     <?php
 
-    // Redirecionar para o WhatsApp se o carrinho não estiver vazio
-    if (isset($_GET['action']) && $_GET['action'] == 'fazer_pedido' && !empty($_SESSION['carrinho'])) {
-        $mensagem = "Olá! Gostaria de fazer um pedido. Itens no carrinho:";
-
-        foreach ($_SESSION['carrinho'] as $produto) {
-            $mensagem .= "\n{$produto['quantidade']} x {$produto['descricao']}";
-        }
-
-        // Verificar se o telefone está disponível na sessão
-        $numero_whatsapp = isset($_SESSION['telefone']) ? $_SESSION['telefone'] : '5521966381670'; // esse ultimo é o seu numero
-
-        // Montar a URL do WhatsApp com a mensagem
-        $url_whatsapp = "https://wa.me/{+5521968603959}?text=" . urlencode($mensagem);
-
-        // Redirecionar para o WhatsApp
-        header("Location: {$url_whatsapp}");
-        exit;
-    }
 ?>
 
 
