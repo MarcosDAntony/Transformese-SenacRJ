@@ -125,9 +125,9 @@ while ($rowProduto = $resultProdutos->fetch_assoc()) {
     echo '<input type="hidden" name="describe" value="' . $rowProduto['descricao'] . '">';
     echo '<br>';
     echo '<br>';
-    echo '<button type="submit" class="add-to-cart" style="text-decoration: none;">';
+    echo '<a type="submit" class="add-to-cart" style="text-decoration: none;">';
     echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
-    echo '</button>';
+    echo '</a>';
     echo '</form>';
     echo '</div>';
 }

@@ -87,5 +87,5 @@ if (!isset($_SESSION['email']) && $_SESSION['tipo-cadastro' != 'Usuario']) {
       </p>
     </div>
   </section>
-  <?php include("../site/includes/footer.php");?>
+  <?php include("./includes/footer.php");?>
 </html>

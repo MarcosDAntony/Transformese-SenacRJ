@@ -116,6 +116,12 @@ if (!isset($_SESSION['email']) && $_SESSION['tipo-cadastro' != 'Usuario']) {
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../area-usuario.php">
+                            <img src="./imagens/icons/atual/conta.png" style="height:20px; width:20px;" alt="carrinho">
+                        </a>
+                        </li>
+                        
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../carrinho.php">
                             <img src="./imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
                         </a>

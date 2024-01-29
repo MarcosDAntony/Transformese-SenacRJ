@@ -10,7 +10,7 @@
     <!-- Funções W3Schools -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <!-- FavIcon das Páginas -->
-    <link rel="shortcut icon" href="../site/conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
 
     <style>
         * {
@@ -38,7 +38,7 @@
 </head>
 <body>
 <div class="formas-pagamento">
-        <img src="../conteudos/imagens/Img-Ref/Atual/pagamento-removebg-preview.png" alt="Formas de pagamento">
+        <img src="./imagens/Img-Ref/Atual/pagamento-removebg-preview.png" alt="Formas de pagamento">
     </div>
 
 <!-- Footer -->

@@ -85,7 +85,7 @@
 </head>
 
 <body>
-<?php include_once("heade-produtos.php");?>
+<?php include("heade-produtos.php");?>
   <header class="limpezafem"></header>
   <div class="principal">
     <h1>Uniformes de Limpeza Feminina</h1>
@@ -93,149 +93,35 @@
     <p>Nossos uniformes combinam praticidade e elegância, proporcionando um visual profissional enquanto realiza suas tarefas de limpeza com eficiência.</p>
   </div>
 <div class="image-container">
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-1.png" alt="Product 1">
-      <p> Uniforme de Camareira Vestido de Copeira + Avental de Camareira - Oxford 100% Poliéster  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+<?php 
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-2.png" alt="Product 2">
-      <p> Kit Vestido copeira com avental preto e branco - Oxford 100% Poliéster  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+include '../config/connect.php';
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-3.png" alt="Product 3">
-      <p> Conjunto - Camisa verde ➕ calça cinza - Oxford 100% Poliéster  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-4.png" alt="Product 4">
-      <p> Colete Social azul marinho - Oxford 100% Poliéster  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
+  $searchTerm = filter_input(INPUT_GET, 'search');
+  $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'limpeza-feminino' AND descricao LIKE '%$searchTerm%'";
+} else {
+  $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'limpeza-feminino'";
+}
+$resultProdutos = $conn->query($sqlProdutos);
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-5.png" alt="Product 5">
-      <p>  Vestido copeira cinza - Oxford 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+// Exibir os produtos dinamicamente
+while ($rowProduto = $resultProdutos->fetch_assoc()) {
+    echo '<div>';
+    echo '<img src="./imagens/Img-Produtos/Img-Feminino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
+    echo '<p>' . $rowProduto['descricao'] . '</p>';
+    echo '<br>';
+    echo '<input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
+    echo '<br>';
+    echo '<br>';
+    echo '<a class="add-to-cart" style="text-decoration: none;" href="../login.php">';
+    echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
+    echo '</a>';
+    echo '</div>';
+}
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-6.png" alt="Product 6">
-      <p> Avental para faxineira vermelho - 100% Algodão </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-7.png" alt="Product 7">
-      <p> Avental branco com bolso - 100% Poliéster   </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-8.png" alt="Product 8">
-      <p> Kit Avental azul com três bolsos com camisa - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-9.png" alt="Product 9">
-      <p> Avental branco com um bolso - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-10.png" alt="Product 10">
-      <p> Macacão azul para faxineira - 100% Brim </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-11.png" alt="Product 11">
-      <p> Camisa amarela manga curta com três botões - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-limpeza-12.png" alt="Product 12">
-      <p> Avental verde com bolso  - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+?>
   </div>
 </body>
 <?php include_once("footer-formas-pagamento.php");?>
