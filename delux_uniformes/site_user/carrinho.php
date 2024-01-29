@@ -194,11 +194,14 @@ if (isset($_GET['action']) && $_GET['action'] == 'remover_item' && isset($_GET['
             </div>
         </div>
     </header>
+    <!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <div class="position-carrinho">
-        <h1>Carrinho de Compras</h1>
 
         <?php if (!empty($_SESSION['carrinho'])) : ?>
             <form class="form_carrinho" method="post">
+            <h1>Carrinho de Compras</h1>
                 <?php foreach ($_SESSION['carrinho'] as $key => $produto) : ?>
                     <div class="mb-3">
                         <label for="produto" class="form-label">Nome do Produto:</label>
@@ -211,7 +214,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'remover_item' && isset($_GET['
                     <a href="?action=remover_item&item_key=<?= $key ?>" class="btn btn-danger">Remover</a>
                 <?php endforeach; ?>
 
-                <a href="?action=fazer_pedido" class="btn btn-success">Fazer Pedido</a>
+                <a href="?action=fazer_pedido" class="btn btn-">Envie Pedido</a>
             </form>
         <?php else : ?>
             <p>O carrinho está vazio.</p>
@@ -231,7 +234,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'remover_item' && isset($_GET['
         $numero_whatsapp = isset($_SESSION['telefone']) ? $_SESSION['telefone'] : '5521966381670'; // esse ultimo é o seu numero
 
         // Montar a URL do WhatsApp com a mensagem
-        $url_whatsapp = "https://wa.me/{$numero_whatsapp}?text=" . urlencode($mensagem);
+        $url_whatsapp = "https://wa.me/{+5521968603959}?text=" . urlencode($mensagem);
 
         // Redirecionar para o WhatsApp
         header("Location: {$url_whatsapp}");
@@ -240,7 +243,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'remover_item' && isset($_GET['
 ?>
 
 
-    <?php include("../site/includes/footer.php");?>
+    <?php include("./includes/footer.php");?>
 </body>
 
 </html>
