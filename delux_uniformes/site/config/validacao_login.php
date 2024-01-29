@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
 
         $_SESSION['email'] = $row['email'];
+        $_SESSION['telefone'] = $row['telefone'];
         $_SESSION['tipo_cadastro'] = $row['tipo_cadastro'];
 
     var_dump($row);
