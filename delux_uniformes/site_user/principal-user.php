@@ -1,3 +1,10 @@
+<?php session_start();
+
+if (!isset($_SESSION['email']) && $_SESSION['tipo-cadastro' != 'Usuario']) {
+    header("Location: ../site/login.php");
+    exit();
+} ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,10 +26,10 @@
     <?php 
 
         // Inclusão do cabeçalho
-        include("./heade-user.php");
+        include("./includes/heade-user.php");
         
         // Inclusão do conteúdo principal
-        include("./main.php");
+        include("./includes/main.php");
         
         // Inclusão do rodapé
         include("../site/includes/footer.php");

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <!-- Bootstrap -->
@@ -14,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- FavIcon -->
-    <link rel="shortcut icon" href="../site/conteudos/imagens/icons/atual/carrinho.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./conteudos/imagens/icons/atual/carrinho.ico" type="image/x-icon">
 
     <title>Envie aqui sua compra</title>
 
@@ -46,45 +48,39 @@
     </style>
 </head>
 
-<?php include("heade-user.php");?>
+<?php include("./includes/heade-user.php");?>
 
 <body>
     <div class="position-carrinho">
         <h1>Carrinho de Compras</h1>
-        <form class="form_carrinho" method="post">
-            <div class="mb-3">
-                <label for="produto" class="form-label">Nome do Produto:</label>
-                <input type="text" class="form-control" id="produto" name="produto" required>
-            </div>
-            <div class="mb-3">
-                <label for="quantidade" class="form-label">Quantidade:</label>
-                <input type="number" class="form-control" id="quantidade" name="quantidade" required>
-            </div>
-            <div class="mb-3">
-                <label for="preco" class="form-label">Preço:</label>
-                <input type="number" class="form-control" id="preco" name="preco" step="0.01" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Adicionar ao Carrinho</button>
-        </form>
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $produto = $_POST['produto'];
-            $quantidade = $_POST['quantidade'];
-            $preco = $_POST['preco'];
-            
-            // Formatar os dados para enviar via WhatsApp
-            $mensagem = "Olá! Gostaria de comprar $quantidade unidades do produto $produto por R$$preco cada. Total: R$$total";
-            $numero_whatsapp = ['numero'];
-            
-            // Montar a URL do WhatsApp com a mensagem
-            $url_whatsapp = "https://wa.me/$numero_whatsapp?text=" . urlencode($mensagem);
-            
-            // Redirecionar para o WhatsApp
-            header("Location: $url_whatsapp");
-            exit;
-        }
-        ?>
+
+       <?php if (!empty($_SESSION['carrinho'])) : ?>
+            <form class="form_carrinho" method="post">
+                <?php foreach ($_SESSION['carrinho'] as $produto) : ?>
+                    <div class="mb-3">
+                        <label for="produto" class="form-label">Nome do Produto:</label>
+                        <input type="text" class="form-control" id="produto" name="descricao[]" value="<?= $produto['descricao'] ?>" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantidade" class="form-label">Quantidade:</label>
+                        <input type="number" class="form-control" id="quantidade" name="quantidade[]" value="<?= $produto['quantidade'] ?>" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="preco" class="form-label">Preço:</label>
+                        <input type="number" class="form-control" id="preco" name="preco[]" value="<?= $produto['preco'] ?>" step="0.01" readonly>
+                    </div>
+                <?php endforeach; ?>
+
+                <button type="submit" class="btn btn-primary">Adicionar ao Carrinho</button>
+            </form>
+
+            <a href="?action=fazer_pedido" class="btn btn-success">Fazer Pedido</a>
+        <?php else : ?>
+            <p>O carrinho está vazio.</p>
+        <?php endif; ?>
     </div>
+
+    <?php include("../site/includes/footer.php");?>
 </body>
-<?php include("../site/footer.php");?>
+
 </html>

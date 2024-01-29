@@ -8,7 +8,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- FavIcon das Páginas -->
-    <link rel="shortcut icon" href="../conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
     <style>
         * {
             font-family: 'sans-serif';
@@ -76,7 +76,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav flex-grow-1 pe-3" style="font-size: 17px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="sobre.php">Sobre</a>
+                            <a class="nav-link active" aria-current="page" href="./sobre.php">Sobre</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -85,7 +85,7 @@
                             </a>
                             <?php
 
-                            include_once '../site/config/connect.php';
+                            include './config/connect.php';
 
                             $sql = "SELECT DISTINCT tipo FROM produtos";
                             $result = $conn->query($sql);
@@ -97,7 +97,7 @@
                                     $tipo = $row['tipo'];
                                     $link = strtolower(str_replace(' ', '-', $tipo)) . '.php';
                                     
-                                    echo '<li><a href="../conteudos/' . $link . '" class="dropdown-item">' . $tipo . '</a></li>';
+                                    echo '<li><a href="./conteudos/' . $link . '" class="dropdown-item">' . $tipo . '</a></li>';
                                 }
                                 echo '</ul>';
                             } else {
@@ -110,23 +110,18 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="area-usuario.php">
-                              <img src="../conteudos/imagens/icons/atual/conta.png" style="height:20px; width:20px;" alt="home" >
+                            <a class="nav-link active" aria-current="page" href="./area-usuario.php">
+                              <img src="./conteudos/imagens/icons/atual/conta.png" style="height:20px; width:20px;" alt="home" >
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="carrinho.php">
-                            <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
+                            <a class="nav-link active" aria-current="page" href="./carrinho.php">
+                            <img src="./conteudos/imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
                           </a>
                         </li>
                     </ul>
 
-                    <!-- Barra de Pesquisa-->
-                    <div class="divBusca posicao-pesquisa">
-                        <input name="Pesquisa" id="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post" />
-                        <a href="#Pesquisa" target="_top" class="animate-img"><img src="../conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" /></a>
-                    </div>
                 </div>
             </div>
         </div>

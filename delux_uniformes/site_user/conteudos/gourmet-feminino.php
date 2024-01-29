@@ -100,7 +100,7 @@
   <div class="image-container">
   <?php 
 
-include '../site/config/connect.php';
+include '../config/connect.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {

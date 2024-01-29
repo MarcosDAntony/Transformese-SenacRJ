@@ -94,7 +94,7 @@
   <div class="image-container">
   <?php 
 
-include_once '../site/config/connect.php';
+include '../config/connect.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
@@ -123,5 +123,5 @@ while ($rowProduto = $resultProdutos->fetch_assoc()) {
 ?>
         </div>
 </body>
-<?php include_once("footer-formas-pagamento.php");?>
+<?php include("footer-formas-pagamento.php");?>
 

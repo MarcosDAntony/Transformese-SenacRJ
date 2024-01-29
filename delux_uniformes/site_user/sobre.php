@@ -1,3 +1,10 @@
+<?php session_start();
+
+if (!isset($_SESSION['email']) && $_SESSION['tipo-cadastro' != 'Usuario']) {
+    header("Location: ../site/login.php");
+    exit();
+} ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,7 +19,7 @@
     }
 
     .imagem-sobre {
-      background-image: url('../site/conteudos/imagens/Img-Ref/Atual/fundo-sobre_ok.png');
+      background-image: url('../conteudos/imagens/Img-Ref/Atual/fundo-sobre_ok.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -49,7 +56,7 @@
   </style>
 </head>
 <body>
-  <?php include("heade-user.php"); ?>
+  <?php include("./includes/heade-user.php"); ?>
 
   <section class="imagem-sobre">
     <div class="conteudo-texto">
@@ -80,5 +87,5 @@
       </p>
     </div>
   </section>
-  <?php include("../site/footer.php");?>
+  <?php include("../site/includes/footer.php");?>
 </html>

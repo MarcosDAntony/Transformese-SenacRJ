@@ -1,4 +1,9 @@
+<?php session_start();
 
+if (!isset($_SESSION['email']) && $_SESSION['tipo-cadastro' != 'Usuario']) {
+    header("Location: ../../site/login.php");
+    exit();
+} ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,7 +82,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav flex-grow-1 pe-3" style="font-size: 17px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../site/sobre.php">Sobre</a>
+                            <a class="nav-link active" aria-current="page" href="../sobre.php">Sobre</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -85,7 +90,7 @@
                                 Produtos
                             </a>
                             <?php
-                            include_once '../site/config/connect.php';
+                            include '../config/connect.php';
 
                             $sql = "SELECT DISTINCT tipo FROM produtos";
                             $result = $conn->query($sql);
@@ -111,7 +116,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../site/login.php">
+                            <a class="nav-link active" aria-current="page" href="../carrinho.php">
                             <img src="./imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
                         </a>
                         </li>

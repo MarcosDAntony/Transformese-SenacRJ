@@ -116,13 +116,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
   // Exibir os produtos dinamicamente
   while ($rowProduto = $resultProdutos->fetch_assoc()) {
       echo '<div>';
-      echo '<img src="./imagens/Img-Produtos/Img-Masculino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
+      echo '<img src="./imagens/Img-Produtos/Img-Feminino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
       echo '<p>' . $rowProduto['descricao'] . '</p>';
       echo '<br>';
       echo '<input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
       echo '<br>';
       echo '<br>';
-      echo '<a class="add-to-cart" style="text-decoration: none;" href="../login.php">';
+      echo '<a class="add-to-cart" style="text-decoration: none;" href="../site/login.php">';
       echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
       echo '</a>';
       echo '</div>';

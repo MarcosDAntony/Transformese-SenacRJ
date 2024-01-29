@@ -102,16 +102,15 @@
     <!-- Restante dos produtos... -->
 
   <div class="image-container">
-<?php 
+  <?php
 
-include '../site/config/connect.php';
-
+include '../config/connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
-  $searchTerm = filter_input(INPUT_GET, 'search');
-  $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'beleza-feminino' AND descricao LIKE '%$searchTerm%'";
+    $searchTerm = filter_input(INPUT_GET, 'search');
+    $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'beleza-feminino' AND descricao LIKE '%$searchTerm%'";
 } else {
-  $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'beleza-feminino'";
+    $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'beleza-feminino'";
 }
 $resultProdutos = $conn->query($sqlProdutos);
 
@@ -120,16 +119,21 @@ while ($rowProduto = $resultProdutos->fetch_assoc()) {
     echo '<img src="./imagens/Img-Produtos/Img-Feminino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
     echo '<p>' . $rowProduto['descricao'] . '</p>';
     echo '<br>';
-    echo '<input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
+    echo '<form method="post" action="../carrinho.php">';
+    echo '<input type="number" class="form-control" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
+    echo '<input type="hidden" name="product_id" value="' . $rowProduto['id_produto'] . '">';
+    echo '<input type="hidden" name="describe" value="' . $rowProduto['descricao'] . '">';
     echo '<br>';
     echo '<br>';
-    echo '<a class="add-to-cart" style="text-decoration: none;" href="../login.php">';
+    echo '<button type="submit" class="add-to-cart" style="text-decoration: none;">';
     echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
-    echo '</a>';
+    echo '</button>';
+    echo '</form>';
     echo '</div>';
 }
 
 ?>
+
   </div>
 </body>
 <?php include_once("footer-formas-pagamento.php");?>

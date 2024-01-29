@@ -121,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
       echo '<input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
       echo '<br>';
       echo '<br>';
-      echo '<a class="add-to-cart" style="text-decoration: none;" href="../login.php">';
+      echo '<a class="add-to-cart" style="text-decoration: none;" href="../site/login.php">';
       echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
       echo '</a>';
       echo '</div>';

@@ -102,7 +102,7 @@
   <div class="image-container">
   <?php 
 
-include '../site/config/connect.php';
+include '../config/connect.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
@@ -116,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
   // Exibir os produtos dinamicamente
   while ($rowProduto = $resultProdutos->fetch_assoc()) {
       echo '<div>';
-      echo '<img src="./imagens/Img-Produtos/Img-Masculino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
+      echo '<img src="./imagens/Img-Produtos/Img-Feminino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
       echo '<p>' . $rowProduto['descricao'] . '</p>';
       echo '<br>';
       echo '<input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
