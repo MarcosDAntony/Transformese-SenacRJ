@@ -88,7 +88,7 @@
 
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="registro_produtos.php">
-                            <img src="../conteudos/imagens/icons/atual/registro_produtos.png" style="height:20px; width:20px;" alt="carrinho">
+                            <img src="../conteudos/imagens/icons/atual/registro_produtos.png" style="height:20px; width:20px;" alt="registro_produtos">
                           </a>
                         </li>
 

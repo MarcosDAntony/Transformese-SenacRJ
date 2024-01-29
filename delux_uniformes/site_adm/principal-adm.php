@@ -24,7 +24,7 @@
         include("main.php");
         
         // Inclusão do rodapé
-        include("../site/footer.php");
+        include("../site/includes/footer.php");
     ?>
 
 </html>

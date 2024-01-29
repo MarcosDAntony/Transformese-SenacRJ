@@ -62,7 +62,7 @@
     <header>
         <div class="navbar navbar-expand-md text-black-80 container-fluid">
             <a href="principal-adm.php" class="animate-img w3-animate-left" target="_self">
-                <img src="../site_adm/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
+                <img src="../conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">

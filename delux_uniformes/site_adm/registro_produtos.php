@@ -118,6 +118,8 @@
                             <img src="../site_adm/conteudos/imagens/icons/atual/sair.png" style="height:20px; width:20px;" alt="logout">
                           </a>
                         </li>
+
+                        
                     </ul>
 
                 </div>
@@ -134,6 +136,39 @@
             <label for="nome" class="form-label">Descrição: </label>
             <input type="text" class="form-control" name="descricao" placeholder="Descrição">
           </div>
+
+          <?php
+          include '../site/config/connect.php';
+
+          $sql = "SELECT DISTINCT tipo FROM produtos";
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+              echo '<div class="col-md-6">
+                  <label for="nome" class="form-label">Tipo: </label>
+                  <select name="tipo" id="tipo">';
+              while ($row = $result->fetch_assoc()) {
+                  $tipo = $row['tipo'];
+                  $link = strtolower(str_replace(' ', '-', $tipo)) . '.php';
+
+
+                  
+
+
+                  echo '<option value="' . $tipo . '">' .$tipo.'</option>'; 
+
+                  
+
+              }
+              echo '
+                  </select>
+                </div>';
+      
+          }
+          $conn->close();
+          ?>
+
+
 
           <div class="col-md-6">
             <label for="nome" class="form-label">Imagem: </label>
