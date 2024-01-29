@@ -75,7 +75,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     </style>
 </head>
-
 <body>
     <div class="position-carrinho">
         <h1>Carrinho de Compras</h1>
