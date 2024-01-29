@@ -114,7 +114,7 @@ $resultProdutos = $conn->query($sqlProdutos);
 while ($rowProduto = $resultProdutos->fetch_assoc()) {
 
     echo '<div>';
-    echo '<img src="./imagens/Img-Produtos/Img-Feminino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
+    echo '<img src="./imagens/Img-Produtos/Img-Masculino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
     echo '<p>' . $rowProduto['descricao'] . '</p>';
     echo '<br>';
     echo '<form method="post" action="../carrinho.php">';
