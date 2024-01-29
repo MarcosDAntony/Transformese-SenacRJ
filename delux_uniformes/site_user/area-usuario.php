@@ -149,7 +149,7 @@ button{
         </div>
     </header>
     <div class="painel-adm">
-    <form action="#" method="post" enctype="multipart/form-data">
+    <form action="./config/action_editar.php" method="post" enctype="multipart/form-data">
             <!-- Seus campos de formulário -->
             <div class="round-image">
                 <img src="../conteudos/imagens/Img-Ref/Atual/deluxpro-semmaquina-removebg-preview.png" alt="Imagem Redonda">
