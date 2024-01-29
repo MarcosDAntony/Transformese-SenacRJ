@@ -194,9 +194,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'remover_item' && isset($_GET['
             </div>
         </div>
     </header>
-    <!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    
 <div class="position-carrinho">
 
         <?php if (!empty($_SESSION['carrinho'])) : ?>
@@ -245,5 +243,9 @@ if (isset($_GET['action']) && $_GET['action'] == 'remover_item' && isset($_GET['
 
     <?php include("./includes/footer.php");?>
 </body>
+
+
+<!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
