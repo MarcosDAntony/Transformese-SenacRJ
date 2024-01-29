@@ -84,7 +84,7 @@
 </head>
 
 <body>
-<?php include_once("heade-produtos.php");?>
+<?php include("heade-produtos.php");?>
 <body>
   <header class="belezafem"></header>
   <body>
@@ -115,14 +115,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
 $resultProdutos = $conn->query($sqlProdutos);
 
 while ($rowProduto = $resultProdutos->fetch_assoc()) {
+
     echo '<div>';
     echo '<img src="./imagens/Img-Produtos/Img-Feminino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
     echo '<p>' . $rowProduto['descricao'] . '</p>';
     echo '<br>';
     echo '<form method="post" action="../carrinho.php">';
-    echo '<input type="number" class="form-control" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
+    echo '<input type="number" class="form-control" name="quantidade" min="1" placeholder="Qtd:" style="width:80px;">';
     echo '<input type="hidden" name="product_id" value="' . $rowProduto['id_produto'] . '">';
-    echo '<input type="hidden" name="describe" value="' . $rowProduto['descricao'] . '">';
+    echo '<input type="hidden" name="descricao" value="' . $rowProduto['descricao'] . '">';
     echo '<br>';
     echo '<br>';
     echo '<button type="submit" class="add-to-cart" style="text-decoration: none;">';
@@ -130,6 +131,7 @@ while ($rowProduto = $resultProdutos->fetch_assoc()) {
     echo '</button>';
     echo '</form>';
     echo '</div>';
+
 }
 
 ?>
