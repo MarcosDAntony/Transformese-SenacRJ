@@ -102,6 +102,13 @@ if (isset($_GET['action']) && $_GET['action'] == 'remover_item' && isset($_GET['
                     </div>
                     <a href="?action=remover_item&item_key=<?= $key ?>" class="btn btn-danger">Remover</a>
                 <?php endforeach; ?>
+                <button onclick="goBack()" class="btn btn-secondary">Voltar</button>
+
+                <script>
+                    function goBack() {
+                        window.history.back();
+                    }
+                </script>
                 <a href="?action=fazer_pedido" class="btn btn-success">Fazer Pedido</a>
             </form>
         <?php else : ?>
