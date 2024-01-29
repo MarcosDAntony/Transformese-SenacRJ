@@ -12,7 +12,7 @@
     }
 
     .imagem-sobre {
-      background-image: url('../site/conteudos/imagens/Img-Ref/Atual/fundo-sobre_ok.png');
+      background-image: url('../conteudos/imagens/Img-Ref/Atual/fundo-sobre_ok.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -49,7 +49,7 @@
   </style>
 </head>
 <body>
-  <?php include("heade-adm.php"); ?>
+  <?php include("./includes/heade-adm.php"); ?>
 
   <section class="imagem-sobre">
     <div class="conteudo-texto">
@@ -80,5 +80,5 @@
       </p>
     </div>
   </section>
-  <?php include("../site/footer.php");?>
+  <?php include("../site/includes/footer.php");?>
 </html>

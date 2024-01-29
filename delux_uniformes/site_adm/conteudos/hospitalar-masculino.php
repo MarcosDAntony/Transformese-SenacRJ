@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--FavIcon--> <link rel="shortcut icon" href="../conteudos/imagens/icons/atual/produtos.ico" type="image/x-icon">
+   <!--FavIcon--> <link rel="shortcut icon" href="./imagens/icons/atual/produtos.ico" type="image/x-icon">
   <title>Uniformes Masculino Hospitalar</title>
   <style>
     body {
@@ -17,7 +17,7 @@
       color: #fff;
       text-align: center;
       padding: 350px;
-      background-image: url('../conteudos/imagens/Img-Ref/Atual/hospitalar-masc.png');
+      background-image: url('./imagens/Img-Ref/Atual/hospitalar-masc.png');
       /* Imagem de fundo adicionada */
       background-size: cover;
     
@@ -85,7 +85,7 @@
 </head>
 
 <body>
-<?php include_once("heade-produtos.php");?>
+<?php include("heade-produtos.php");?>
   <header class="hospitalarmasc"></header>
   <div class="principal">
   <h1>Uniformes Masculino Hospitalar</h1>
@@ -97,150 +97,41 @@
     </p>
   </div>
     <div class="image-container">
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-1.png" alt="Product 1">
-      <p> Conjunto de Pijama Cirúrgico azul claro incluso máscara , manga curta - Oxford 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+      <!-- dinamico aqui -->
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-2.png" alt="Product 2">
-      <p> Conjunto de Pijama Cirúrgico azul claro, manga curta - Oxford 100% poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+    <?php 
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-3.png" alt="Product 3">
-      <p> Jaleco branco 3 bolsos frontais, sendo 1 no peito e 2 na cintura , manga longa - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+    include '../config/connect.php';
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-4.png" alt="Product 4">
-      <p> Jaleco branco com 2 bolsos inferiores, um bolso superior, manga longa sem punho e gola esporte - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+  if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
+      $searchTerm = filter_input(INPUT_GET, 'search');
+      $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'hospitalar-masculino' AND descricao LIKE '%$searchTerm%'";
+  } else {
+      $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'hospitalar-masculino'";
+  }
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-5.png" alt="Product 5">
-      <p> Conjunto de Pijama Cirúrgico azul escuro, manga curta - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+    
+    $resultProdutos = $conn->query($sqlProdutos);
+    
+    // Exibir os produtos dinamicamente
+    while ($rowProduto = $resultProdutos->fetch_assoc()) {
+        echo '<div>';
+        echo '<img src="./imagens/Img-Produtos/Img-Masculino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
+        echo '<p>' . $rowProduto['descricao'] . '</p>';
+        echo '<br>';
+        echo '<input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
+        echo '<br>';
+        echo '<br>';
+        echo '<a class="add-to-cart" style="text-decoration: none;" href="../login.php">';
+        echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
+        echo '</a>';
+        echo '</div>';
+    }
+    
+    ?>
+    <!-- ------------------------------- -->
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-6.png" alt="Product 6">
-      <p> Jaleco com 2 bolsos inferiores manga longa branco -  100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-7.png" alt="Product 7">
-      <p> Jaleco com dois bolsos inferiores, um bolso superior, manga longa sem punho branco- 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-8.png" alt="Product 8">
-      <p> Jaleco Masculino Tradicional Gola Partida Punho Bolsos Fontais manga longa branco - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-9.png" alt="Product 9">
-      <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta verde água  - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-10.png" alt="Product 10">
-      <p> Jaleco Oxford com 2 bolsos na cintura manga longa, com gola social branco - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-11.png" alt="Product 11">
-      <p> Camisa cinza manga curta com 3 bolsos , um bolso superior e dois na cintura -100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-hospitalar-12.png" alt="Product 12">
-      <p> Calça azul com 2 bolsos - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
   </div>
 </body>
-<?php include_once("footer-formas-pagamento.php");?>
+<?php include_once("./footer-formas-pagamento.php");?>
 

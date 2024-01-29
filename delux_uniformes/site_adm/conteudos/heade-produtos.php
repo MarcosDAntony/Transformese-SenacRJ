@@ -1,4 +1,9 @@
+<?php session_start();
 
+if (!isset($_SESSION['email']) && $_SESSION['tipo-cadastro' != 'Usuario']) {
+    header("Location: ../../site/login.php");
+    exit();
+} ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +14,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- FavIcon das Páginas -->
-    <link rel="shortcut icon" href="../site/conteudos/imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagens/icons/atual/logodeluxunipro-remaster.ico" type="image/x-icon">
     <style>
         * {
             font-family: 'sans-serif';
@@ -61,8 +66,8 @@
     <!-- =============================================Header=========================================================================-->
     <header>
         <div class="navbar navbar-expand-md text-black-80 container-fluid">
-            <a href="../principal-adm.php" class="animate-img w3-animate-left" target="_self">
-                <img src="imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
+            <a href="../principal.php" class="animate-img w3-animate-left" target="_self">
+                <img src="./imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -84,36 +89,61 @@
                             <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                                 Produtos
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="hospitalar-masculino.php" class="dropdown-item">Hospitalar Masculino</a></li>
-                                <li><a href="hospitalar-feminino.php" class="dropdown-item">Hospitalar Feminino</a></li>
-                                <li><a href="limpeza-masculino.php" class="dropdown-item">Limpeza Masculino</a></li>
-                                <li><a href="limpeza-feminino.php" class="dropdown-item">Limpeza Feminino</a></li>
-                                <li><a href="gourmet-masculino.php" class="dropdown-item">Gourmet Masculino</a></li>
-                                <li><a href="gourmet-feminino.php" class="dropdown-item">Gourmet Feminino</a></li>
-                                <li><a href="beleza-feminino.php" class="dropdown-item">Beleza Feminino</a></li>
-                                <li><a href="bordados.php" class="dropdown-item">Bordados</a></li>
-                            </ul>
+                            <?php
+                            include '../config/connect.php';
+
+                            $sql = "SELECT DISTINCT tipo FROM produtos";
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                                echo '<ul class="dropdown-menu">';
+                                
+                                while ($row = $result->fetch_assoc()) {
+                                    $tipo = $row['tipo'];
+                                    $link = strtolower(str_replace(' ', '-', $tipo)) . '.php';
+                                    
+                                    echo '<li><a href="../conteudos/' . $link . '" class="dropdown-item">' . $tipo . '</a></li>';
+                                }
+                                echo '</ul>';
+                            } else {
+                                echo "Sem tipos de produto no momento.";
+                            }
+
+
+                            
+                            $conn->close();
+?>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../area-adm.php">
-                              <img src="imagens/icons/atual/contdeadm.png" style="height:20px; width:20px;" alt="contadeadm" >
-                            </a>
+                            <img src="./imagens/icons/atual/contdeadm.png" style="height:20px; width:20px;" alt="carrinho">
+                        </a>
                         </li>
-
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../carrinho.php">
+                            <img src="./imagens/icons/atual/carrinho.png" style="height:20px; width:20px;" alt="carrinho">
+                        </a>
+                        </li>
                     </ul>
 
                     <!-- Barra de Pesquisa-->
-                    <div class="divBusca posicao-pesquisa">
-                        <input name="Pesquisa" id="Pesquisa" type="search" class="inputBusca" placeholder=" Buscar..." method="post" />
-                        <a href="#Pesquisa" target="_top" class="animate-img"><img src="../site/conteudos/imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" /></a>
-                    </div>
+                    <form action="" method="get">
+                        <div class="divBusca posicao-pesquisa">
+                            <input name="search" type="text" class="inputBusca" placeholder="Buscar..." value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>"/>
+                            <button type="submit" class="animate-img" style="border: none; background-color: transparent;">
+                                <img src="./imagens/icons/atual/lupa2-2.png" style="height:25px; width:25px;" />
+                            </button>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<!-- Bootstrap JavaScript (não pode remover se não perde a função do menu) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script
 </html>

@@ -82,5 +82,5 @@
       </p>
     </div>
   </section>
-  <?php include("../site/includes/footer.php");?>
+  <?php include("./includes/footer.php");?>
 </html>

@@ -18,7 +18,7 @@
 </head>
     <?php 
         // Inclusão do cabeçalho
-        include("heade-adm.php");
+        include("./includes/heade-adm.php");
         
         // Inclusão do conteúdo principal
         include("main.php");

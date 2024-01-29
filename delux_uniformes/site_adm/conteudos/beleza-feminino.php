@@ -102,149 +102,38 @@
     <!-- Restante dos produtos... -->
 
   <div class="image-container">
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-1.png" alt="Product 1">
-      <p>Kinomo Preto para salão de beleza - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+  <?php
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-2.png" alt="Product 2">
-      <p>Máscara Rosa e Avental rosa / com detalhes azuis na manga com dois bolsos na cintura - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-     <br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+include '../config/connect.php';
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-3.png" alt="Product 3">
-      <p> Kinomo Marrom com botões para salão de beleza com um bolso na cintura - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-           <br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
+    $searchTerm = filter_input(INPUT_GET, 'search');
+    $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'beleza-feminino' AND descricao LIKE '%$searchTerm%'";
+} else {
+    $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'beleza-feminino'";
+}
+$resultProdutos = $conn->query($sqlProdutos);
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-4.png" alt="Product 4">
-      <p>Avental azul para salão de beleza um bolso na cintura -  100% Poliéster</p>
-      <br>
-      <label for="quantity">Qtd:</label>
-      <input type="number" id="quantity" class="quantity-input" value="1" min="1">
-           <br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+while ($rowProduto = $resultProdutos->fetch_assoc()) {
+    echo '<div>';
+    echo '<img src="./imagens/Img-Produtos/Img-Feminino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
+    echo '<p>' . $rowProduto['descricao'] . '</p>';
+    echo '<br>';
+    echo '<form method="post" action="../carrinho.php">';
+    echo '<input type="number" class="form-control" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
+    echo '<input type="hidden" name="product_id" value="' . $rowProduto['id_produto'] . '">';
+    echo '<input type="hidden" name="describe" value="' . $rowProduto['descricao'] . '">';
+    echo '<br>';
+    echo '<br>';
+    echo '<a type="submit" class="add-to-cart" style="text-decoration: none;">';
+    echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
+    echo '</a>';
+    echo '</form>';
+    echo '</div>';
+}
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-5.png" alt="Product 5">
-      <p>Avental preto para salão de beleza um bolso na cintura - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-           <br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+?>
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-6.png" alt="Product 6">
-      <p>Blusa Scrub Feminino de Oxfordine Veterinária com dois bolsos na cintura - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-           <br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-7.png" alt="Product 7">
-      <p>Avental Personalizado Roxo incluso logo na marca com um bolso na cintura + com blusa - 100% Poliéster   </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-           <br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-8.png" alt="Product 8">
-      <p>Conjunto preto - blusa dois bolsos na cintura e calça para assistente de salão de beleza - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-           <br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-9.png" alt="Product 9">
-      <p>Avental Branco sem manga - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-           <br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-10.png" alt="Product 10">
-      <p>Avental Branco com dois bolsos na cintura para esteticistas - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-           <br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-11.png" alt="Product 11">
-      <p>Avental Preto para cabeleleiro um bolso - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-           <br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-beleza-12.png" alt="Product 12">
-      <p>Avental Personalizado Verde e Preto para salão de beleza - 100% Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-           <br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
   </div>
 </body>
 <?php include_once("footer-formas-pagamento.php");?>

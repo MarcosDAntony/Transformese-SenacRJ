@@ -71,7 +71,7 @@
     }
   
     .imgadm {
-  background-image: url(../site/conteudos/imagens/Img-Ref/Atual/atual\ -\ fundo\ principal\ melhoradas.png);
+  background-image: url(../conteudos/imagens/Img-Ref/Atual/atual\ -\ fundo\ principal\ melhoradas.png);
   background-size: cover;
   background-position: center; /* Adiciona esta linha para posicionar no centro */
   background-attachment: fixed; /* Adiciona esta linha se quiser que a imagem seja fixa durante o scroll */
@@ -86,7 +86,7 @@
   <header>
         <div class="navbar navbar-expand-md text-black-80 container-fluid">
             <a href="#" class="animate-img w3-animate-left" target="_self">
-                <img src="../site/conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
+                <img src="../conteudos/imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -102,20 +102,20 @@
                     <ul class="navbar-nav flex-grow-1 pe-3" style="font-size: 17px;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="principal-adm.php">
-                              <img src="../site_adm/conteudos/imagens/icons/atual/home.png" style="height:25px; width:25px;" alt="home" >
+                              <img src="../conteudos/imagens/icons/atual/home.png" style="height:25px; width:25px;" alt="home" >
                             </a>
                         </li>
 
 
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="area-adm.php">
-                            <img src="../site_adm/conteudos/imagens/icons/atual/seta.png" style="height:20px; width:20px;" alt="carrinho">
+                            <img src="../conteudos/imagens/icons/atual/seta.png" style="height:20px; width:20px;" alt="carrinho">
                           </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="logout.php">
-                            <img src="../site_adm/conteudos/imagens/icons/atual/sair.png" style="height:20px; width:20px;" alt="logout">
+                            <img src="../conteudos/imagens/icons/atual/sair.png" style="height:20px; width:20px;" alt="logout">
                           </a>
                         </li>
 

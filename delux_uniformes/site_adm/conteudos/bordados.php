@@ -89,149 +89,35 @@
 <!-- Restante dos produtos... -->
 
   <div class="image-container">
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-1.jpg" alt="Product 1">
-      <p>Patch Bordado Termocolante - Técnico em Enfermagem/ Jaleco / Uniformes - 8 cm</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+  <?php 
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-2.jpg" alt="Product 2">
-      <p>Patch Bordado Termocolante - Biomedicina Jaleco, Uniformes - 8 cm</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+include '../config/connect.php';
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-3.jpg" alt="Product 3">
-      <p>  Patch Bordado Termocolante - Fonoaudiologia  - 8 cm </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-4.jpg" alt="Product 4">
-      <p> Patch Bordado Termocolante - Segurança do Trabalho - 8 cm </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
+  $searchTerm = filter_input(INPUT_GET, 'search');
+  $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'bordados' AND descricao LIKE '%$searchTerm%'";
+} else {
+  $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'bordados'";
+}
+$resultProdutos = $conn->query($sqlProdutos);
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-5.jpg" alt="Product 5">
-      <p> Patch Bordado Termocolante - Nutrição - 8  cm </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+// Exibir os produtos dinamicamente
+while ($rowProduto = $resultProdutos->fetch_assoc()) {
+    echo '<div>';
+    echo '<img src="./imagens/Img-Produtos/Img-Feminino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
+    echo '<p>' . $rowProduto['descricao'] . '</p>';
+    echo '<br>';
+    echo '<input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
+    echo '<br>';
+    echo '<br>';
+    echo '<a class="add-to-cart" style="text-decoration: none;" href="../login.php">';
+    echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
+    echo '</a>';
+    echo '</div>';
+}
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-6.jpg" alt="Product 6">
-      <p> Patch Bordado Termocolante - Psicologia - 8 cm </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-7.jpg" alt="Product 7">
-      <p>  Patch Bordado Termocolante - Fisioterapia - 8 cm </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-8.jpg" alt="Product 8">
-      <p>  Patch Bordado Termocolante - Radiologia - 8 cm </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-9.jpg" alt="Product 9">
-      <p> Patch Bordado Termocolante - Podologia - 8 cm  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-10.jpg" alt="Product 10">
-      <p> Patch Bordado Termocolante - Socorrista - 8 cm  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-11.jpg" alt="Product 11">
-      <p> Patch Bordado Termocolante - Farmácia - 8 cm </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/img-Feminino/feminino-bordado-12.jpg" alt="Product 12">
-      <p> Patch Bordado Termocolante - Assistente Social - 8 cm </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+?>
   </div>
 </body>
 <?php include_once("footer-formas-pagamento.php");?>

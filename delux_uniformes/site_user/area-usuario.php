@@ -139,7 +139,7 @@ button{
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./includes/logout.php">
+                            <a class="nav-link active" aria-current="page" href="logout.php">
                             <img src="../conteudos/imagens/icons/atual/sair.png" style="height:20px; width:20px;" alt="logout">
                           </a>
                         </li>
@@ -181,22 +181,22 @@ button{
             </div>
 
             <div class="col-md-2">
-                <label for="rua" class="form-label">RUA:</label>
+                <label for="rua" class="form-label">Rua:</label>
                 <input class="form-control" id="street" name="rua" style="width:100px;" value="<?php echo $rua; ?>" required>
             </div>
 
             <div class="col-md-2">
-                <label for="numero" class="form-label">NÚMERO:</label>
+                <label for="numero" class="form-label">Número:</label>
                 <input class="form-control" id="numero" name="numero" style="width:100px;" value="<?php echo $numero; ?>" required>
             </div>
 
             <div class="col-md-2">
-                <label for="bairro" class="form-label">BAIRRO:</label>
+                <label for="bairro" class="form-label">Bairro:</label>
                 <input class="form-control" id="neighborhood" name="bairro" style="width:100px;" value="<?php echo $bairro; ?>" required>
             </div>
 
             <div class="col-md-2">
-                <label for="cidade" class="form-label">CIDADE:</label>
+                <label for="cidade" class="form-label">Cidade:</label>
                 <input class="form-control" id="city" name="cidade" style="width:100px;" value="<?php echo $cidade; ?>" required>
             </div>
 

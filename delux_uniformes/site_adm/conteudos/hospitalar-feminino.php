@@ -85,7 +85,7 @@
 </head>
 
 <body>
-<?php include_once("heade-produtos.php");?>
+<?php include("heade-produtos.php");?>
   <header class="hospitalarfem"></header>
   <div class="principal">
     <h1>Uniformes Femininos Hospitalar</h1>
@@ -100,149 +100,35 @@
 
 <body>
   <div class="image-container">
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-1.png" alt="Product 1">
-      <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta gola V marsala- 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+  <?php 
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-2.png" alt="Product 2">
-      <p> Jaleco manga longa 3 bolsos 1 superior e 2 na cintura , gola V branco - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+include '../config/connect.php';
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-3.png" alt="Product 3">
-      <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta verde - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-4.png" alt="Product 4">
-      <p> Camisa com um bolso superior , rosa - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-5.png" alt="Product 5">
-      <p> Blusa branca personalizada gola em V, dois bolsos - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-6.png" alt="Product 6">
-      <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta gola V rosa - 100% Poliéster  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-7.png" alt="Product 7">
-      <p> Pijama Cirúrgico Conjunto Camisa Hospitalar , manga curta verde - 100% Poliéster  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-8.png" alt="Product 8">
-      <p> Jaleco manga longa 3 bolsos 1 superior e 2 na cintura , detalhe azul na gola - 100% Poliéster  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-9.png" alt="Product 9">
-      <p> Camisa com 2 bolsos na cintura azul claro -  100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-10.png" alt="Product 10">
-      <p> Camisa com um bolso superior , e 2 bolsos na cintura azul escuro - 100% Poliéster  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-11.png" alt="Product 11">
-      <p> Blusa - Pijama Cirúrgico Estampado - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Feminino/feminino-hospitalar-12.png" alt="Product 12">
-      <p> Camisa pijama cirúrgico verde - 100% Poliéster  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
+  $searchTerm = filter_input(INPUT_GET, 'search');
+  $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'hospitalar-feminino' AND descricao LIKE '%$searchTerm%'";
+} else {
+  $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'hospitalar-feminino'";
+}
+  $resultProdutos = $conn->query($sqlProdutos);
+  
+  // Exibir os produtos dinamicamente
+  while ($rowProduto = $resultProdutos->fetch_assoc()) {
+      echo '<div>';
+      echo '<img src="./imagens/Img-Produtos/Img-Feminino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
+      echo '<p>' . $rowProduto['descricao'] . '</p>';
+      echo '<br>';
+      echo '<input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
+      echo '<br>';
+      echo '<br>';
+      echo '<a class="add-to-cart" style="text-decoration: none;" href="../login.php">';
+      echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
+      echo '</a>';
+      echo '</div>';
+  }
+  
+  ?>
   </div>
 </body>
 <?php include_once("footer-formas-pagamento.php");?>

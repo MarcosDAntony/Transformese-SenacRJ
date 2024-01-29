@@ -85,7 +85,7 @@
 </head>
 
 <body>
-<?php include_once("heade-produtos.php");?>
+<?php include("heade-produtos.php");?>
   <header class="gourmetmasc"></header>
   <div class="principal">
     <h1>Uniformes Gourmet Masculinos</h1>
@@ -99,149 +99,35 @@
 </head>
 <body>
   <div class="image-container">
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-1.png" alt="Product 1">
-      <p> Avental Premium preto sem bolsos - 100% Oxford </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+  <?php 
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-2.png" alt="Product 2">
-      <p>Dolmã chefe de cozinha branco manga 3/4 - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+include '../config/connect.php';
 
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-3.png" alt="Product 3">
-      <p> Conjunto Colete Social Forrado  para Garçons + camisa branca com gravata borboleta preta - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-4.png" alt="Product 4">
-      <p> Avental preto sem bolso + camisa branca com gravata borboleta preta - 100% Poliéster   </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-5.png" alt="Product 5">
-      <p> Avental preto sem bolso - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-6.png" alt="Product 6">
-      <p>Kimono Sushiman Hapi Uniforme Cozinha Oriental um bolsos na frente vermelho - 100% Oxford </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-7.png" alt="Product 7">
-      <p> Avental de cintura preto com bolso na cintura -  100% Oxford   </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-8.png" alt="Product 8">
-      <p> Avental preto sem bolso + camisa branca - 100% Poliéster  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-9.png" alt="Product 9">
-      <p> Bandana Preta Chef Cozinha Uniforme Restaurante - 100% Poliéster </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-10.png" alt="Product 10">
-      <p> Camiseta manga longa cozinheiro uniforme de inverno - 100 %  Poliéster</p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-11.png" alt="Product 11">
-      <p> Uniforme calça preta social +  camisa branca com colete preto + gravata preto - 100 %  Poliéster </p>
-      <br>
-     <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
-
-    <div>
-      <img src="../conteudos/imagens/Img-Produtos/Img-Masculino/masculino-gourmet-12.png" alt="Product 12">
-      <p> Uniforme colete dourado +  camisa branca com gravata + avental para cintura preto -  100 %  Poliéster  </p>
-      <br>
-      <input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">
-<br>
-      <br>
-      <a class="add-to-cart" style="text-decoration: none;" href="../login.php">
-      <img src="../conteudos/imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+
-    </a>
-    </div>
+ 
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
+  $searchTerm = filter_input(INPUT_GET, 'search');
+  $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'gourmet-masculino' AND descricao LIKE '%$searchTerm%'";
+} else {
+  $sqlProdutos = "SELECT * FROM produtos WHERE tipo = 'gourmet-masculino'";
+}
+  $resultProdutos = $conn->query($sqlProdutos);
+  
+  // Exibir os produtos dinamicamente
+  while ($rowProduto = $resultProdutos->fetch_assoc()) {
+      echo '<div>';
+      echo '<img src="./imagens/Img-Produtos/Img-Masculino/' . $rowProduto['imagem'] . '" alt="' . $rowProduto['descricao'] . '">';
+      echo '<p>' . $rowProduto['descricao'] . '</p>';
+      echo '<br>';
+      echo '<input type="number" class="form-control" id="quantity" name="quantity" min="1" placeholder="Qtd:" style="width:80px;">';
+      echo '<br>';
+      echo '<br>';
+      echo '<a class="add-to-cart" style="text-decoration: none;" href="../login.php">';
+      echo '<img src="./imagens/icons/atual/carrinho.png" style="height:25px; width:25px;" alt="adicionar_carrinho">+';
+      echo '</a>';
+      echo '</div>';
+  }
+  
+  ?>
   </div>
 </body>
 <?php include_once("footer-formas-pagamento.php");?>
