@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Montar a URL do WhatsApp com a mensagem
             $url_whatsapp = "https://wa.me/{$numero_whatsapp}t?ext=" . urlencode($mensagem);
 
-            // Redirecionar para o WhatsApp
+            // Redirecionar para o WhatsAppve
             header("Location: {$url_whatsapp}");
             exit;
         }

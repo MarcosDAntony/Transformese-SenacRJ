@@ -136,6 +136,7 @@ while ($rowProduto = $resultProdutos->fetch_assoc()) {
 
 ?>
 
+
   </div>
 </body>
 <?php include_once("footer-formas-pagamento.php");?>
