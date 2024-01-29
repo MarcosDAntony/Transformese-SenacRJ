@@ -4,7 +4,7 @@ session_start();
 // Adicionando produto ao carrinho
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $produto = [
-        'id' => $_POST['product_id'],
+        
         'descricao' => $_POST['descricao'],
         'quantidade' => $_POST['quantidade'],
     ];
@@ -85,7 +85,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'remover_item' && isset($_GET['
     </style>
 </head>
 <body>
-    <?php include("./includes/heade-user.php");?>
+    <?php include("../site_user/includes/heade-user.php");?>
 <div class="position-carrinho">
         <h1>Carrinho de Compras</h1>
 
