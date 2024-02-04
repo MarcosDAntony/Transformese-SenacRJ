@@ -1,0 +1,3 @@
+Precisa instalar o XAMPP que é um pacote de servidores que inclui php por pastas
+e isto deve ser declarado na aba de opções "Var. de Ambiente" > 
+editar > por o caminho C:\xampp\php > fazendo o php funcionar na máquina

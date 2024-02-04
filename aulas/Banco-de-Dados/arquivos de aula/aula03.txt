@@ -1,0 +1,13 @@
+MER e DER
+https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
+
+
+=====================================================================================================================
+meusitexemplo(banco de dados) >
+
+historico_login(tabela)
+usuarios(tabela)
+clientes(tabela)
+categorias(tabela)
+servicos(tabela)
+==================================================================================================================

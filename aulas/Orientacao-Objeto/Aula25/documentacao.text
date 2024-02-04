@@ -1,0 +1,358 @@
+
+
+
+
+
+
+
+
+
+
+===== Aula 11/01/24 =====
+
+#### **Exercícios:**
+1. Crie uma classe `Cachorro` com propriedades como `nome` e `idade`. Implemente um método para exibir a mensagem "Woof!".
+2. Crie uma classe `Calculadora` com métodos para adição, subtração, multiplicação e divisão. Teste esses métodos com diferentes valores.
+3. Modifique a classe `Pessoa` para incluir um construtor que recebe nome e idade como parâmetros.
+
+
+
+
+ mconfi======= Aula 08/01/2024  =============================
+
+**Enunciado**
+
+Crie uma lista de tarefas usando PHP e MySQL. A lista deve permitir que o usuário adicione, edite e exclua tarefas.
+
+**Requisitos**
+
+* A lista deve ser exibida em uma página HTML.
+* O usuário deve poder adicionar uma nova tarefa usando um formulário. O formulário deve ter dois campos: um para a tarefa e outro para o status.
+* O usuário deve poder editar uma tarefa existente usando um formulário. O formulário deve ter três campos: um para o ID da tarefa, um para a tarefa e outro para o status.
+* O usuário deve poder excluir uma tarefa existente.
+
+**Instruções**
+
+1. Crie um banco de dados chamado `tarefasBD`.
+2. Crie uma tabela chamada `tarefas` com as seguintes colunas:
+
+    * id: um campo inteiro auto-incremento que é a chave primária da tabela
+    * tarefa: um campo de texto que armazena a tarefa
+    * status: um campo de texto que armazena o status da tarefa
+
+3. Crie os seguintes arquivos PHP:
+
+    * `config.php`: arquivo de conexão com o banco de dados
+    * `index.php`: a página principal da lista de tarefas
+    * `adicionar.php`: a página do backend para adicionar uma nova tarefa (INSERT)
+    * `editar.php`: a página do backend para editar uma tarefa existente (UPDATE)
+    * `excluir.php`: a página do backend para excluir uma tarefa existente (DELETE)
+    * `tarefas_cadastro_tela`: a página do frontend  com o form para adicionar uma nova tarefa 
+    * `tarefas_editar_tela`: a página do frontend com o form para editar uma tarefa existente.
+	
+
+4. Implemente o código necessário em cada arquivo PHP para atender aos requisitos do exercício.
+
+**Exemplo**
+
+config.php
+<?php 
+// Conexão com o banco de dados
+$conn = mysqli_connect("localhost", "root", "", "tarefas");
+// Verifica se a conexão foi bem-sucedida
+if (!$conn) {
+    die("Erro ao conectar ao banco de dados: " . mysqli_connect_error());
+}
+?>
+
+Aqui está um exemplo de código para a página principal da lista de tarefas:
+
+index.php
+<?php
+
+require_once('config.php');
+
+// Lista de tarefas
+$tarefas = mysqli_query($conn, "SELECT * FROM tarefas");
+
+// Cabeçalho da página
+echo "<h1>Lista de tarefas</h1>"; 
+
+// Loop para exibir as tarefas
+while ($tarefa = mysqli_fetch_assoc($tarefas)) {
+    echo "<p>";
+    echo "<strong>Tarefa:</strong> " . $tarefa['tarefa'];
+    echo "<br>";
+    echo "<strong>Status:</strong> " . $tarefa['status'];
+    echo "</p>";
+}
+
+// Botão para adicionar uma nova tarefa
+echo "<a href='adicionar.php'>Adicionar tarefa</a>";
+
+// Fecha a conexão com o banco de dados
+mysqli_close($conn);
+?>
+
+
+Este código se conecta ao banco de dados e lista todas as tarefas. Também inclui um botão para adicionar uma nova tarefa.
+
+**Desafios**
+
+* Adicione a funcionalidade para que o usuário possa marcar uma tarefa como concluída.
+* Adicione a funcionalidade para que o usuário possa ordenar a lista de tarefas por tarefa ou status.
+* Adicione a funcionalidade para que o usuário possa pesquisar tarefas por tarefa ou status.
+
+
+===================================================================================
+
+=================================================================================
+            $sql = "UPDATE usuarios SET "; 
+            $sql .=" nome = '" . $nome . "' ,";
+            $sql .=" email = '" . $email . "' ,";
+            $sql .=" data_cadastro = '" . $dataCadastro . "' ,";
+            $sql .=" situacao = '" . $situacao . "' ,";
+            $sql .=" funcao = '" . $funcao . "' ,";
+            $sql .=" foto = '" . $caminho_foto . "' ,";
+            $sql .=" WHERE id =".$id_usuario;
+
+====================================================================================================================
+
+Extensões : https://jvictorpdx.notion.site/Extens-es-para-o-Visual-Studio-Code-a9bd7b9f162448e49b4ba6fc9d255311
+
+
+'Aula 07/12
+x
+Aula 22
+https://www.transfernow.net/dl/20231212phCfLokP/Ud57De9e
+
+
+
+P. Integrador
+- Hospedagens gratuitas
+https://www.bitcatcha.com.br/pesquisa/hospedagem-gratis/
+
+
+Aula 18
+https://www.transfernow.net/dl/20231124xKCo0eXo/svMBKCL2
+
+
+==== INDEX.php =======================
+
+
+
+==== validarlogin.php =======================
+
+?php
+
+// Definir os usuários e senhas válidos
+$usuariosValidos = array(
+    'usua
+<rio1' => 'senha1',
+    'usuario2' => 'senha2',
+    // Adicione mais usuários conforme necessário
+);
+
+// Capturar os dados do formulário
+$username = isset($_POST['username']) ? $_POST['username'] : '';
+$password = isset($_POST['password']) ? $_POST['password'] : '';
+
+// Verificar se o usuário e senha estão no array de usuários válidos
+if (isset($usuariosValidos[$username]) && $usuariosValidos[$username] == $password) {
+    // Login bem-sucedido
+    header('Location: dashboard.php');
+} else {
+    // Login inválido
+    echo 'Usuário ou senha inválido. Tente novamente.';
+}
+?>
+
+
+==== dashboard.php =======================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Dashboard
+                </div>
+                <div class="card-body">
+                    <p>Você está logado com sucesso!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+echo '<script> alert("Usuário ou senha inválido. Tente novamente"); </script>';
+    echo '<script> window.location = "index.php"; </script>';
+
+=========================================================================
+
+<div class="row">
+        
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="./img/userpadrao.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Encontro</h5>
+                        <p class="card-text">Nesse dia encontramos o Max Lucado na livraria da FNAC da Barra da Tijuca.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                   <img src="./img/userpadrao.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Encontro</h5>
+                        <p class="card-text">Nesse dia encontramos o Max Lucado na livraria da FNAC da Barra da Tijuca.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+Lista de exercicios Select 07.12.23
+
+1. Liste todos os produtos, incluindo o nome da categoria a que pertencem.
+2.Liste todos os clientes, incluindo o nome do estado em que residem.
+3.Liste todos os pedidos, incluindo a data de criação e o nome do cliente que o realizou.
+4.Liste todos os itens de pedido, incluindo o nome do produto e o nome do serviço.
+5.Liste todos os pagamentos de pedidos, incluindo o valor total do pedido e o tipo de pagamento.
+SQL
+6.Liste todos os pedidos realizados por clientes do estado de São Paulo, incluindo o nome do cliente e o nome do estado.
+7.Liste todos os itens de pedido que são produtos, incluindo o nome do produto, a quantidade e o valor total.
+8.Liste todos os pagamentos de pedidos que foram realizados com cartão, incluindo o valor do pagamento e a data do pagamento.
+9.Liste todos os produtos, ordenados pelo preço de venda.
+10.Liste todos os clientes, ordenados pelo nome.
+11.Liste o total de pedidos realizados por cada cliente.
+SELECT count(*) as contagem, sum(total_pedido), avg(total_pedido),min(total_pedido),MAX(total_pedido), id_cliente FROM `pedidos` GROUP BY id_cliente;
+1. Liste todos os produtos, incluindo o nome da categoria a que pertencem.
+SELECT
+  produto.nome,
+  categoria.nome
+FROM
+  produtos
+  JOIN categorias ON produtos.id_categoria = categorias.id;
+
+
+2.Liste todos os clientes, incluindo o nome do estado em que residem.
+SELECT
+  cliente.nome,
+  estado.nome
+FROM
+  clientes
+  JOIN estados ON clientes.id_estado = estados.id;
+
+3.Liste todos os pedidos, incluindo a data de criação e o nome do cliente que o realizou.
+SELECT
+  pedido.id,
+  pedido.dt_criacao,
+  cliente.nome
+FROM
+  pedidos
+  JOIN clientes ON pedidos.id_cliente = clientes.id;
+
+4.Liste todos os itens de pedido, incluindo o nome do produto e o nome do serviço.
+SELECT
+  pedido_itens.id,
+  produto.nome,
+  servico.nome
+FROM
+  pedido_itens
+  JOIN produtos ON pedido_itens.id_produto = produtos.id
+  LEFT JOIN servicos ON pedido_itens.id_servico = servicos.id;
+
+5.Liste todos os pagamentos de pedidos, incluindo o valor total do pedido e o tipo de pagamento.
+SELECT
+  pedidos_pagamentos.id,
+  pedidos.total_pedido,
+  pedidos_pagamentos.tipo_pagamento
+FROM
+  pedidos_pagamentos
+  JOIN pedidos ON pedidos_pagamentos.id_pedido = pedidos.id;
+
+6.Liste todos os pedidos realizados por clientes do estado de São Paulo, incluindo o nome do cliente e o nome do estado.
+SELECT
+  cliente.nome,
+  estado.nome,
+  pedido.id
+FROM
+  pedidos
+  JOIN clientes ON pedidos.id_cliente = clientes.id
+  JOIN estados ON clientes.id_estado = estados.id
+WHERE
+  estados.nome = 'São Paulo';
+
+7.Liste todos os itens de pedido que são produtos, incluindo o nome do produto, a quantidade e o valor total.
+SELECT
+  produto.nome,
+  pedido_itens.quantidade,
+  pedido_itens.valor_total
+FROM
+  pedido_itens
+  JOIN produtos ON pedido_itens.id_produto = produtos.id
+WHERE
+  pedido_itens.id_servico IS NULL;
+
+8.Liste todos os pagamentos de pedidos que foram realizados com cartão, incluindo o valor do pagamento e a data do pagamento.
+SELECT
+  pedidos_pagamentos.valor_pagamento,
+  pedidos_pagamentos.dt_pagamento
+FROM
+  pedidos_pagamentos
+WHERE
+  pedidos_pagamentos.tipo_pagamento = 'cartão';
+
+9.Liste todos os produtos, ordenados pelo preço de venda.
+SELECT
+  produto.nome,
+  produto.preco_venda
+FROM
+  produtos
+ORDER BY
+  produto.preco_venda;
+
+10.Liste todos os clientes, ordenados pelo nome.
+SELECT
+  cliente.nome
+FROM
+  clientes
+ORDER BY
+  cliente.nome;
+
+11.Liste o total de pedidos realizados por cada cliente.
+SELECT
+  cliente.nome,
+  COUNT(*) AS total_pedidos
+FROM
+  pedidos
+  JOIN clientes ON pedidos.id_cliente = clientes.id
+GROUP BY
+  cliente.nome;
+
+
+SELECT count(*) as contagem, sum(total_pedido), avg(total_pedido),min(total_pedido),MAX(total_pedido), id_cliente FROM `pedidos` GROUP BY id_cliente;
+
+
+    Link professor
+https://www.transfernow.net/dl/20231215JFkstTq3/D7uH6lII
+

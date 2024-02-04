@@ -1,0 +1,31 @@
+Obs: ` não é necessário na sintaxe.
+
+Base:
+SELECT * FROM historico_login WHERE 1
+
+Filtragem:
+SELECT * FROM historico_login WHERE id_usuario = 1
+
+Junção:
+SELECT * FROM historico_login, usuarios WHERE 1
+
+SELECT * FROM historico_login,usuarios WHERE historico_login.id_usuario = usuarios.id
+
+SELECT * FROM historico_login h,usuarios u WHERE  h.id_usuario = u.id  (para dar apelido as tabelas)
+
+
+
+junção com filtragem:
+SELECT * FROM historico_login
+INNER JOIN usuarios
+ON historico_login.id_usuario = usuarios.id
+WHERE historico_login.id_usuario=1;
+
+
+=====================================================================================================================
+meusitexemplo(banco de dados) >
+
+historico_login(tabela)
+usuarios(tabela)
+clientes(tabela)
+==================================================================================================================

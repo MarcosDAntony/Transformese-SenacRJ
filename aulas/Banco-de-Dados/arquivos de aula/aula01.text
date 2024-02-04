@@ -1,0 +1,16 @@
+Essas aulas se passam dentro do 'phpmyadmin' usando a linguagem MySQL dentro do xampp deste pendrive.
+
+=====================================================================================================================
+meusitexemplo(banco de dados) >
+
+historico_login(tabela)
+usuarios(tabela)
+
+==================================================================================================================
+Explicando e comparando banco de dados a uma tabela Excel e suas tabelas são o que se encontra no arquivo .xsml.
+PK é (primary key ou chave primaria)
+FK é (foreign key ou chave estrangeira)
+
+
+criamos uma tabela dentro do banco de dados 'sitexemplo'
+

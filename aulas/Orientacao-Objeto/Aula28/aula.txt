@@ -1,0 +1,33 @@
+**HTTP em PHP**
+
+Principais métodos dos verbos HTTP são : **GET, POST, DELETE, PUT e PATCH.**
+**Aula: Introdução às Requisições HTTP em PHP**
+
+**Objetivo da Aula:**
+
+- Compreender o funcionamento das requisições HTTP em PHP.
+- Explorar os principais métodos HTTP: GET, POST, DELETE, PUT e PATCH.
+- Aplicar conhecimentos através de exemplos práticos.
+
+**1. Introdução: Requisições HTTP**
+
+As requisições HTTP (Hypertext Transfer Protocol) são fundamentais para a comunicação entre clientes e servidores na web. Elas envolvem a transferência de dados e informações entre diferentes sistemas.
+
+**2. Biblioteca Requests em PHP**
+
+No contexto de PHP, a biblioteca `file_get_contents()` é uma opção nativa para realizar requisições HTTP. Ela simplifica o processo de comunicação com servidores remotos.
+
+**3. Requisições GET**
+
+O método GET é utilizado para recuperar dados de um servidor. Em PHP, podemos fazer isso com `file_get_contents()` e a função `json_decode()` para lidar com dados JSON.
+
+**4. Requisições POST**
+
+O método POST é utilizado para enviar dados para o servidor. Utilizaremos `file_get_contents()` com a opção `context` para enviar dados no formato JSON.
+
+**5. Requisições DELETE**
+O método DELETE é usado para remover recursos do servidor. Em PHP, podemos utilizá-lo com `file_get_contents()` e a opção `context`.
+
+**6. Requisições PUT para Atualização Completa**
+
+O método PUT é utilizado para atualizar completamente um recurso no servidor.

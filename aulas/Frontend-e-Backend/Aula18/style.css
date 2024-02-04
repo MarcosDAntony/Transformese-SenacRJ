@@ -1,0 +1,8 @@
+body {
+    background-color:  rgb(249, 249, 249);
+}
+
+/*  Esse '*' é a represtação de formatação em cascata de tudo da página*/
+*{
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,428 @@
+**Título da Apostila: Aprenda CSS do Zero - Guia para Iniciantes**
+
+**Duração da Aula: 3 horas e 30 minutos**
+
+**Índice**
+
+1. Introdução ao CSS
+   - O que é CSS?
+   - Como incorporar CSS em um documento HTML
+   - Regras de seleção (seletores)
+   - Exemplo: Alterando a cor do texto em um parágrafo
+
+2. Propriedades de Estilo Básicas
+   - Cores e Fundos
+     - `color`
+     - `background-color`
+   - Tipografia
+     - `font-family`
+     - `font-size`
+   - Espaçamento
+     - `margin`
+     - `padding`
+   - Bordas
+     - `border`
+   - Exemplo: Estilizando uma caixa de texto
+
+3. Box Model
+   - O modelo de caixa (box model) no CSS
+   - `width` e `height`
+   - Margens, bordas e preenchimentos
+   - Exemplo: Criando um layout de caixa com margens e preenchimentos
+
+4. Posicionamento e Layout
+   - `position`
+   - `float`
+   - `display`
+   - Exemplo: Criando uma barra de navegação horizontal
+
+5. Seletor de Classe e id
+   - Diferença entre seletores de classe e id
+   - Usando classes e ids em elementos HTML
+   - Exemplo: Estilizando elementos específicos com classes e ids
+
+6. Pseudo-classes e Pseudo-elementos
+   - `:hover`, `:active`, `:focus`
+   - `::before` e `::after`
+   - Exemplo: Estilizando links com pseudo-classes
+
+7. Responsividade
+   - Media queries
+   - Layout responsivo
+   - Exemplo: Criando um site que se adapta a diferentes tamanhos de tela
+
+8. Transformações e Transições
+   - `transform`
+   - `transition`
+   - Exemplo: Criando efeitos de hover suaves
+
+9. Animações
+   - `@keyframes`
+   - Criando animações CSS
+   - Exemplo: Animação de um objeto se movendo na tela
+
+10. Melhores Práticas e Recursos
+    - Comentários e organização de código
+    - Ferramentas e recursos úteis
+    - Otimização de desempenho
+    - Referências e documentação
+
+**Conclusão**
+
+Neste guia, fornecemos uma introdução detalhada ao CSS, abordando conceitos fundamentais e oferecendo exemplos práticos. Lembre-se de que este é apenas um esboço e que você pode expandir cada seção com mais informações, exemplos e exercícios práticos. À medida que seu conhecimento avança, você pode cobrir tópicos mais avançados, como flexbox, grid layout, CSS preprocessors e outros.
+
+
+
+**1. Introdução ao CSS**
+
+* O que é CSS?
+  - CSS (Cascading Style Sheets) é uma linguagem de estilo usada para controlar a apresentação de documentos HTML. Com o CSS, você pode definir o estilo, layout e design de páginas da web.
+
+* Como incorporar CSS em um documento HTML?
+  - Você pode incorporar CSS em seu documento HTML de várias maneiras, incluindo:
+    - Usando a tag `<style>` dentro do cabeçalho `<head>`.
+    - Usando um arquivo externo de CSS vinculado com a tag `<link>`.
+    - Incorporar Css diretamente na Tag HTML, usando o atributo style. 
+
+1.	Incorporação Interna (Usando a tag <style>):
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Página com CSS</title>
+    <style>
+        /* Suas regras de estilo CSS vão aqui */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Título</h1>
+    <p>Este é um parágrafo com estilo definido internamente.</p>
+</body>
+</html>
+
+2. Incorporação Externa (Usando a tag <link>):
+
+Passo 1: Crie um arquivo CSS separado (por exemplo, "estilos.css") com suas regras de estilo:
+/* estilos.css */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+Passo 2: No seu documento HTML, dentro da seção <head>, use a tag <link> para vincular o arquivo CSS externo:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Página com CSS</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <h1>Meu Título</h1>
+    <p>Este é um parágrafo com estilo definido externamente.</p>
+</body>
+</html>
+
+3. Incorporar Css diretamente na Tag HTML, usando o atributo style
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Página com CSS Incorporado</title>
+</head>
+<body>
+    <h1 style="color: blue;">Meu Título</h1>
+    <p style="background-color: #f0f0f0; font-family: Arial, sans-serif;">Este é um parágrafo com estilo incorporado na tag.</p>
+</body>
+</html>
+
+
+* Regras de seleção (seletores)
+  - Os seletores são usados para selecionar elementos HTML que você deseja estilizar. Exemplos de seletores incluem:
+    - Seletor de tipo: `p` para selecionar parágrafos.
+    - Seletor de classe: `.destaque` para selecionar elementos com a classe "destaque".
+    - Seletor de id: `#cabecalho` para selecionar um elemento com o id "cabecalho".
+
+* Exemplo: Alterando a cor do texto em um parágrafo
+  p {
+    color: blue;
+  }
+  
+
+**2. Propriedades de Estilo Básicas**
+
+* Cores e Fundos
+  - `color`: Define a cor do texto.
+  - `background-color`: Define a cor de fundo de um elemento.
+
+* Tipografia
+  - `font-family`: Define a família de fontes.
+  - `font-size`: Define o tamanho da fonte.
+
+* Espaçamento
+  - `margin`: Define as margens externas de um elemento.
+  - `padding`: Define o preenchimento interno de um elemento.
+
+* Bordas
+  - `border`: Define a borda de um elemento.
+
+* Exemplo: Estilizando uma caixa de texto
+  
+  .caixa-de-texto {
+    color: #333;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+
+2.1 Mudar FONTE dos textos 
+Para incluir uma fonte externa em seu site, você pode usar o serviço Google Fonts, que oferece uma ampla variedade de fontes para uso na web. Vou mostrar como incorporar uma fonte externa ao exemplo anterior.
+
+**1. Escolhendo uma Fonte do Google Fonts:**
+
+Primeiro, escolha uma fonte no [Google Fonts](https://fonts.google.com/). Vamos usar a fonte "Roboto" como exemplo.
+
+**2. Incorporando a Fonte Externa:**
+
+Após escolher a fonte, você pode incorporá-la ao seu site adicionando um link para o arquivo CSS da fonte no cabeçalho do seu documento HTML. Aqui está como você pode fazer isso:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site Responsivo com Fonte Externa</title>
+    <!-- Adicione o link para a fonte externa do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Use a fonte externa 'Roboto' */
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Restante do seu CSS... */
+    </style>
+</head>
+<body>
+    <!-- Conteúdo do site... -->
+</body>
+</html>
+
+
+Neste exemplo, adicionamos o link para a fonte "Roboto" do Google Fonts dentro do cabeçalho do documento HTML usando a tag `<link>`. Em seguida, definimos a família de fontes para o corpo do site usando a propriedade `font-family`. Agora, a fonte "Roboto" será usada para o texto do site.
+
+Certifique-se de escolher a fonte externa que deseja no Google Fonts e ajustar o atributo `href` do link de acordo com a fonte escolhida. Depois de incorporar a fonte externa, ela estará disponível para uso em todo o seu site. Isso ajudará a melhorar a aparência e a tipografia do site responsivo.
+
+
+
+**3. Box Model**
+
+* O modelo de caixa (box model) no CSS
+  - O box model é uma representação de como os elementos HTML são renderizados no navegador, compreendendo conteúdo, margens, bordas e preenchimentos.
+
+* `width` e `height`
+  - `width` define a largura de um elemento.
+  - `height` define a altura de um elemento.
+
+* Margens, bordas e preenchimentos
+  - Margens: Espaço externo em torno de um elemento.
+  - Bordas: Linha que envolve o elemento.
+  - Preenchimentos: Espaço interno entre o conteúdo e a borda.
+
+* Exemplo: Criando um layout de caixa com margens e preenchimentos
+  
+  .minha-caixa {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #333;
+  }
+  
+
+4. Posicionamento e Layout
+**Posicionamento e Layout em CSS** são conceitos fundamentais para criar o design de uma página da web. Abaixo, vou explicar os principais atributos relacionados a esses tópicos e fornecer um exemplo de como criar uma barra de navegação horizontal.
+
+**1. `position` (Posição):**
+
+A propriedade `position` é usada para controlar a posição de um elemento em relação ao seu contexto. Existem quatro valores principais para `position`:
+
+- `static` (padrão): O elemento é posicionado normalmente, seguindo o fluxo do documento.
+- `relative`: O elemento é posicionado em relação à sua posição normal, permitindo ajustes usando as propriedades `top`, `right`, `bottom` e `left`.
+- `absolute`: O elemento é posicionado em relação ao elemento pai mais próximo com uma posição que não seja `static`.
+- `fixed`: O elemento é posicionado em relação à janela do navegador e permanece visível, mesmo com a rolagem.
+
+**2. `float` (Flutuação):**
+
+A propriedade `float` é usada para criar layouts onde elementos "flutuam" uns ao lado dos outros. Isso é comum para criar layouts de coluna e permite que elementos de texto fluam ao redor de elementos flutuantes.
+
+- `float: left`: Faz o elemento flutuar para a esquerda.
+- `float: right`: Faz o elemento flutuar para a direita.
+- `clear`: Controla como os elementos devem se comportar em relação aos elementos flutuantes.
+
+**3. `display` (Exibição):**
+
+A propriedade `display` controla como um elemento é exibido. Alguns valores comuns incluem:
+
+- `block`: O elemento é exibido como um bloco que ocupa toda a largura disponível. Os elementos subsequentes aparecem abaixo dele.
+- `inline`: O elemento é exibido em linha, ocupando apenas o espaço necessário. Os elementos subsequentes aparecem na mesma linha.
+- `inline-block`: Combina características de elementos em bloco e em linha.
+- `none`: O elemento não é exibido.
+
+**Exemplo: Criando uma Barra de Navegação Horizontal**
+
+Aqui está um exemplo de como você pode criar uma simples barra de navegação horizontal usando CSS:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barra de Navegação Horizontal</title>
+    <style>
+        /* Estilizando a barra de navegação */
+        .navbar {
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            background-color: #ac1515;
+            overflow: hidden;
+        }
+
+        .nav-item {
+            float: left;
+        }
+
+        .nav-item a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Altera a cor do link quando o mouse passa por cima */
+        a:hover {
+            background-color: #555;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li class="nav-item"><a href="#">Início</a></li>
+        <li class="nav-item"><a href="#">Sobre</a></li>
+        <li class="nav-item"><a href="#">Serviços</a></li>
+        <li class="nav-item"><a href="#">Contato</a></li>
+    </ul>
+</body>
+</html>
+
+
+
+**Responsividade em CSS** é fundamental para garantir que seu site seja exibido de forma apropriada em dispositivos com diferentes tamanhos de tela, como computadores, tablets e smartphones. Vou explicar como usar media queries e criar um layout responsivo, bem como fornecer um exemplo de um site que se adapta a diferentes tamanhos de tela.
+
+**1. Media Queries:**
+
+As media queries permitem que você aplique estilos CSS específicos com base nas características da tela, como largura, altura, resolução e orientação. Elas são essenciais para criar layouts responsivos.
+
+
+/* Exemplo de media query para telas menores que 768px */
+@media (max-width: 768px) {
+    /* Estilos específicos para telas menores */
+    body {
+        font-size: 16px;
+    }
+}
+
+
+Neste exemplo, estamos aumentando o tamanho da fonte quando a largura da tela for de 768 pixels ou menos.
+
+**2. Layout Responsivo:**
+
+Para criar um layout responsivo, você pode usar várias técnicas, como:
+
+- Usar unidades flexíveis, como porcentagem, em vez de unidades fixas, como pixels, para o dimensionamento de elementos.
+- Reorganizar elementos com base na largura da tela usando flexbox ou grade (CSS Grid).
+- Ocultar ou exibir elementos específicos com base na resolução da tela.
+
+**Exemplo: Criando um Site Responsivo:**
+
+Aqui está um exemplo básico de como criar um site que se adapta a diferentes tamanhos de tela usando HTML e CSS:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site Responsivo</title>
+    <style>
+        body {
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            header, nav {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site Responsivo</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Bem-vindo ao nosso site responsivo!</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+    </main>
+</body>
+</html>
+
+
+Neste exemplo, aplicamos media queries para ajustar o tamanho da fonte e o padding do cabeçalho e da navegação quando a largura da tela for de 768 pixels ou menos. Isso cria um layout que se adapta a diferentes tamanhos de tela, garantindo que o site seja legível e usável em dispositivos variados.

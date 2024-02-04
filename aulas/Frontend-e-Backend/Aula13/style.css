@@ -1,0 +1,64 @@
+/* 
+Estilização de referência de outra id dentro de uma id
+a(é a referencia da estilização da tag link dentro do css nesse arquivo)
+
+*/
+
+/*Estilização de dois seletores de mesma id*/
+#I, a{
+    color: red;
+    margin-top: 50px;
+    padding: 0px;
+    border: solid 5px ;
+    height: 100px;
+    width: 100px;
+    }
+    
+    
+    
+    #II a{
+    color: blue;
+    margin-top: 50px;
+    padding: 0px;
+    border: solid 5px ;
+    height: 100px;
+    width: 100px;
+    }
+
+
+
+
+
+    /*:hover é para dar cor ao passar o mouse no botão*/
+    #bt1:hover{
+        height: 100px;
+        width: 100px;
+        background-color:blue;
+        transition: ease-in;
+        transition-duration: 2s;
+        transform: rotate(0.5turn);
+    }
+
+    a:link{
+        text-decoration:none;
+    }
+
+    p::after {
+        content: "⭐";
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and(max-width: 600px) {
+        body{
+            background-color: rgb(241, 241, 241);
+        }
+    }

@@ -1,0 +1,61 @@
+### **Bootstrap: Colunas e Linhas**
+
+O sistema de grade do Bootstrap é baseado em uma divisão de 12 colunas. Você pode criar linhas e distribuir as colunas conforme necessário. Aqui está um exemplo básico:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Bootstrap Aula</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">Coluna 1</div>
+      <div class="col-md-4">Coluna 2</div>
+      <div class="col-md-4">Coluna 3</div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+Neste exemplo, temos uma linha (`<div class="row">`) com três colunas (`<div class="col-md-4">`). Cada coluna ocupa 4 das 12 colunas disponíveis, totalizando 12 colunas na linha.
+
+### **Centralização de Elementos**
+
+Você pode centralizar elementos utilizando as classes `text-center` ou `mx-auto`. Aqui está um exemplo:
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <p class="text-center">Este texto está centralizado.</p>
+    </div>
+  </div>
+</div>
+
+
+### **Posicionamento de Elementos**
+
+Para posicionar elementos, você pode usar as classes de posicionamento do Bootstrap, como `fixed-top`, `fixed-bottom`, `sticky-top`, etc. Por exemplo, para fixar um elemento no topo da página, você pode usar:
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="fixed-top">
+        <p>Este elemento está fixo no topo.</p>
+      </div>
+    </div>
+  </div>
+</div>

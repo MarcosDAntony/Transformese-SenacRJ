@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Form</title>
+</head>
+<body>
+    <h2>HTML Forms</h2>
+<!--id é para o for-->
+<form action="/clientes.php" method="post">   <!--Get por padrão e vira Post pelo method="post"-->
+  <label for="fname">First name:</label><br> <!--Tag de Rótulo-->
+  <input type="text" id="fname" name="fname" value="John"><br> <!-- Tag de entrada ou leitura de dados-->
+  
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  
+  <input type="submit" value="Submit"><br><br><br><br><br>
+</form> 
+
+
+
+
+
+<!--<fieldset> </fieldset> é esse quadro que imita uma <div></div>-->
+<form action="/login.php" method="post"></form>
+<fieldset> 
+  <legend>Tela de Login</legend>
+  <label for="fuser">Login: </label><br>
+  <input type="text" id="fuser" name="fuser"><br><br>
+
+  <label for="fsenha">Senha:</label><br>
+  <input type="text" id="fsenha" name="fsenha"><br><br>
+
+  <input type="submit" value ="Enviar">
+</fieldset>
+</form><br><br><br>
+
+
+<!-- type="radio" -->
+<p>Radio Box:</p>
+<form> 
+  <input type="radio" id="html" name ="html">
+  <label for="html">HTML</label><br>
+
+  <input type="radio" id="css" name ="css">
+  <label for="fuser">CSS</label>
+</form><br><br>
+
+
+
+<!-- type="checkbox"-->
+<p>Check Box:</p>
+<form> 
+  <input type="checkbox" id="html" name ="html">
+  <label for="html">HTML</label><br>
+
+  <input type="checkbox" id="css" name ="css">
+  <label for="fuser">CSS</label>
+</form><br><br><br><br>
+
+
+
+
+
+
+
+<!-- placeholder="Nome"  required(Para tornar campo obrigatório)-->
+<form action="/clientes.php" method="post">   
+  <input type="text" id="Nome" name="Nome" placeholder="Nome" required><br> 
+  <input type="email" id="email" name="e-mail" placeholder="e-mail"><br>
+  <input type="password" id="Senha" name="Senha" placeholder="Senha" required><br><br>
+  
+  <input type="submit" value="Enviar"><br><br><br><br><br>
+</form> 
+
+
+
+
+
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+</body>
+</html>

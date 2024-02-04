@@ -1,0 +1,27 @@
+a {
+    color: goldenrod;
+}
+
+.paragraf{
+    font-weight: bold;
+}
+
+
+#idparagraf{
+    font-family: 'Tahoma';
+    margin-top: 50px;
+    padding: 0px;
+    border: solid 5px ;
+    height: 100px;
+    width: 100px;
+}
+
+ /*
+      * no css serve para citar todo o estilo da página e edita-lo
+ */
+*{
+    background-image: "";
+    
+}
+
+

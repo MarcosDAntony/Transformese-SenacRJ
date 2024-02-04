@@ -1,0 +1,39 @@
+<!--Bootstrap Media Query
+O Bootstrap utiliza media queries para tornar o design responsivo, adaptando-se a diferentes tamanhos de tela e dispositivos. As media queries são regras CSS que aplicam estilos específicos com base nas características da tela, como largura, altura e orientação.
+
+O Bootstrap possui vários breakpoints, que são pontos específicos em que o design responsivo é ajustado. Os breakpoints padrão do Bootstrap 4 são os seguintes:
+
+- Extra Small (`xs`): Menos de 576 pixels.
+- Small (`sm`): 576 pixels ou mais.
+- Medium (`md`): 768 pixels ou mais.
+- Large (`lg`): 992 pixels ou mais.
+- Extra Large (`xl`): 1200 pixels ou mais.
+
+Aqui está um exemplo básico de como o Bootstrap usa media queries em seu sistema de grid:
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Bootstrap Aula</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">Coluna em telas médias e maiores</div>
+      <div class="col-12 col-md-6">Coluna em todas as telas, mas 100% de largura em telas médias e maiores</div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+<!--Neste exemplo, a classe `col-md-6` especifica que a coluna deve ocupar 6 das 12 colunas disponíveis em telas médias (`md`) e maiores. A classe `col-12 col-md-6` indica que, em telas pequenas (menores que 768 pixels, onde a classe `col-md-6` não se aplica), a coluna deve ocupar 12 colunas, tornando-se 100% da largura da tela.
+
+Essa abordagem é usada para criar layouts flexíveis que se adaptam automaticamente ao tamanho da tela, proporcionando uma experiência de usuário consistente em diferentes dispositivos. Os desenvolvedores podem personalizar os estilos e comportamentos para cada breakpoint, garantindo uma apresentação adequada em uma variedade de dispositivos. -->

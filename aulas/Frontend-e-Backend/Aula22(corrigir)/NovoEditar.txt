@@ -1,0 +1,47 @@
+case 'editar':
+    // Implementa a lógica para editar usuário
+
+    // Procura o índice do usuário no array com base no id
+    $indice_usuario = -1;
+    foreach ($_SESSION['usuariosBD'] as $indice => $usuario) {
+        if ($usuario['id_usuario'] == $id_usuario) {
+            $indice_usuario = $indice;
+            break;
+        }
+    }
+
+    // Atualiza o usuário se encontrado
+    if ($indice_usuario != -1) {
+        // Atualiza as informações do usuário com os dados do formulário
+        $_SESSION['usuariosBD'][$indice_usuario]['Nome'] = $nome;
+        $_SESSION['usuariosBD'][$indice_usuario]['Email'] = $email;
+        $_SESSION['usuariosBD'][$indice_usuario]['DataCadastro'] = $dataCadastro;
+        $_SESSION['usuariosBD'][$indice_usuario]['Situacao'] = $situacao;
+        $_SESSION['usuariosBD'][$indice_usuario]['Funcao'] = $funcao;
+
+        // Atualiza a foto apenas se um novo arquivo foi enviado
+        if (!empty($_FILES["foto"]["tmp_name"])) {
+            $foto_temp = $_FILES["foto"]["tmp_name"];
+            $foto_nome = $_FILES["foto"]["name"];
+            $diretorio_upload = "img/";
+            $caminho_foto = $diretorio_upload . $foto_nome;
+
+            // Move o arquivo para o diretório de upload
+            if (!move_uploaded_file($foto_temp, $caminho_foto)) {
+                // Handle erro de upload, se necessário
+                echo "Erro no upload da foto.";
+                exit();
+            }
+
+            // Atualiza o caminho da foto no array de usuários
+            $_SESSION['usuariosBD'][$indice_usuario]['Foto'] = $caminho_foto;
+        }
+
+        header("Location: usuario_listar_card.php?mensagem=Usuario+editado+com+sucesso");
+        exit();
+    } else {
+        // Usuário não encontrado
+        header("Location: usuario_listar_card.php?mensagem=Usuario+não+encontrado");
+        exit();
+    }
+    break;

@@ -1,0 +1,76 @@
+Lista de exercicios Select 07.12.23
+
+1. Liste todos os produtos, incluindo o nome da categoria a que pertencem.
+R:
+SELECT * FROM produtos 
+INNER JOIN categorias
+ON produtos.id_produto = categorias.id_categoria;
+
+
+
+
+2.Liste todos os clientes, incluindo o nome do estado em que residem.
+R:
+SELECT uf, nome FROM `clientes` WHERE 1
+
+
+
+3.Liste todos os pedidos, incluindo a data de criação e o nome do cliente que o realizou.
+R:
+SELECT pedidos.id_pedido,pedidos.dt_criacao,clientes.id_cliente,clientes.nome
+FROM pedidos
+INNER JOIN clientes on clientes.id_cliente = pedidos.id_cliente
+
+
+
+4.Liste todos os itens de pedido, incluindo o nome do produto e o nome do serviço.
+R:
+SELECT produtos.id_produto, produtos.descricao, servicos.id_servico, servicos.nome, pedidos_itens.*
+FROM pedidos_itens
+LEFT JOIN produtos ON produtos.id_produto = pedidos_itens.id_produto
+LEFT JOIN servicos ON servicos.id_servico = pedidos_itens.id_servico;
+
+
+
+5.Liste todos os pagamentos de pedidos, incluindo o valor total do pedido e o tipo de pagamento.
+SQL
+R:
+SELECT `id_pedido_pagamento`,  `tipo_pagamento`, `valor_pagamento`, `parcelas` FROM `pedidos_pagamentos` WHERE 1;
+
+
+6.Liste todos os pedidos realizados por clientes do estado de São Paulo, incluindo o nome do cliente e o nome do estado.
+R:
+SELECT p.id_pedido,c.nome, c.uf
+FROM pedidos p
+INNER JOIN clientes c ON c.id_cliente = p.id_cliente
+
+
+
+
+7.Liste todos os itens de pedido que são produtos, incluindo o nome do produto, a quantidade e o valor total.
+R:
+SELECT * FROM pedidos_itens WHERE
+id_produto Is Not Null;
+
+
+
+8.Liste todos os pagamentos de pedidos que foram realizados com cartão, incluindo o valor do pagamento e a data do pagamento.
+R:
+SELECT valor_pagamento, dt_pagamento FROM pedidos_pagamentos WHERE tipo_pagamento = "cartão"
+
+
+9.Liste todos os produtos, ordenados pelo preço de venda.
+R:
+SELECT * FROM `produtos` ORDER BY preco_venda
+
+
+
+10.Liste todos os clientes, ordenados pelo nome.
+R:
+SELECT * FROM `clientes` ORDER BY nome
+
+
+
+11.Liste o total de pedidos realizados por cada cliente.
+R:
+SELECT * FROM `pedidos` GROUP BY id_cliente
