@@ -1,0 +1,26 @@
+29-08-23
+
+Continuação de Lógica de Programação...
+
+Vat até dia 03/10/23
+
+Ferramenta: VisualG
+
+CMD's:
+
+escreva("Olá, Mundo!") com L ele quebra a linha
+
+leia("texto" ou var.) (para receber uma informação ou captar)
+
+Esc (Finaliza um programa)
+
+Tipos de váriaveis:
+caractere (alfabeto)
+
+real (números R)
+
+inteiro (números Z)
+
+n.var <- (sinal de atribuição.)
+
+

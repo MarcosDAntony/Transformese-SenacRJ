@@ -1,0 +1,21 @@
+17-08-24
+
+Continuação...
+
+ =SOMA(A1:B1) + C4 (soma de valores sob argumentação)
+
+ - Excel entende se puxar números para os lados ou baixo, sua ordem progressiva e regressiva, meses também.
+
+ - "Nome da Planilha" !A1(Levar informação de planilhas para endereço de outra planilha)
+
+ Crtl + Shift + % (põe em porcentagem a seleção)
+
+ Crtl + Shift + ; (põe a hora exata), + : (põe o dia)
+ 
+ =AGORA(informa data e hora)
+
+ =HOJE(informa somente a data)
+
+ =SE(D2<=0;"Negativo";SE < D2 >= 100%; "Positivo"; "Médio") (Exemplo de condição composta)
+ 
+ 

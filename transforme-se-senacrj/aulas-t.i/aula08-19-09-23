@@ -1,0 +1,12 @@
+19-09-23
+
+Continuação de VisualG...
+
+- Vetor
+  var: vetor[1..10] de tipo ...
+  cont: inteiro
+
+  Para cont de 1 ate 10 faca
+        repetição de comandos
+
+  fimPara

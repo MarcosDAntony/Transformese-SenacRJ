@@ -1,0 +1,19 @@
+15-08-24
+
+# Intr. de Excel
+ - Teclas atalho:
+ os operadores lógicos aritímeticos(+, -, /, ^,  raiz(nº))
+
+ F2 (ajeitar algum erro nos endereços)
+ 
+ F4 (É para fixar algo no endereço, afim de que não mude) "$"
+ 
+ =SOMA(coluna;linha)
+ 
+ =SE(F2 > 7; "APROVADO"; "REPROVADO") (Lógico condicional)
+
+ CONT.VALORES(A2:A11) (Conta a quantidade até o endereço)
+
+ =HOJE() (Põe o dia, mês e ano em ordem)
+
+ 
