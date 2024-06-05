@@ -27,14 +27,12 @@
 
  <div style="display: inline_block"><br>
    <a href="https://gerandofalcoes.com/" target="_blank">
-    <img src="https://cvee2f.p3cdn1.secureserver.net/wp-content/uploads/2022/03/logosite-gerandofalcoes.png" style="width:125px; height:100px;">
+    <img src="https://cvee2f.p3cdn1.secureserver.net/wp-content/uploads/2022/03/logosite-gerandofalcoes.png" style="width:140px; height:110px;">
    </a>
  </div>
-
-</br>
-
+        </br>
    <a href="https://www.serasaexperian.com.br/" target="_blank">
-   <img src="https://www.serasaexperian.com.br/images-cms/wp-content/uploads/2022/08/logo-serasa-experian-color-1.png.webp" style="width:125px; height:100px;">
+   <img src="https://www.serasaexperian.com.br/images-cms/wp-content/uploads/2022/08/logo-serasa-experian-color-1.png.webp" style="width:140px; height:110px;">
    </a>
   
  </div>
