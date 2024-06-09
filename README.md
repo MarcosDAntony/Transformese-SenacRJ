@@ -36,7 +36,7 @@
    <img src="https://www.serasaexperian.com.br/images-cms/wp-content/uploads/2022/08/logo-serasa-experian-color-1.png.webp" style="width:130px; height:100px;">
    </a>
 </br>
-   <a href="https://www.senac.com.br/" target="_blank">
+   <a href="https://www.senac.br/" target="_blank">
    <img src="https://logodownload.org/wp-content/uploads/2014/10/senac-logo-0-2048x2048.png" style="width:120px; height:135px;">
    </a>
 </div> 
