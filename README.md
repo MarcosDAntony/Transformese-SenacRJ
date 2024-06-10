@@ -1,15 +1,17 @@
 <h1><a href="https://www.serasaexperian.com.br/transforme-se/" target="_blank">Transforme-se</a></h1>
 
 
-<div style="display: inline_block">
+<div style="padding: 100;">
  <h3>Linguagens e Framework utilizados</h3>
-  <img align="center" alt="HTML" height="60" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img alt="HTML" height="60" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
  
-  <img align="center" alt="CSS" height="60" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
- 
-  <img align="center" alt="PHP" height="60" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
-  
-  <img align="center" alt="PHP" height="60" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
+  <img alt="CSS" height="60" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+
+  <img alt="Bootstrap" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+          
+  <img alt="PHP" height="70" width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                  
+  <img alt="MySQL" height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
 </div>
  
 </br></br>
