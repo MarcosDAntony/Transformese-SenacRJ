@@ -2,7 +2,7 @@
 
 session_destroy();
 
-header('Location:../../site/principal.php');
+header('Location:../../site/index.php');
 
 
 ?>

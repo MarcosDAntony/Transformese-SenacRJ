@@ -66,7 +66,7 @@ if (!isset($_SESSION['email']) && $_SESSION['tipo-cadastro' != 'Usuario']) {
     <!-- =============================================Header=========================================================================-->
     <header>
         <div class="navbar navbar-expand-md text-black-80 container-fluid">
-            <a href="../principal.php" class="animate-img w3-animate-left" target="_self">
+            <a href="../index.php" class="animate-img w3-animate-left" target="_self">
                 <img src="./imagens/img-ref/atual/deluxpro-semmaquina-removebg-preview.png" class="logo" alt="logo">
             </a>
 
