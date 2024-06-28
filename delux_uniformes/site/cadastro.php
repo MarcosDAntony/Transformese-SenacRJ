@@ -80,28 +80,28 @@
           </div>
 
           <div class="col-md-6">
-            <label for="rua" class="form-label">RUA:</label>
+            <label for="rua" class="form-label">Rua:</label>
             <input class="form-control" id="street" name="rua" style="width:100px;" required>
           </div>
 
           <div class="col-md-6">
-            <label for="numero" class="form-label">NÚMERO:</label>
+            <label for="numero" class="form-label">Nº:</label>
             <input class="form-control" id="numero" name="numero" style="width:100px;" required>
           </div>
 
           <div class="col-md-6">
-            <label for="bairro" class="form-label">BAIRRO:</label>
+            <label for="bairro" class="form-label">Bairro:</label>
             <input class="form-control" id="neighborhood" name="bairro" style="width:100px;" required>
           </div>
 
           <div class="col-md-6">
-            <label for="cidade" class="form-label">CIDADE:</label>
+            <label for="cidade" class="form-label">Cidade:</label>
             <input class="form-control" id="city" name="cidade" style="width:100px;" required>
           </div>
 
           <div class="col-md-6">
             <label for="uf" class="form-label">UF</label>
-            <input type="text" class="form-control" name="uf" id="state" placeholder="UF do estado. Ex: RJ"  style="width:100px;">
+            <input type="text" class="form-control" name="uf" id="state" placeholder="UF do estado. Ex: RJ"  style="width:170px;">
           </div>
 
 

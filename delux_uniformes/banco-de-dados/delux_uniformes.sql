@@ -18,8 +18,6 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO `usuarios` (`nome`, `email`, `senha`, `tipo_cadastro`, `rua`, `numero`, `bairro`, `cidade`, `uf`, `cep`, `telefone`) VALUES
-('Marcos', 'marcosantony.asp@gmail.com', '181143/marcola', 'Administrador', 'Rua do Adm', '123', 'Centro', 'Rio de Janeiro', 'RJ', '2147483647', '123456789'),
-('Victor', 'v@k.co', '1234', 'Usuario', 'Rua XYZ', '456', 'Bairro XYZ', 'São Paulo', 'SP', '32421434', '987654321');
 
 CREATE TABLE `produtos` (
   `id_produto` int(11) PRIMARY KEY AUTO_INCREMENT,
